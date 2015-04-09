@@ -1,0 +1,604 @@
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Gestion des changements</title>
+  <style type="text/css" media="screen">
+    <!--
+    /* interet de la css : controler l ensemble de l affichage depuis cette petite zone de déclaration !!*/
+    /*redefinition affichage balise html*/
+    /*Pour changer la taille des charactères : changer la valeur font-size:*/
+    /*Pour changer la taille de la marge, changer la valeur margin-left */
+    /*definition des ID*/
+    #body{
+      font-family: arial;
+      font-size:10pt
+      }
+    #titre{
+      font-family: comics;
+      font-size:20pt ;
+      font: bold;
+      display:inline;
+      }
+    #ligne{
+      font-family: comics;
+      font-size:12pt ;
+      font: bold;
+      display:inline;
+      }
+    #log{
+      font-family: comics;
+      font-size: 10pt ;
+      color: blue;
+      display:inline;
+      }
+    .marge{margin-left :4em}
+    //-->
+  </style>
+</head>
+<body background="../Images/texture_blanc.gif">
+<div id="body"><br>
+De : Cecile Sauvaitre <br>
+A : Vincent.Guibert-e@caissedesdepots.fr<br>Cecile.Sauvaitre@caissedesdepots.fr<br>Gilles.Santacreu@caissedesdepots.fr<br><br>
+Objet : [dev]-=Gestion des changements=- Cloture de la demande n 2.<br>
+<br>
+<table>
+<tr align="center" >
+<td colspan="4" align="center"><b>&nbsp;Information sur le changement <a href="http://dpiddr-dev.re.cdc.fr/riasogeti/changements/index.php?ITEM=changement_Info_Changement&amp;action=Info&amp;ID=2" >2</a>&nbsp;</b></td>
+</tr>
+<tr>
+<td align="center" colspan="4">
+<table>
+<tr>
+<td bgcolor="#20EA01"><FONT COLOR="#000000">&nbsp;Brouillon&nbsp;</FONT></td>
+<td bgcolor="#20EA01"><FONT COLOR="#000000">&nbsp;->&nbsp;Inscrit&nbsp;</FONT></td>
+<td bgcolor="#20EA01"><FONT COLOR="#000000">&nbsp;->&nbsp;Valid&eacute;&nbsp;</FONT></td>
+<td bgcolor="#20EA01"><FONT COLOR="#000000">&nbsp;->&nbsp;Termin&eacute;&nbsp;</FONT></td>
+<td bgcolor="#20EA01"><FONT COLOR="#000000">&nbsp;->&nbsp;Clotur&eacute;&nbsp;</FONT></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Date de D&eacute;but&nbsp;</td>
+<td align="left">&nbsp;01/11/2010&nbsp;</td>
+<td align="left">&nbsp;Heure de D&eacute;but&nbsp;</td>
+<td align="left">&nbsp;13h59&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Date de fin&nbsp;</td>
+<td align="left">&nbsp;04/11/2010&nbsp;</td>
+<td align="left">&nbsp;Heure de Fin&nbsp;</td>
+<td align="left">&nbsp;15h59</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Titre du Changement&nbsp;</td>
+<td align="left" colspan="3">&nbsp;ddd&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Type de Changement&nbsp;</td>
+<td align="left" colspan="3" bgcolor="#FF00FF"><FONT COLOR="#FFFFFF">&nbsp;Changement applicatif&nbsp;</FONT></td>
+</tr>
+<tr>
+<td align="left">&nbsp;Description&nbsp;*&nbsp;</td>
+<td align="left" colspan="3">
+ssss
+</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Pour changement applicatif&nbsp;&nbsp;</td>
+<td align="left" colspan="3">
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_LISTE_CONFIG_ID_7_3"
+>D&eacute;rogatoire
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_LISTE_CONFIG_ID_7_2"
+ checked
+>LUP
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_LISTE_CONFIG_ID_7_1"
+>Version
+</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Entit&eacute;&nbsp;*&nbsp;</td>
+<td align="left" colspan="3">
+Editique
+</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Site&nbsp;*&nbsp;</td>
+<td align="left" colspan="3">
+Angers
+</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Personnes assurant la communication&nbsp;&nbsp;</td>
+<td align="left" colspan="3">
+
+</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Personnes assurant l'intervention&nbsp;*&nbsp;</td>
+<td align="left" colspan="3">
+g santacreu
+</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Personnes assurant l'assistance apr&egrave;s l'intervention&nbsp;*&nbsp;</td>
+<td align="left" colspan="3">
+g santcreu
+</td>
+</tr>
+<tr>
+<td align="left" bgcolor="#0000FF"><FONT COLOR="#FFFFFF">&nbsp;Status&nbsp;</FONT></td>
+<td align="left" colspan="3" bgcolor="#0000FF"><FONT COLOR="#FFFFFF">&nbsp;Clotur&eacute;&nbsp;</FONT></td>
+</tr>
+</table>
+</BR>
+<div align="left">
+<table>
+<tr align="center">
+<td colspan="2"><b>&nbsp;Information de la FAR du changement n&deg; 2&nbsp;</b></td>
+</tr>
+<tr align="center">
+<td colspan="2">&nbsp;<b>Impacts infrastructure / mat&eacute;riel</b>&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;&nbsp;</td>
+<td align="left">
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_12_10"
+ checked
+>Appareils mobiles&nbsp;&nbsp;
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_12_9"
+>Citrix&nbsp;&nbsp;
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_12_5"
+>DMZ&nbsp;&nbsp;
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_12_8"
+>Editique&nbsp;&nbsp;
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_12_2"
+>Linux&nbsp;&nbsp;
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_12_6"
+>PC&nbsp;&nbsp;
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_12_4"
+>R&eacute;seaux&nbsp;&nbsp;
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_12_7"
+>TL&nbsp;&nbsp;
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_12_1"
+>Unix&nbsp;&nbsp;
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_12_3"
+>Windows&nbsp;&nbsp;
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;&nbsp;</td>
+<td align="left">
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_13_2"
+checked
+>Produits 
+&nbsp;:&nbsp;ctm
+</BR>
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_13_1"
+>Serveurs
+&nbsp;:&nbsp;
+&nbsp;</td>
+</tr>
+<tr align="center">
+<td colspan="2">&nbsp;<b>Impacts fonctionnels</b>&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;&nbsp;</td>
+<td align="left">
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_14_2"
+ checked
+>Internet&nbsp;&nbsp;
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_14_3"
+>Intranet&nbsp;&nbsp;
+<INPUT TYPE="CHECKBOX" DISABLED NAME="CHANGEMENT_FAR_CONFIG_ID_14_1"
+>Messagerie&nbsp;&nbsp;
+&nbsp;</td>
+</tr>
+<tr align="center">
+<td colspan="2">&nbsp;<b>Risques sur le service</b>&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Interruption du service pour le client&nbsp;</td>
+<td align="left">
+&nbsp;1&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_16" value="1"
+>&nbsp;2&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_16" value="2"
+CHECKED
+>&nbsp;3&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_16" value="3"
+>&nbsp;4&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_16" value="4"
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Interruption du service pour DEI&nbsp;</td>
+<td align="left">
+&nbsp;1&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_17" value="1"
+>&nbsp;2&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_17" value="2"
+CHECKED
+>&nbsp;3&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_17" value="3"
+>&nbsp;4&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_17" value="4"
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Interruption du service pour DPI&nbsp;</td>
+<td align="left">
+&nbsp;1&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_18" value="1"
+>&nbsp;2&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_18" value="2"
+CHECKED
+>&nbsp;3&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_18" value="3"
+>&nbsp;4&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_18" value="4"
+>
+&nbsp;</td>
+</tr>
+<tr align="center">
+<td colspan="2">&nbsp;<b>Risques techniques et organisationnels</b>&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Niveau de complexit&eacute; du changement&nbsp;</td>
+<td align="left">
+&nbsp;1&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_19" value="1"
+>&nbsp;2&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_19" value="2"
+>&nbsp;3&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_19" value="3"
+CHECKED
+>&nbsp;4&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_19" value="4"
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Maitrise de la technologie employ&eacute;e&nbsp;</td>
+<td align="left">
+&nbsp;1&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_20" value="1"
+>&nbsp;2&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_20" value="2"
+>&nbsp;3&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_20" value="3"
+CHECKED
+>&nbsp;4&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_20" value="4"
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Nombre de ressources mobilis&eacute;es&nbsp;</td>
+<td align="left">
+&nbsp;1&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_21" value="1"
+>&nbsp;2&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_21" value="2"
+>&nbsp;3&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_21" value="3"
+CHECKED
+>&nbsp;4&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_21" value="4"
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Dur&eacute;e d'intervention pr&eacute;vue&nbsp;</td>
+<td align="left">
+&nbsp;1&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_22" value="1"
+>&nbsp;2&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_22" value="2"
+>&nbsp;3&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_22" value="3"
+CHECKED
+>&nbsp;4&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_22" value="4"
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Urgence du changement&nbsp;</td>
+<td align="left">
+&nbsp;1&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_23" value="1"
+>&nbsp;2&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_23" value="2"
+>&nbsp;3&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_23" value="3"
+CHECKED
+>&nbsp;4&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_23" value="4"
+>
+&nbsp;</td>
+</tr>
+<tr align="center">
+<td colspan="2">&nbsp;<b>Actions pr&eacute;ventives</b>&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Tests avant intervention&nbsp;</td>
+<td align="left">
+<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_24" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_24" value="Non"
+CHECKED
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Chronogramme d'op&eacute;rations&nbsp;</td>
+<td align="left">
+<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_25" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_25" value="Non"
+CHECKED
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Retour arri&egrave;re pr&eacute;vu&nbsp;</td>
+<td align="left">
+<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_26" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_26" value="Non"
+CHECKED
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Tests applicatifs apr&egrave;s intervention&nbsp;</td>
+<td align="left">
+<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_27" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_27" value="Non"
+CHECKED
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Validation DEI&nbsp;</td>
+<td align="left">
+<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_28" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_28" value="Non"
+CHECKED
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Validation m&eacute;tiers&nbsp;</td>
+<td align="left">
+<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_29" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_29" value="Non"
+CHECKED
+>
+&nbsp;</td>
+</tr>
+<tr align="center">
+<td colspan="2">&nbsp;<b>Risque global</b>&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Risque global du changement&nbsp;</td>
+<td align="left">
+&nbsp;1&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_30" value="1"
+>&nbsp;2&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_30" value="2"
+>&nbsp;3&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_30" value="3"
+>&nbsp;4&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_30" value="4"
+CHECKED
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Risque si non r&eacute;alisation&nbsp;</td>
+<td align="left">
+&nbsp;1&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_31" value="1"
+>&nbsp;2&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_31" value="2"
+>&nbsp;3&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_31" value="3"
+>&nbsp;4&nbsp;<INPUT type="radio" DISABLED name="CHANGEMENT_FAR_CONFIG_ID_31" value="4"
+CHECKED
+>
+&nbsp;</td>
+</tr>
+<tr align="center">
+<td colspan="2">&nbsp;<b>Commentaires</b>&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;&nbsp;</td>
+<td align="left">
+mouais
+&nbsp;</td>
+</tr>
+</table>
+</div>
+</BR>
+</BR>
+<div align="left">
+<table>
+<tr align="center">
+<td colspan="2"><b>&nbsp;Information de la fiche Bilan du changement n&deg; 2&nbsp;</b></td>
+</tr>
+<tr align="center">
+<td colspan="2">&nbsp;<b>Bilan Technique</b>&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;R&eacute;ussite de l'op&eacute;ration&nbsp;</td>
+<td align="left">&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_1" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_1" value="Non"
+CHECKED
+>
+&nbsp;-&nbsp;
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Pr&eacute;paration de l'op&eacute;ration suffisante&nbsp;</td>
+<td align="left">&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_2" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_2" value="Non"
+CHECKED
+>
+&nbsp;-&nbsp;
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Utilisation du retour arrière&nbsp;</td>
+<td align="left">&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_9" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_9" value="Non"
+CHECKED
+>
+&nbsp;-&nbsp;
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Interruption de service pour DPI&nbsp;</td>
+<td align="left">&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_10" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_10" value="Non"
+CHECKED
+>
+&nbsp;-&nbsp;
+&nbsp;</td>
+</tr>
+<tr align="center">
+<td colspan="2">&nbsp;<b>Bilan pour le client</b>&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Amélioration du service&nbsp;</td>
+<td align="left">&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_11" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_11" value="Non"
+CHECKED
+>
+&nbsp;-&nbsp;
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Dégradation du service&nbsp;</td>
+<td align="left">&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_12" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_12" value="Non"
+CHECKED
+>
+&nbsp;-&nbsp;
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Interruption du service&nbsp;</td>
+<td align="left">&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_6" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_6" value="Non"
+CHECKED
+>
+&nbsp;-&nbsp;
+&nbsp;</td>
+</tr>
+<tr align="center">
+<td colspan="2">&nbsp;<b>Commentaires</b>&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Commentaires&nbsp;</td>
+<td align="left">&nbsp;
+non
+&nbsp;</td>
+</tr>
+<tr align="center">
+<td colspan="2">&nbsp;<b>Mise &agrave; jour gestion de configuration</b>&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Mise &agrave; jour des serveurs physiques&nbsp;</td>
+<td align="left">&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_4" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_4" value="Non"
+CHECKED
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Mise &agrave; jour des serveurs logiques&nbsp;</td>
+<td align="left">&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_5" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_5" value="Non"
+CHECKED
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Mise &agrave; jour des logiciels installés&nbsp;</td>
+<td align="left">&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_13" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_13" value="Non"
+CHECKED
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Mise &agrave; jour des applications&nbsp;</td>
+<td align="left">&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_14" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_14" value="Non"
+CHECKED
+>
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Mise &agrave; jour des services applicatifs&nbsp;</td>
+<td align="left">&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_15" value="Oui"
+>&nbsp;Oui&nbsp;/&nbsp;Non&nbsp;
+<INPUT type="radio" DISABLED name="CHANGEMENT_BILAN_CONFIG_ID_15" value="Non"
+CHECKED
+>
+&nbsp;</td>
+</tr>
+<tr align="center">
+<td colspan="2">&nbsp;<b>Consommations</b>&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Nombre de personnes mobilis&eacute;es&nbsp;</td>
+<td align="left">&nbsp;
+&nbsp;CDS: 0&nbsp;
+&nbsp;CITI: 0&nbsp;
+&nbsp;DEI/Client: 0&nbsp;
+&nbsp;ING: 0&nbsp;
+&nbsp;OPE: 0&nbsp;
+&nbsp;RSX: 0&nbsp;
+&nbsp;SLG: 0&nbsp;
+&nbsp;Total: 0&nbsp;
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Nombre de jours d astreinte&nbsp;</td>
+<td align="left">&nbsp;
+&nbsp;CDS: 0&nbsp;
+&nbsp;CITI: 0&nbsp;
+&nbsp;DEI/Client: 0&nbsp;
+&nbsp;ING: 0&nbsp;
+&nbsp;OPE: 0&nbsp;
+&nbsp;RSX: 0&nbsp;
+&nbsp;SLG: 0&nbsp;
+&nbsp;Total: 0&nbsp;
+&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Nombre de jours de pr&eacute;sence&nbsp;</td>
+<td align="left">&nbsp;
+&nbsp;CDS: 0&nbsp;
+&nbsp;CITI: 0&nbsp;
+&nbsp;DEI/Client: 0&nbsp;
+&nbsp;ING: 0&nbsp;
+&nbsp;OPE: 0&nbsp;
+&nbsp;RSX: 0&nbsp;
+&nbsp;SLG: 0&nbsp;
+&nbsp;Total: 0&nbsp;
+&nbsp;</td>
+</tr>
+<tr align="center">
+<td colspan="2">&nbsp;<b>Commentaires</b>&nbsp;</td>
+</tr>
+<tr>
+<td align="left">&nbsp;Commentaires&nbsp;</td>
+<td align="left">&nbsp;
+non
+&nbsp;</td>
+</tr>
+</table>
+</div>
+</BR>
+</BR>
+<div id="signature">
+  <b>Cecile Sauvaitre </b><br>
+  Gestion des changements<br>
+  Informatique CDC - Etablissement DPI<br>
+</div>   
+</div>   
+</body></html>
+

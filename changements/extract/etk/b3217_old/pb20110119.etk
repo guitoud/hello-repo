@@ -1,0 +1,20 @@
+!OPCOMP!D!11/01/17!09:46:34!-env-=x
+!OPCOMP!S!11/01/17!09:46:34!VPOM =2486908
+!OPCOMP!S!11/01/17!09:46:34!banie=job:re0859fc3u040001
+!OPCOMP!S!11/01/17!09:46:34!banie=dest:PPAI40 - FC3 CR Mises en paiement FEH 
+!OPCOMP!S!11/01/17!09:46:35!banie=printer:b128blas piece:5000 modele:RE0859
+!OPCOMP!S!11/01/17!09:46:35!banie=ex:1 fact:xx 
+!OPCOMP!S!11/01/17!09:46:35!banie=cop:1 
+!OPCOMP!S!11/01/17!09:46:35!bapag=     25
+!OPCOMP!X!11/01/17!09:46:40!
+!Z-----!X!11/01/17!09:46:40!x    =--------------------------------------------  
+!OPCOMP!D!11/01/19!06:21:11!-env-=x
+!OPCOMP!S!11/01/19!06:21:11!VPOM =2494141
+!OPCOMP!S!11/01/19!06:21:11!banie=job:re0323aeds55000H
+!OPCOMP!S!11/01/19!06:21:11!banie=dest:AED PCAT30 meta modele BSCT regroupement RUCL RUCK BSCT - journalier 
+!OPCOMP!S!11/01/19!06:21:11!banie=printer:PRA0268A piece:204A modele:RE0323
+!OPCOMP!S!11/01/19!06:21:11!banie=ex:1 fact:xx 
+!OPCOMP!S!11/01/19!06:21:11!banie=cop:1 
+!OPCOMP!S!11/01/19!06:21:12!bapag=     12
+!OPCOMP!X!11/01/19!06:21:26!
+!Z-----!X!11/01/19!06:21:26!x    =--------------------------------------------  

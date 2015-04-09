@@ -1,0 +1,17 @@
+
+HEURE_DEBUT Wednesday 2 February a 09:29:32
+Traitement du fichier /editique-supervision/supervision/b3217_old/liste_ETK_open.txt
+ 24151 -rw-rw-rw-   1 servimp    exploit          0 Feb  1 15:32 /editique-supervision/supervision/b3217_old/liste_ETK_open.txt
+
+Traitement du fichier /editique-supervision/supervision/b3217_old/liste_etk_en_erreur.txt
+ 37139 -rw-rw-rw-   1 servimp    exploit         11 Feb  2 09:29 /editique-supervision/supervision/b3217_old/liste_etk_en_erreur.txt
+
+cloture de l ETK 0000067804.
+NB CLOTURE = 1
+NB PERE = 0
+NB DEJA CLOS = 0
+NB TOTAL ETK A CLOTURER = 1
+POURCENTAGE DE CLOTURE DE ETK : 100.00 %
+POURCENTAGE DE PERE : 0 %
+HEURE_FIN Wednesday 2 February a 09:29:35
+

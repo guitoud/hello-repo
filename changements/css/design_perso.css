@@ -1,0 +1,641 @@
+/*-------------------------------------------------------------*/
+/* CSS Outils                                                  */
+/*-------------------------------------------------------------*/
+Body {
+	background-repeat: no-repeat;
+	background-color: #CCCCCC;
+	margin: 0; 
+	padding: 0;
+	font-family: Verdana;
+	font-size: 11px;
+	color: #666666;
+}
+
+.Menu {
+	background-repeat: no-repeat;
+	background-color: none;
+	width: 100%;
+	margin-bottom: 5px;
+	text-align: center;
+	border: 1px solid #993333;
+	font-family: Verdana;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #666666;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+  font-family: Verdana, "Trebuchet MS", Arial;
+  font-size: 18px;
+  font-weight: 900;
+  color: #FF9900;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-family: Verdana, "Trebuchet MS", Arial;
+  font-size: 14px;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+
+.titre_legend {
+  font-family: Verdana, "Trebuchet MS", Arial;
+  font-size: 12px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+a {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FF9900;
+	text-decoration: none;
+}
+
+a:hover {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+
+.LinkDef {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+}
+
+.LinkDef:hover {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #993333;
+	text-decoration: none;
+}
+
+.imgaide {
+	background-repeat: no-repeat;
+	background-color: none;
+	text-align: center;
+	border: 1px solid #993333;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding : 2px;
+}
+
+.Contenu {
+	font-family: Verdana;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	vertical-align: middle;
+	padding: 2px;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.titre_in_Contenu {
+	width: 100%;
+	margin-bottom: 5px;
+	text-align: center;
+	border: 0px solid #FFFFFF;
+	font-family: Verdana;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: none;
+	vertical-align: middle;
+	padding: 2px;
+}
+
+.in_Contenu {
+	width: 100%;
+	margin-bottom: 5px;
+	text-align: left;
+	border: 0px solid #FFFFFF;
+	font-family: Verdana;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+	vertical-align: middle;
+	padding: 2px;
+}
+
+.texte_gauche_in_Contenu {
+	width: 100%;
+	margin-bottom: 5px;
+	text-align: left;
+	border: 0px solid #FFFFFF;
+	font-family: Verdana;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+	vertical-align: middle;
+	padding: 2px;
+}
+
+.texte_centre_in_Contenu{
+	width: 100%;
+	margin-bottom: 5px;
+	text-align: center;
+	border: 0px solid #FFFFFF;
+	font-family: Verdana;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+	vertical-align: middle;
+	padding: 2px;
+}
+
+.Global {
+	font-family: Verdana;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 2px;
+	margin-bottom: 5px;
+	border: 1px solid #666666;
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.Header {
+	font-family: Verdana;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 2px;
+	margin-bottom: 5px;
+	border: 1px solid #993333;
+	background-color: ;
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.Copyright {
+	font-family: Verdana;
+	font-size: 9px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 5px;
+}
+
+fieldset {
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px double #993333;
+} 
+
+fieldset legend {
+    line-height: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px 0;
+    background-image: url(../img/fieldsetheaderbg.jpg);
+	border: 1px solid #993333;
+}
+
+input {
+	font-family: Verdana;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+tr.titre {
+  background-color: #8A9999;
+  color: #FFFFFF;
+  font-weight: bold;
+	text-align: center;
+}
+
+tr.pair {
+  background-color: #EEEEEE;
+	text-align: center;
+}
+
+tr.impair {
+  background-color: #D7D7D7;
+	text-align: center;
+}
+
+tr.annulation {
+  background-color: #C0C0C0;
+  color: #606060;
+	text-align: center;
+}
+
+tr.vert {
+  background-color: #68ea34;
+  color: #666666;
+  font-weight: bold;
+}
+
+tr.down {
+  background-color: #ff4800;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+tr.noinfo {
+  background-color: #d9d9d9;
+  color: #000000;
+  font-weight: bold;
+}
+
+tr.rouge {
+  background-color: #FF0000;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+td {
+  border-color: #FFFFFF;
+  border: 1px;
+}
+
+th {
+  background-color: #8A9999;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  border: 1px;
+  font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+  position: relative;
+}
+
+td.vert {
+  background-color: #68ea34;
+  color: #666666;
+}
+td.orange {
+  background-color: #FF9933;
+  color: #666666;
+}
+td.jaune {
+  background-color: #FFFF00;
+  color: #666666;
+}
+
+
+td.rouge {
+  background-color: #ff4800;
+  color: #FFFFFF;
+}
+
+td.hostname_histo {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+  color: #606060;
+	text-decoration: none;
+}
+
+.table_inc {
+	font-family: Verdana;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	vertical-align: middle;
+	padding: 2px;
+	margin-bottom: 5px;
+	border: 0px solid #FFFFFF;
+	background-color: ;
+}
+
+.LinkModif {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+  color: #000000;
+	text-decoration: none;
+}
+
+.LinkModif:hover {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #993333;
+	text-decoration: none;
+}
+
+.LinkAnnul {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+  color: #606060;
+	text-decoration: none;
+  background-color: #C0C0C0;
+}
+
+.LinkAnnul:hover {
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	color: #993333;
+	text-decoration: none;
+}
+
+.infobullegauche {
+ color: #FFFFFF;
+ border-color: #FFFFFF;
+ border: 1px;
+ font-weight: bold;
+ text-align: left;
+ text-decoration: none;
+ position: relative;
+}
+.infobullegauche span {
+ display: none; /* on masque l'infobulle */
+}
+
+.infobullegauche:hover {
+ /*  background: none; /* correction d'un bug IE */
+ z-index: 500; /* on définit une valeur pour l'ordre d'affichage */
+ /* cursor: help;  on change le curseur par défaut en curseur d'aide */
+ color: #FFFFFF;
+ border-color: #FFFFFF;
+ border: 1px;
+ font-weight: bold;
+ text-align: left;
+ text-decoration: none;
+ position: relative;
+}
+
+.infobullegauche:hover span {
+ font-family: Verdana;
+ font-size: 10px;
+ display: inline; /* on affiche l'infobulle */
+ position: absolute;
+ white-space: nowrap; /* on change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non-désiré */
+ top: 20px; /* on positionne notre infobulle */
+ left: -0px;
+ background: #FFFFFF;
+ color: #993333;
+ padding: 3px;
+ border: 1px solid #993333;
+}
+
+.infobulleuptime {
+ color: #000000;
+ border-color: #000000;
+ border: 1px;
+ text-align: left;
+ text-decoration: none;
+ position: relative;
+}
+.infobulleuptime span {
+ display: none; /* on masque l'infobulle */
+}
+
+.infobulleuptime:hover {
+ /*  background: none; /* correction d'un bug IE */
+ z-index: 500; /* on définit une valeur pour l'ordre d'affichage */
+ /* cursor: help;  on change le curseur par défaut en curseur d'aide */
+ color: #000000;
+ border-color: #000000;
+ border: 1px;
+ text-align: left;
+ text-decoration: none;
+ position: relative;
+}
+
+.infobulleuptime:hover span {
+ font-family: Verdana;
+ font-size: 10px;
+ display: inline; /* on affiche l'infobulle */
+ position: absolute;
+ white-space: nowrap; /* on change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non-désiré */
+ top: 20px; /* on positionne notre infobulle */
+ left: -0px;
+ background: #FFFFFF;
+ color: #993333;
+ padding: 3px;
+ border: 1px solid #993333;
+}
+
+.infobulledroite {
+ color: #FFFFFF;
+ border-color: #FFFFFF;
+ border: 1px;
+ font-weight: bold;
+ text-align: left;
+ text-decoration: none;
+ position: relative;
+}
+.infobulledroite span {
+ display: none; /* on masque l'infobulle */
+}
+
+.infobulledroite:hover {
+ /*  background: none; /* correction d'un bug IE */
+ z-index: 500; /* on définit une valeur pour l'ordre d'affichage */
+ /* cursor: help;  on change le curseur par défaut en curseur d'aide */
+ color: #FFFFFF;
+ border-color: #FFFFFF;
+ border: 1px;
+ font-weight: bold;
+ text-align: left;
+ text-decoration: none;
+ position: relative;
+}
+
+.infobulledroite:hover span {
+ font-family: Verdana;
+ font-size: 10px;
+ display: inline; /* on affiche l'infobulle */
+ position: absolute;
+ white-space: nowrap; /* on change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non-désiré */
+ top: 20px; /* on positionne notre infobulle */
+ right: 0px;
+ background: #FFFFFF;
+ color: #993333;
+ padding: 3px;
+ border: 1px solid #993333;
+}
+
+/*-------------------------------------------------------------*/
+/* Pour les pages générales                                    */
+/*-------------------------------------------------------------*/
+h3 {
+  margin: 0; margin-bottom: 10px;
+  padding: 0;
+  font-family: Verdana, "Trebuchet MS", Arial;
+  font-size: 20px;
+  font-weight: 900;
+  color: #993333;
+}
+
+body.rapport {
+	background-repeat: no-repeat;
+	background-color:#FFFFFF;
+	margin: 0;
+  padding: 0;
+	font-family: Verdana;
+	font-size: 11px;
+	color: #666666;
+}
+
+.table_rapport_general {
+  border-spacing: 0px;
+  border: 0px solid #FFFFFF ;
+	background-repeat: no-repeat;
+	background-color: none;
+	margin-bottom: 5px;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+tr.rapport_general {
+  padding: 0px;
+  border: 0px solid #000000 ;
+}
+
+td.rapport_general {
+  padding: 0px;
+  border: 0px solid #000000 ;
+}
+
+.table_rapport_gdi {
+  border-spacing: 0px;
+  border: 0px solid #FFFFFF ;
+	background-repeat: no-repeat;
+	background-color: none;
+	margin-bottom: 5px;
+	font-family: Verdana;
+	text-align: left;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0px;
+  color: #000000;
+}
+
+tr.titre_table_rapport_gdi {
+  padding: 0px;
+  border: 0px solid #000000 ;
+  color: #000000;
+}
+
+td.titre_table_rapport_gdi {
+  padding: 0px;
+  border: 0px solid #000000 ;
+  color: #000000;
+}
+
+.table_rapport_autres {
+  border-spacing: 0px;
+  border: 1px solid #000000 ;
+	background-repeat: no-repeat;
+	background-color: none;
+	width: 100%;
+	margin-bottom: 5px;
+	text-align: center;
+	font-family: Verdana;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+tr.titre_table_rapport_autres {
+  background-color: #FFCC99;
+  color: #000000;
+  border: 1px solid #000000 ;
+}
+
+td.titre_table_rapport_autres {
+  background-color: #FFCC99;
+  color: #000000;
+  border: 1px solid #000000 ;
+  font-weight: bold;
+}
+
+tr.contenu_table_rapport_autres {
+  padding: 0px;
+  color: #000000;
+  border: 1px solid #000000 ;
+}
+
+td.contenu_table_rapport_autres {
+  padding: 0px;
+  color: #000000;
+  border: 1px solid #000000 ;
+}
+
+tr.pair_rapport_autres {
+  background-color: #d2dce8;
+}
+
+tr.impair_rapport_autres {
+  background-color: #c0dce8;
+}
+
+tr.titre_rapport_nbu_ent {
+  background-color: #FFFF99;
+  color: #000000;
+  font-weight: bold;
+}
+
+td.titre_rapport_nbu_ent {
+  padding: 0px;
+  color: #000000;
+  border: 1px solid #000000 ;
+}
+
+tr.contenu_rapport_nbu {
+  padding: 0px;
+  color: #000000;
+  border: 1px solid #000000 ;
+}
+
+td.contenu_rapport_nbu {
+  padding: 0px;
+  color: #000000;
+  border: 1px solid #000000 ;
+}

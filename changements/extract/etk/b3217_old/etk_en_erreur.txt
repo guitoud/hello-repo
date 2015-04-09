@@ -1,0 +1,6 @@
+0000043796!ARCPDF!E!11/01/06!23:56:18!e    =-erno610-fichier /vpom09/outmgr/tmp/travail/2454019_2454288_pr0201es1ey98001_00001.pdf absent ou vide
+
+NB ETK EN ERREUR = 1
+NB TOTAL ETK = 3555
+POURCENTAGE D ERREUR : .02 %
+

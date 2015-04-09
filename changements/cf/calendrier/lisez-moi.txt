@@ -1,0 +1,92 @@
+-------------------------------------------------------------------------------------------------
+* SAISIE DE DATE
+-------------------------------------------------------------------------------------------------
+* 30 août 2004
+* Tafel
+-------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
+Commentaires
+-------------------------------------------------------------------------------------------------
+ * Affiche un calendrier, avec dimanche ou lundi comme 1er jour, et permet de
+ * reporter la date sélectionnée dans un champ INPUT d'un formulaire.
+ *
+ * Exemple d'utilisation :
+ * Soit un fichier (php, html ou autre). Imaginons qu'il y a un champs "date"
+ * qui doit contenir une date formattée selon certains critères. Il faut tout
+ * d'abord avoir un formulaire qui a un nom :
+ *
+ * <from name="test" method="post" action="monFichierDeTraitement.php">
+ *
+ * Ensuite, il faut un champ qui accueillera le jour choisi via ce fichier.
+ * Prenons par exemple un simple champ texte :
+ *
+ * <input type="texte" name="date" readonly="readonly"/>
+ *
+ * Finalement, il faut un lien qui ouvre le calendrier. Pour ce faire, on peut
+ * utiliser l'événement onClick du Javascript :
+ *
+ * <a href="#" onClick="window.open('calendrier.php?frm=test&ch=date', 'calendrier', 'width=415,height=170,scrollbars=0').focus();">
+ *    <img src="images/calendrier.gif" />
+ * </a>
+ *
+ * On utilise la fonction window.open(). Le 1er paramètre est le nom de la page
+ * ainsi que son emplacement par rapport au calendrier (ici, les 2 sont
+ * au même endroit). Il y a 2 variables à passer, "frm" et "ch". "frm" est égal
+ * au nom du formulaire, "ch" est égal au nom du champ qui accueillera le jour
+ * choisi.
+ * Le 2e paramètre est le nom de la fenêtre (optionnel), le reste, ben c'est du
+ * connu. Largeur, hauteur, scrollbars. Et un petit focus() pour être sûr que
+ * le calendrier se mettra en avant-plan lors de son ouverture.
+ *
+ * NOTE : Le onClick peut se mettre ailleurs. Et c pas obligé d'avoir une image
+ *        Pour un peu plus de sûreté, on peut mettre un readonly dans le champ.
+ *        Ainsi, seul la date pourra s'inscrire dedans
+
+
+-------------------------------------------------------------------------------------------------
+Les fichiers inclus dans le ZIP : 
+
+- lisez-moi.txt
+- index.html
+- pop.calendrier.php
+- petit_calendrier.gif
+- calendrier.gif
+
+-------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
+Utilisation :
+
+Voir l'index.html pour un exemple d'utilisation.
+-------------------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------------------
+Variables "utilisateurs" :
+
+Quelques variables sont modifiables pour customizer un peu le calendrier. Elles se trouvent dans
+pop.calendrier.php
+
+/**
+ * $anneeMin : Permet la selection d'années antérieures à celle actuelle (2 = 2 ans antérieur)
+ * $anneeMax : Permet la sélection d'années postérieures à celle actuelle (3 = 3 ans postérieur)
+ */
+$anneeMin = 0;
+$anneeMax = 3;
+
+/**
+ * Formattage de la date (par exemple : JJ-MM-AAAA ou JJ|MM|AAAA)
+ * $checkzero : ajoute un zéro devant le mois ou le jour s'ils sont inférieur à 10
+ *              "false" ou "true"
+ * $format    : représente la string qui sépare le mois du jour de l'année
+ * $ordre     : détermine l'ordre, de gauche à droite, du jour, mois et année
+ *              "a" pour année, "m" pour mois, "j" pour jour
+ * $affichage : Pour présenter le calendrier au format anglais ou français
+ *              "fr" ou "en"
+ */
+$checkzero = "true";
+$format = "-";
+$ordre = array("a", "m", "j");
+$affichage = "fr";
+-------------------------------------------------------------------------------------------------

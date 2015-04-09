@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Calendrier -> Exemple</title>
+</head>
+<body>
+
+<!--
+Ne pas oublier de faire tourner tout ça sous Apache...sinon, ça va pas marcher, forcément...
+-->
+
+<form name="frm" method="post" action="#">
+    <p>Le champ de la date avec un petit icône nous permettant d'accéder au calendrier</p>
+    <input type="text" name="d" readonly="readonly"/>
+    <a href="#" onClick=" window.open('pop.php?frm=frm&ch=d','calendrier','width=350,height=160,scrollbars=0').focus();"><img src="petit_calendrier.gif" border="0"/></a>
+    <br/><br/>
+    <p>L'envoi des données</p>
+    <input type="submit" value="Ensuite, débrouillez-vous ;) !"/>
+</form>
+
+</body>
+</html>

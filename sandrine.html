@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="generator" content="VISIO" />
+    <meta name="author" content="Sandrine CHATELET" />
+    <title>VISIO EXPLOITATION</title>
+    <div style="text-align: center;">
+        <img style=" width: 966px; height:120px;" alt="en-tete" src="img/logo.jpg">
+    </div>
+    <br>
+
+    <!--<big><span style="text-align: center;margin: 470px;font-family: Arial; font-size: 14px; color: rgb(0, 102, 0);font-weight: bold;">Consultation d&eacutetaill&eacutee des jobs : FCR et p&eacuterim&egravetre de responsabilit&eacute</span></big>-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="img/logo.jpg" />
+    <div style="text-align: center;font-size: 20px;color: rgb(255, 0, 0);font-weight: bold;">Consultation des FCRs en Production</div>
+    <br>
+    <script>
+        function showUser(str, bsr) //Fonction appel�e dans la recherche par JOB
+         {
+            if (str == "" || bsr == "") document.getElementById("txtHint").innerHTML = "";
+            if (window.XMLHttpRequest) {
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET", "getcarto.php?p=" + str + "&cr=" + bsr);
+            xmlhttp.send();
+        }
+
+        function showMQ(mq) //Fonction appel�e dans la recherche par MQREBUT
+         {
+            if (mq == "") {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+            }
+            if (window.XMLHttpRequest) {
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET", "getcarto.php?q=" + mq, true);
+            xmlhttp.send();
+        }
+
+        function showAP(ap) //Fonction appel�e dans la recherche par Code Appli
+         {
+            if (ap == "") {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+            }
+            if (window.XMLHttpRequest) {
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET", "getcarto.php?a=" + ap, true);
+            xmlhttp.send();
+        }
+
+        function showPD(pd) //Fonction appel�e dans la recherche par Nom appli
+         {
+            if (pd == "") {
+                document.getElementById("txtHint").innerHTML = "";
+                return;
+            }
+            if (window.XMLHttpRequest) {
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET", "getcarto.php?d=" + pd, true);
+            xmlhttp.send();
+        }
+
+        function showOp(fcr_open, cr_open, $top_open) //Fonction appel�e dans la recherche par OPEN
+         {
+            if (fcr_open == "" || cr_open == "") document.getElementById("txtHint_Open").innerHTML = "";
+            if (window.XMLHttpRequest) {
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("txtHint_Open").innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET", "getcarto.php?fcr_open=" + fcr_open + "&cr_open=" + cr_open + "&top_open=1");
+            xmlhttp.send();
+        }
+
+        function showReseau(fcr_reseau, cr_reseau, $top_reseau) //Fonction appel�e dans la recherche par OPEN
+         {
+            if (fcr_reseau == "" || cr_reseau == "") document.getElementById("txtHint_Reseau").innerHTML = "";
+            if (window.XMLHttpRequest) {
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("txtHint_Reseau").innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET", "getcarto.php?fcr_reseau=" + fcr_reseau + "&cr_reseau=" + cr_reseau + "&top_reseau=1");
+            xmlhttp.send();
+        }
+    </script>
+</head>
+
+<body>
+    <br>
+    <br>
+    <big><span style="margin-left: 150px;font-family: Arial; color: rgb(0, 102, 0);font-weight: bold;"><u>Consultation d&eacute;taill&eacute;e des jobs : FCR et p&eacute;rim&egrave;tre de responsabilit&eacute;</u></span></big>
+    <br>
+
+    <table border="0" align="center">
+        <tr>
+            <form onsubmit="showUser(users.value,cr.value); return false;">
+                <br>
+                <td><b><center><span style="font-family: Arial;">Nom JOB</span></center><span style="font-family: Arial;">sur 6 positions:</span></b>
+                </td>
+                <td></td>
+                <td>
+                    <input type="text" name="users" value="">
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><b><span style="font-family: Arial;">Code</span><br><span style="font-family: Arial;">adh&eacute;rent:</span></b>
+                </td>
+                <td></td>
+                <td style=" vertical-align: center;">
+                    <select name="cr">
+                        <option selected value=""></option>
+                        <option value="AL">AL - Alpes Provence</option>
+                        <option value="AM">AM - de l Anjou et du Maine</option>
+                        <option value="AO">AO - Alsace-Vosges</option>
+                        <option value="AP">AP - Des Savoies</option>
+                        <option value="AQ">AQ - Aquitaine</option>
+                        <option value="AV">AV - Atlantique-Vendée</option>
+                        <option value="BI">BI - Brie-Picardie</option>
+                        <option value="BP">BP - Centre France</option>
+                        <option value="CA">CA - Côtes-d Armor</option>
+                        <option value="CE">CE - Charente Périgord</option>
+                        <option value="CL">CL - Centre Loire</option>
+                        <option value="CO">CO - Centre-Ouest</option>
+                        <option value="CP">CP - Provence Côtes d Azur</option>
+                        <option value="CR">CR - Corse</option>
+                        <option value="CS">CS - Charente Maritime Deux Sèvres</option>
+                        <option value="DP">DP - Banque Chalus</option>
+                        <option value="FC">FC - Franche-Comté</option>
+                        <option value="FI">FI - Finistère</option>
+                        <option value="GU">GU - Guadeloupe</option>
+                        <option value="IF">IF - Paris-Ile-de-France</option>
+                        <option value="IV">IV - Ille-et-Vilaine</option>
+                        <option value="JP">JP - Champagne-Bourgogne</option>
+                        <option value="KP">KP - Loire-Haute Loire</option>
+                        <option value="LA">LA - Languedoc</option>
+                        <option value="LO">LO - Lorraine</option>
+                        <option value="LP">LP - Centre-Est</option>
+                        <option value="MA">MA - Martinique</option>
+                        <option value="MO">MO - Morbihan</option>
+                        <option value="NE">NE - Nord-Est</option>
+                        <option value="NF">NF - Nord de France</option>
+                        <option value="NM">NM - Nord Midi Pyrénées</option>
+                        <option value="NO">NO - Normandie</option>
+                        <option value="NS">NS - Normandie-Seine</option>
+                        <option value="PG">PG - Pyrénées-Gascogne</option>
+                        <option value="RE">RE - Réunion</option>
+                        <option value="RP">RP - Sud Rhône-Alpes</option>
+                        <option value="SM">SM - Sud Méditerranée</option>
+                        <option value="TO">TO - Toulouse</option>
+                        <option value="TP">TP - Touraine-Poitou</option>
+                        <option value="VF">VF - Val-de-France</option>
+                        <option value="MU">MU - Partitions Communautaires & Techniques</option>
+                        <option value="TE">TE - NE PAS UTILISER</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="submit" value="go">
+                </td>
+            </form>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table border="0" align="center">
+        <tr>
+            <form onsubmit="showAP(ap.value); return false;">
+                <td><b><span style="font-family: Arial;">Code APPLI (Incident Fonctionnel) :</b>
+                    </span>
+                </td>
+                <td></td>
+                <td>
+                    <input type="text" name="ap" value="">
+                </td>
+                <td>
+                    <input type="button" name="go" value="go" onclick="showAP(ap.value);">
+                </td>
+        </tr>
+        </form>
+        <tr>
+            <form onsubmit="showPD(pd.value); return false;">
+                <td><b><span style="font-family: Arial;">Nom APPLI (Incident Technique) :</b>
+                    </span>
+                </td>
+                <td></td>
+                <td>
+                    <input type="text" name="pd" value="">
+                </td>
+                <td>
+                    <input type="button" name="go" value="go" onclick="showPD(pd.value);">
+                </td>
+        </tr>
+        </form>
+        <tr>
+            <form onsubmit="showMQ(mq.value); return false;">
+                <td><b><span style="font-family: Arial;">MQREBUT :</b>
+                    </span>
+                </td>
+                <td></td>
+                <td>
+                    <input type="text" name="mq" value="">
+                </td>
+                <td>
+                    <input type="button" name="go" value="go" onclick="showMQ(mq.value); return false;">
+                </td>
+        </tr>
+        </form>
+    </table>
+    <br>
+    <div id="txtHint" align="center"></div>
+
+    <!-- rajout OPEN-->
+    <br>
+    <br>
+    <big><span style="margin-left:150px;font-family: Arial; color: rgb(0, 102, 0);font-weight: bold;"><u>Consultation FCR Open</u></span></big>
+    <br>
+    <table border="0" align="center">
+        <tr>
+            <br>
+            <form onsubmit="showOp(fcr_open.value,cr_open.value,1); return false;">
+                <td><b><center><span style="font-family: Arial;">CAT_ConsigneNOM<br>(Rubrique issue Alerte Omnibus)</span></center></b>
+                </td>
+                <!--<td></td><td><input type="text" name="users" value=""></td>-->
+                <!--<textarea id="monChamp" name="users" rows="1" cols="80" ></textarea> -->
+                <td></td>
+                <td>
+                    <textarea id="fcr_open" name="fcr_open" rows="1" cols="60" maxlength="256" style="width: 482px; height: 16px;text-align:middle;"></textarea>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><b><span style="font-family: Arial;">Code</span><br><span style="font-family: Arial;">adh&eacute;rent:</span></b>
+                </td>
+                <td></td>
+                <td style=" vertical-align: center;">
+                    <select name="cr_open">
+                        <option selected value=""></option>
+                        <option value="AL">AL - Alpes Provence</option>
+                        <option value="AM">AM - de l Anjou et du Maine</option>
+                        <option value="AO">AO - Alsace-Vosges</option>
+                        <option value="AP">AP - Des Savoies</option>
+                        <option value="AQ">AQ - Aquitaine</option>
+                        <option value="AV">AV - Atlantique-Vendée</option>
+                        <option value="BI">BI - Brie-Picardie</option>
+                        <option value="BP">BP - Centre France</option>
+                        <option value="CA">CA - Côtes-d Armor</option>
+                        <option value="CE">CE - Charente Périgord</option>
+                        <option value="CL">CL - Centre Loire</option>
+                        <option value="CO">CO - Centre-Ouest</option>
+                        <option value="CP">CP - Provence Côtes d Azur</option>
+                        <option value="CR">CR - Corse</option>
+                        <option value="CS">CS - Charente Maritime Deux Sèvres</option>
+                        <option value="DP">DP - Banque Chalus</option>
+                        <option value="FC">FC - Franche-Comté</option>
+                        <option value="FI">FI - Finistère</option>
+                        <option value="GU">GU - Guadeloupe</option>
+                        <option value="IF">IF - Paris-Ile-de-France</option>
+                        <option value="IV">IV - Ille-et-Vilaine</option>
+                        <option value="JP">JP - Champagne-Bourgogne</option>
+                        <option value="KP">KP - Loire-Haute Loire</option>
+                        <option value="LA">LA - Languedoc</option>
+                        <option value="LO">LO - Lorraine</option>
+                        <option value="LP">LP - Centre-Est</option>
+                        <option value="MA">MA - Martinique</option>
+                        <option value="MO">MO - Morbihan</option>
+                        <option value="NE">NE - Nord-Est</option>
+                        <option value="NF">NF - Nord de France</option>
+                        <option value="NM">NM - Nord Midi Pyrénées</option>
+                        <option value="NO">NO - Normandie</option>
+                        <option value="NS">NS - Normandie-Seine</option>
+                        <option value="PG">PG - Pyrénées-Gascogne</option>
+                        <option value="RE">RE - Réunion</option>
+                        <option value="RP">RP - Sud Rhône-Alpes</option>
+                        <option value="SM">SM - Sud Méditerranée</option>
+                        <option value="TO">TO - Toulouse</option>
+                        <option value="TP">TP - Touraine-Poitou</option>
+                        <option value="VF">VF - Val-de-France</option>
+                        <option value="MU">MU - Partitions Communautaires & Techniques</option>
+                        <option value="TE">TE - NE PAS UTILISER</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="submit" value="go">
+                </td>
+            </form>
+        </tr>
+    </table>
+    <div id="txtHint_Open" align="center"></div>
+    <!-- fin OPEN-->
+
+    <!-- rajout RESEAU-->
+    <br>
+    <br>
+    <big><span style="margin-left:150px;font-family: Arial; color: rgb(0, 102, 0);font-weight: bold;"><u>Consultation FCR R&eacute;seau</u></span></big>
+    <br>
+    <table border="0" align="center">
+        <tr>
+            <br>
+            <form onsubmit="showReseau(fcr_reseau.value,cr_reseau.value,1); return false;">
+                <td><b><center><span style="font-family: Arial;">CAT_ConsigneNOM<br>(Rubrique issue Alerte Omnibus)</span></center></b>
+                </td>
+                <!--<td></td><td><input type="text" name="users" value=""></td>-->
+                <!--<textarea id="monChamp" name="users" rows="1" cols="80" ></textarea> -->
+                <td></td>
+                <td>
+                    <textarea id="fcr_reseau" name="fcr_reseau" rows="1" cols="60" maxlength="256" style="width: 482px; height: 16px;text-align:middle;"></textarea>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><b><span style="font-family: Arial;">Code</span><br><span style="font-family: Arial;">adh&eacute;rent:</span></b>
+                </td>
+                <td></td>
+                <td style=" vertical-align: center;">
+                    <select name="cr_reseau">
+                        <option selected value=""></option>
+                        <option value="AL">AL - Alpes Provence</option>
+                        <option value="AM">AM - de l Anjou et du Maine</option>
+                        <option value="AO">AO - Alsace-Vosges</option>
+                        <option value="AP">AP - Des Savoies</option>
+                        <option value="AQ">AQ - Aquitaine</option>
+                        <option value="AV">AV - Atlantique-Vendée</option>
+                        <option value="BI">BI - Brie-Picardie</option>
+                        <option value="BP">BP - Centre France</option>
+                        <option value="CA">CA - Côtes-d Armor</option>
+                        <option value="CE">CE - Charente Périgord</option>
+                        <option value="CL">CL - Centre Loire</option>
+                        <option value="CO">CO - Centre-Ouest</option>
+                        <option value="CP">CP - Provence Côtes d Azur</option>
+                        <option value="CR">CR - Corse</option>
+                        <option value="CS">CS - Charente Maritime Deux Sèvres</option>
+                        <option value="DP">DP - Banque Chalus</option>
+                        <option value="FC">FC - Franche-Comté</option>
+                        <option value="FI">FI - Finistère</option>
+                        <option value="GU">GU - Guadeloupe</option>
+                        <option value="IF">IF - Paris-Ile-de-France</option>
+                        <option value="IV">IV - Ille-et-Vilaine</option>
+                        <option value="JP">JP - Champagne-Bourgogne</option>
+                        <option value="KP">KP - Loire-Haute Loire</option>
+                        <option value="LA">LA - Languedoc</option>
+                        <option value="LO">LO - Lorraine</option>
+                        <option value="LP">LP - Centre-Est</option>
+                        <option value="MA">MA - Martinique</option>
+                        <option value="MO">MO - Morbihan</option>
+                        <option value="NE">NE - Nord-Est</option>
+                        <option value="NF">NF - Nord de France</option>
+                        <option value="NM">NM - Nord Midi Pyrénées</option>
+                        <option value="NO">NO - Normandie</option>
+                        <option value="NS">NS - Normandie-Seine</option>
+                        <option value="PG">PG - Pyrénées-Gascogne</option>
+                        <option value="RE">RE - Réunion</option>
+                        <option value="RP">RP - Sud Rhône-Alpes</option>
+                        <option value="SM">SM - Sud Méditerranée</option>
+                        <option value="TO">TO - Toulouse</option>
+                        <option value="TP">TP - Touraine-Poitou</option>
+                        <option value="VF">VF - Val-de-France</option>
+                        <option value="MU">MU - Partitions Communautaires & Techniques</option>
+                        <option value="TE">TE - NE PAS UTILISER</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="submit" value="go">
+                </td>
+            </form>
+        </tr>
+    </table>
+    <div id="txtHint_Reseau" align="center"></div>
+    <!-- fin RESEAU-->
+</body>
+
+</html>

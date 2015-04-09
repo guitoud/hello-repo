@@ -1,0 +1,2076 @@
+Demande;Clé;Résumé;Type de demande;Etat;Priorité;Motif de clôture;Intervenant;Demandeur;Création;Mise à jour;Résolue;Composants;Gérer les observateurs;Images;Estimation originale;Estimation restante;Temps consacré;Ratio du travail réel comparé à l'estimation;Sous-tâches;Demandes liées;Descriptif;Niveau de sécurité;Progression;? Progrès;? Temps consacré;? Estimation restante;? Estimation originale;Application libellé;Code Convention;Code application;Composant *;Date souhaitée;Entité métier;Env. physique;Environnement;ID application;Mode de facturation;Motif d'annulation;Motif de résolution;Niveau d'expertise;Niveau de service;Refacturation client;Réf. Incident/client;Site;Temps passé (J);Temps passé (h);Temps passé (mn)
+PRODUCTION;PROD-483;LR7 passage en VA avant la LUP de septembre;Unitaire;Réalisée;Simple;Réalisée;Didier BECMEUR;Maryse GAGNAIRE;18/sept./13 11:44;19/sept./13 9:09;19/sept./13 9:09;PLATEFORME - UNIX;1;;;;;;;;"Bonjour, 
+
+Merci de passer le batch cyclique de LR7 en VA""z"" 
+
+batchLR7OCAPI.ksh 
+
+cordialement,";;;;;;;LR7 : LIQUIDATION SASV;;LR7;PLATEFORME - UNIX;18/sept./13 13:41;DIR SOLRISQ PRO;"VA ""Z""";Pre-exploitation;499;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Exécution de Traitement;;DRS;0;0;15
+PRODUCTION;PROD-491;OE1 - Livraison WS CDD en VA;Unitaire;Terminée;Simple;Annulée;Vincent KROWA;Julien CHAMPION;18/sept./13 12:17;18/sept./13 17:25;18/sept./13 17:25;WEB - TOMCAT;2;;;;;;;;"Pouvez-vous svp livrer le package suivant en VA : 
+
+Package généré : oec_v00-00-00_v01-02-00.tar 
+CheckSum : 3758133358 
+Taille : 10035200 
+
+Pour info OEC (ancien code) = OE1 (nouveau code)";;;;;;;OPTIMISATION DES ECHANGES AVEC LES CICAS;;OE1;WEB - TOMCAT;;DRS;VA;Pre-exploitation;2123;Gestion de Patrimoine;Rejetée;Réalisée;Applicatif;Initial;;;DRS;0;0;0
+PRODUCTION;PROD-492;reprise fichier notif rise SLG;Unitaire;Terminée;Simple;Réalisée;Vincent KROWA;Arnaud GENDRY;18/sept./13 12:19;19/sept./13 9:06;18/sept./13 17:04;SGBD - ORACLE;3;;;;;;;;"Bonjour, 
+
+Pour la prise en compte de notifications RISE sur SLG : 
+
+1- Pouvez-vous exécuter le script suivant sur slg01@eslg01 
+/sas_liv/slg/requetes/insertion_rise_20130917.sql 
+
+2- Puis relancer le batch 
+/epatrimoine/slg/batch_java/scripts/slg-rise-notification-cft.ksh 
+
+pour le fichier suivant : 
+/eslg01/fichiers/sav/jR/DIAONOTR_IRCANTEC_P1304273_I1615033_36175950 
+
+Merci d'avance, 
+
+Arnaud GENDRY";;;;;;;SLG - SERVICES EN LIGNE;;SLG;PLATEFORME - UNIX;18/sept./13 14:14;DRS;E;Exploitation;1118;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;0;0;20
+PRODUCTION;PROD-494;DDI assistance 2013-034-028 etape de mise a jour;Unitaire;Réalisée;Simple;Réalisée;Vincent KROWA;Emmanuelle QUEMENEUR;18/sept./13 12:31;18/sept./13 16:48;18/sept./13 16:48;SGBD - ORACLE;3;;;;;;;;"Bonjour, 
+
+Afin de relancer les traitements des EFI demandé par la MOA, pouriez vous , svp, executer sur DMZ , die01/die01@EWEB01 la requête de mise à jour et son script associé ci dessous: 
+/sas_liv/dm3/assistance_2013-034-28/DDI2013-034-28_update.ksh 
+/sas_liv/dm3/assistance_2013-034-28/DDI2013-034-28_update.sql 
+
+Pourriez vous également recopier la log et le .txt $FTEMP/update-de-DIE_$DTE.log et $FTEMP/Re-extraction-de-DIE_$DTE.txt dans le sas ci-dessus? 
+
+Merci d'avance. 
+Cordialement, 
+Emmanuelle Quémeneur-Bacher 
+5.25.52 
+";;;;;;;EVOLUTION DI;;B-DIE;SGBD - ORACLE;18/sept./13 14:27;DRS;production;Exploitation;1371;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Traitement de Forçage;DDI assistance 2013-034-028;DRS;0;0;20
+PRODUCTION;PROD-432;CRM - Livraison en VA et PROD d'un nouveau fichier de correspondance pour batch RetourEDM;Unitaire;Réalisée;Simple;Réalisée;Vincent KROWA;Stephane DONA;17/sept./13 17:44;18/sept./13 16:34;18/sept./13 16:34;PLATEFORME - UNIX;2;;;;;;;;"Bonjour, 
+
+En VA certaines lignes issues des éditions de masse CLX sont KO car le fichier de correspondance utilisé par le batch RetourEdm n'a pas été mis à jour. 
+Ce cas peut se produire d'un moment à l'autre en PROD pour la même raison. 
+
+Afin de résoudre ce problème et suite à une demande de notre MOA, 
+pourriez-vous svp, déposer le fichier ci-joint ( correspondance_cttrao.txt) dans les environnements suivants : 
+
+ravapa1 /zpatrimoine/crm/oracle/sql/TALEND/ 
+raproa1 /xpatrimoine/crm/oracle/sql/TALEND/ 
+
+( 3 lignes supplémentaires ont été ajoutées au fichier déjà existant ) 
+
+Cette demande fait suite à l'incident INC000000405191 
+
+Je suis à votre disposition pour tout renseignement complémentaire. 
+
+Cordialement, 
+";;;;;;;CRM GESTION DE LA RELATION CLIENT;;CRM;PLATEFORME - UNIX;17/sept./13 19:29;DRS;Z et X;Exploitation;1851;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;CRM - incident n° INC000000405191;DRS;0;0;20
+PRODUCTION;PROD-479;RPS - VA 1 (et Z) - Livraison Batch Alimentation v1.0.1.RC18;Globale;Terminée;Simple;Réalisée;Christophe CHIGNAGUET;Alain GUINLE;18/sept./13 11:37;18/sept./13 17:57;18/sept./13 16:16;;2;;;;;;PROD-522, PROD-523;;"Bonjour, 
+
+Veuillez livrer en Envt VA 1 (et VA Z) de l'Application RPS 
+les Composants du package décrit dans la fiche de livraison ci-jointe. 
+
+
+Merci. 
+
+A.GUINLE F.LAUDOUAR 
+5.49.34 5.48.43";;;;;;;RPS;;RPS;;18/sept./13 14:00;DRS;1RPS01 et ZRPS01;Pre-exploitation;1691;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;DDI 2013-142;DRS;;;
+PRODUCTION;PROD-523;PROD-479 LIV.COMPOSANT Z RPS - Livraison Batch Alimentation v1.0.1.RC18;Sous-Tâche;Terminée;Simple;Réalisée;Christophe CHIGNAGUET;Christophe CHIGNAGUET;18/sept./13 16:00;18/sept./13 16:15;18/sept./13 16:15;PLATEFORME - UNIX;1;;;;;;;;"Livraison du package 
+Nom du package Checksum du package 
+
+rps_v00-00-70_v00-00-71.tar 
+1335807908 
+";;;;;;;RPS;;RPS;PLATEFORME - UNIX;18/sept./13 17:58;DRS;1RPS01 et ZRPS01;Pre-exploitation;1691;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;0;0;20
+PRODUCTION;PROD-522;PROD-479 LIV.COMPOSANT 1 RPS - Livraison Batch Alimentation v1.0.1.RC18;Sous-Tâche;Terminée;Simple;Réalisée;Christophe CHIGNAGUET;Christophe CHIGNAGUET;18/sept./13 16:00;18/sept./13 16:15;18/sept./13 16:15;PLATEFORME - UNIX;1;;;;;;;;"Livraison du package 
+Nom du package Checksum du package 
+
+rps_v00-00-70_v00-00-71.tar 
+1335807908 
+";;;;;;;RPS;;RPS;PLATEFORME - UNIX;18/sept./13 17:58;DRS;1RPS01 et ZRPS01;Pre-exploitation;1691;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;0;0;15
+PRODUCTION;PROD-450;Restore de la VA Z;Unitaire;Réalisée;Simple;Réalisée;Wilfried PEYROU;Marie-Christine DELEGLISE;18/sept./13 10:10;18/sept./13 14:40;18/sept./13 14:40;STOCKAGE - SAUVEGARDE;2;;;;;;;;"Bonjour 
+
+Merci de Restaurer la VA Zoc101 à partir du tag suivant RS_ON0-ZOC101_ODTI3313742461605";;;;;;;OUTILLAGE DE CALCUL ALLOCATIONS, PENSIONS, IND;;OC1;STOCKAGE - SAUVEGARDE;18/sept./13 12:08;DIR GEST MUTUAL;;Pre-exploitation;1849;Gestion de Patrimoine;Annulée;Réalisée;Support;Sensible;Demande de Sauvegarde - Restauration;;DRS;0;2;0
+PRODUCTION;PROD-497;PROD-462 TOMCAT X SA7 INC 401590 - livraison sa7e_war_v01-01-25_SA7IHM.war en PROD;Sous-Tâche;Terminée;Simple;Réalisée;Olivier GAUSSERON;Franck VERGEZ;18/sept./13 13:43;18/sept./13 14:35;18/sept./13 14:35;WEB - TOMCAT;1;;;;;;;;"Merci de livrer les composants suivants : 
+sa7_v01-02-11_v01-02-12.tar 
+contenant : 
+?une maj de l'application Web SA7-IHM 
+?une maj de l'application Web-service SA7-WS 
+
+le 18/09/2013 entre 12h00 et 14h00 
+Cordialement 
+PS : la fiche de livraison est en pièce jointe 
+";;;;;;;SA7 - ARCHIDATA;;SA7;WEB - TOMCAT;;SERVICES DES ARCHIVES;X;Exploitation;2303;Gestion de Patrimoine;Annulée;Réalisée;Système;Critique;Livraison composant;;DRS;0;0;30
+HORS PRODUCTION;HORSPROD-98;[C][EC5] Installation CISPEO 5.0.3;Unitaire;Réalisée;Simple;Réalisée;Yves DERRE;Lyes MESSAOUDI;17/sept./13 15:07;18/sept./13 14:04;18/sept./13 14:04;WEB - TOMCAT;1;;;;;;;;"Pouvez-vous installer la webapp JCMS disponible ci-dessous sur CEC5 ? : 
+
+1) Arrêter l'application CISPEO 
+2) Récupérer les fichiers /cexploit/tomcat/ec5/application/WEB-INF/data/store.xml 
+3) Télécharger l'archive de la webapp JCMS 7.0.4 (CEC5-jcms-704-5.0.3.zip)sur https://sfe.caissedesdepots.fr/sdf-web/sdf-web/Telechargement/Telechargement?tfCode=H9GX7TL6BtqpZgi 
+Mot de passe : Cispeo2013 
+4) Supprimer tout le contenu de /cexploit/tomcat/ec5/application/ sauf les répertoires upload et WEB-inf/data/stats (aucune sauvegarde n'est nécessaire) 
+5) Déposer l'archive téléchargée dans /cexploit/tomcat/ec5/application/ 
+6) Décompresser l'archive 
+7) Rétablir dans le répertoire WEB-INF/data/, les fichier store.xml mis de côté à l'étape 2 
+8) Démarrer l'application CISPEO 
+
+Merci par avance.";;;;;;;ADMINISTRATION DU PORTAIL CISPEO EXTERNE;;EC5;WEB - TOMCAT;18/sept./13 11:00;DIR PROCESSUS ET SI;;Recette;1800;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;;;DRS;0;0;15
+PRODUCTION;PROD-475;PROD-462 LIV.COMPOSANT X SA7 INC 401590 - WAR;Sous-Tâche;Terminée;Simple;Réalisée;Franck VERGEZ;Franck VERGEZ;18/sept./13 11:12;18/sept./13 13:46;18/sept./13 13:46;PLATEFORME - UNIX;1;;;;;;;;"Merci de livrer les composants suivants : 
+sa7_v01-02-11_v01-02-12.tar 
+contenant : 
+?une maj de l'application Web SA7-IHM 
+?une maj de l'application Web-service SA7-WS 
+
+le 18/09/2013 entre 12h00 et 14h00 
+Cordialement 
+PS : la fiche de livraison est en pièce jointe 
+";;;;;;;SA7 - ARCHIDATA;;SA7;PLATEFORME - UNIX;18/sept./13 13:00;SERVICES DES ARCHIVES;X;Exploitation;2303;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Critique;Livraison composant;;DRS;0;0;30
+HORS PRODUCTION;HORSPROD-116;Mise à jour contexte JNDI intégration (ISA7BCVIWS);Unitaire;Réalisée;Simple;Réalisée;Frederic CHERUETTE;Judikael ROUILLARD;18/sept./13 12:25;18/sept./13 13:08;18/sept./13 13:08;WEB - TOMCAT;1;;;;;;;;"Bonjour, 
+
+Pouvez vous mettre à jour le contexte JNDI pour le web service de la BCV en Intégration. 
+Il faudrait ajouter la variable suivante : 
+""sa7/bcv/moteur/jhove/xmlSaxClass"" 
+
+Ci-joint le fichier récapitulatif de toutes les variables JNDI de la BCV. 
+
+Merci pour votre intervention. 
+
+Cordialement, 
+";;;;;;;SA7 - ARCHIDATA;;SA7;WEB - TOMCAT;18/sept./13 14:20;SERVICES DES ARCHIVES;I;Intégration;2303;Gestion de Patrimoine;Annulée;Réalisée;Système;Critique;;;DRS;0;0;5
+PRODUCTION;PROD-383;SRV - PROD - Demande de recyclage FLUX1 SRV;Unitaire;Terminée;Simple;Réalisée;Didier BECMEUR;Christine THAI VAN;17/sept./13 13:19;19/sept./13 8:59;18/sept./13 12:08;PLATEFORME - UNIX;2;;;;;;;;"Bonjour 
+
+pourrez vous faire passer les traitements de recyclage du FLUX 1 SRV en PRODUCTION le MERCREDI 17 septembre à 12h ? 
+En PJ : mail de la MOA 
+
+Etape 1 : copie du fichier in_m (82 enregistrements) de /sas_liv/srv/FLUX1_SEPTEMBRE2013/in_m vers $FFIC de SRV 
+
+Etape 2 : ATTENTION => SAUVEGARDER le fichier fic701I_cumul de production puis remise à zéro de ce fichier 
+
+Etape 3 : passer le traitement SRV1MJ1X05 (traitement AAA803 ) 
+
+Etape 4 : sauvegarder le fichier fic701I_cumul généré en étape 3, il sera à mettre en entrée des batch TRFT de AED dans le cadre de ce reyclage (voir demande de H.Herault) 
+
+Etape 5 : REMETTRE le fichier fic701I_cumul de production sauvegardé en étape 2 dans $FFIC de SRV 
+
+Merci pour votre intervention. 
+Je ne suis pas là ce mercredi, C Montenoise assurera le suivi ce cette demande. 
+Coté DPI, D Becmeur est en charge de cette demande de recyclage. 
+
+
+Christine. 
+";;;;;;;AE03 : RÉGULARISATIONS VALIDATIONS CNRACL;;SRV;PLATEFORME - UNIX;18/sept./13 12:00;DIR GEST MUTUAL;X;Exploitation;489;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Exécution de Traitement;;DRS;0;0;20
+PRODUCTION;PROD-392;Traitements AED de prise en compte du flux 1 – DEI SRV, DEI AED et DPI => Didier Becmeur;Unitaire;Réalisée;Simple;Réalisée;Didier BECMEUR;Herve HERAULT;17/sept./13 14:40;18/sept./13 12:08;18/sept./13 12:08;PLATEFORME - UNIX;0;;;;;;;;"Demande à effectuer par Didier Becmeur : 
+
+Traitements AED de prise en compte du flux 1 a effectuer après le passage des traitements SRV de constitution du flux 1 (Cf Odti de Christine Thai-Van) 
+
+1 Récupération du flux transmis par SRV sous : 
+/sas_liv/aed/FDEMTR_CNR_d 
+et le copier sur : /xaed01/fichiers/fic/h/FDEMTR_CNR_d 
+
+2 Lancement script aed1mj3a25.ksh (aace27) 
+Fichier entrée : /xaed01/fichiers/fic/h/FDEMTR_CNR_d 
+
+3 Recopier ou renommer les fichiers suivants 
+De : /xaed01/fichier/temp/h/FCOLLT_CNR_d$TRT$NUM ? Vers : /xaed01/fichier/temp/h/FCOLLE_CNR_d$TRT$NUM 
+De : /xaed01/fichier/temp/h/FAGENT_CNR_d$TRT$NUM ? Vers : /xaed01/fichier/temp/h/FAGENE_CNR_d$TRT$NUM 
+
+4 Lancement script temp_aace04.ksh 
+
+5 Lancement script aace32.ksh (aace32) 
+
+6 Lancement script aed1mj3a40.ksh (aace04) 
+
+7 Lancement script aed1mj3d10.ksh (aaca07) 
+
+Cdt, 
+Hervé";;;;;;;AE13 : GESTION COMPTE DE DROITS;;AED;PLATEFORME - UNIX;18/sept./13 13:00;DRS;x;Exploitation;439;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Exécution de Traitement;DDi SRV n° 2013-088;DRS;0;0;20
+PRODUCTION;PROD-408;lancer l'interface LRX sur Zoc101;Unitaire;Réalisée;Simple;Réalisée;Christophe CHIGNAGUET;Marie-Christine DELEGLISE;17/sept./13 15:36;18/sept./13 11:59;18/sept./13 11:59;PLATEFORME - UNIX;1;;;;;;;;Après avoir fair la sauvegarde de Zoc101 merci de lancer l'interface LRX;;;;;;;OUTILLAGE DE CALCUL ALLOCATIONS, PENSIONS, IND;;OC1;PLATEFORME - UNIX;17/sept./13 17:32;DIR GEST MUTUAL;;Pre-exploitation;1849;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;0;0;15
+PRODUCTION;PROD-461;Mise en production correctif incident 401590;Globale;Réalisée;Simple;Réalisée;Franck VERGEZ;Dominique URBANI;18/sept./13 10:28;18/sept./13 11:51;18/sept./13 11:51;;2;;;;;;PROD-472;;"Merci de livrer les composants suivants : 
+sa7_v01-02-11_v01-02-12.tar 
+contenant : 
+- une maj de l'application Web SA7-IHM 
+- une maj de l'application Web-service SA7-WS 
+
+le 18/09/2013 entre 12h00 et 14h00 
+Cordialement 
+PS : la fiche de livraison est en pièce jointe 
+";;;;;;;SA7 - ARCHIDATA;;SA7;;18/sept./13 12:26;SERVICES DES ARCHIVES;Z;Pre-exploitation;2303;Gestion de Patrimoine;Annulée;Réalisée;;Critique;;INC00000401590;DRS;;;
+PRODUCTION;PROD-472;PROD-461 LIV.COMPOSANT Z SA7 INC 401590 - WAR;Sous-Tâche;Terminée;Simple;Réalisée;Franck VERGEZ;Franck VERGEZ;18/sept./13 11:10;18/sept./13 11:50;18/sept./13 11:50;PLATEFORME - UNIX;1;;;;;;;;"Merci de livrer les composants suivants : 
+sa7_v01-02-11_v01-02-12.tar 
+contenant : 
+?une maj de l'application Web SA7-IHM 
+?une maj de l'application Web-service SA7-WS 
+
+le 18/09/2013 entre 12h00 et 14h00 
+Cordialement 
+PS : la fiche de livraison est en pièce jointe 
+";;;;;;;SA7 - ARCHIDATA;;SA7;PLATEFORME - UNIX;18/sept./13 11:00;SERVICES DES ARCHIVES;Z;Pre-exploitation;2303;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Critique;Livraison composant;;DRS;0;0;30
+PRODUCTION;PROD-471;PROD-443 ORACLE.LUP Z CRM - schema crm01 en v01-01-05;Sous-Tâche;Terminée;Simple;Réalisée;Yves DERRE;Franck VERGEZ;18/sept./13 11:05;18/sept./13 11:49;18/sept./13 11:49;SGBD - ORACLE;1;;;;;;;;"Bonjour, 
+
+Dans le cadre de la mise en VA des corrections et évolutions liées à la LUP du 26 septembre, pourriez-vous svp prendre en compte le package suivant sur l'environnement de VA: 
+
+Package généré : crm_v03-00-33_v03-00-34.tar 
+CheckSum : 2387146873 
+Taille : 31918080 
+
+A cette livraison, outre la fiche de livraison habituelle, est ajoutée la procédure de livraison Cohéris. 
+
+Je reste à votre disposition pour tout renseignement complémentaire. 
+
+Par avance merci. 
+Cordialement, 
+";;;;;;;CRM GESTION DE LA RELATION CLIENT;;CRM;SGBD - ORACLE;18/sept./13 13:04;DRS;z;Pre-exploitation;1851;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Mise à jour d’environnement;;DRS;0;0;15
+PRODUCTION;PROD-458;retraitement des EFI requete de selection;Unitaire;Réalisée;Simple;Réalisée;Franck VERGEZ;Emmanuelle QUEMENEUR;18/sept./13 10:26;18/sept./13 10:49;18/sept./13 10:49;SGBD - ORACLE;2;;;;;;;;"Bonjour, 
+
+Afin de relancer les traitements des EFI demandé par la MOA, pouriez vous , svp, d'executer sur DMZ , die01/die01@EWEB01 la requête de sélection et son script associé ci dessous: 
+/sas_liv/dm3/assistance_2013-034-28/DDI2013-034-28_selection.ksh 
+/sas_liv/dm3/assistance_2013-034-28/DDI2013-034-28_selection.sql 
+
+Pourriez vous également recopier la log et le .txt $FTEMP/selection-de-DIE_$DTE.log et $FTEMP/selection-de-DIE_$DTE.txt dans le sas ci-dessus? 
+
+Merci d'avance. 
+Cordialement, 
+Emmanuelle Quémeneur-Bacher 
+5.25.52";;;;;;;EVOLUTION DI;;B-DIE;SGBD - ORACLE;18/sept./13 12:06;DRS;production;Exploitation;1371;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Exécution de Traitement;assistance DDI2013-034-28;DRS;0;0;25
+PRODUCTION;PROD-422;traitement ddr_xjrv_demande;Unitaire;Réalisée;Simple;Réalisée;Didier BECMEUR;Nicolas DRENO;17/sept./13 16:50;18/sept./13 10:33;18/sept./13 10:33;PLATEFORME - UNIX;1;;;;;;;;"Bonjour, 
+
+afin de dupliquer la carrière CD1 d'un dossier LR6 nous avons besoin du passage du script xjrv. 
+
+Merci 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;0;0;10
+PRODUCTION;PROD-433;Mise en production correctif incident 401590;Unitaire;Terminée;Simple;Annulée;Franck VERGEZ;Dominique URBANI;17/sept./13 17:56;18/sept./13 10:26;18/sept./13 10:26;WEB - TOMCAT;1;;;;;;;;"Merci de livrer les composants suivants : 
+sa7_v01-02-11_v01-02-12.tar 
+contenant : 
+- une maj de l'application Web SA7-IHM 
+- une maj de l'application Web-service SA7-WS 
+
+le 18/09/2013 entre 12h00 et 14h00 
+Cordialement 
+PS : la fiche de livraison est en pièce jointe";;;;;;;SA7 - ARCHIDATA;;SA7;WEB - TOMCAT;18/sept./13 12:00;SERVICES DES ARCHIVES;X;Exploitation;2303;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Critique;;INC00000401590;DRS;0;0;0
+HORS PRODUCTION;HORSPROD-64;Mise à jour contexte JNDI pour le WS BCV (ISA7BCVIWS);Unitaire;Terminée;Simple;Réalisée;Frederic CHERUETTE;Judikael ROUILLARD;16/sept./13 11:32;18/sept./13 12:19;18/sept./13 10:24;WEB - TOMCAT;2;;;;;;;;"Bonjour, 
+
+Pouvez vous mettre à jour le contexte JNDI pour le web service de la BCV en Intégration. 
+Il faudrait ajouter la variable suivante : 
+""sa7/bcv/moteur/antivirus/bin"" 
+
+Cette variable correspond à l'emplacement du script de lancement de l'antivirus. (idem variable ""sa7/gwt/upload/antivirus"" positionnée pour l'IHM SA7) 
+
+Ci-joint le fichier récapitulatif de toutes les variables JNDI de la BCV. 
+
+Merci pour votre intervention. 
+
+Cordialement,";;;;;;;SA7 - ARCHIDATA;;SA7;WEB - TOMCAT;16/sept./13 13:12;SERVICES DES ARCHIVES;I;Intégration;2303;Gestion de Patrimoine;Annulée;Réalisée;Système;Critique;;;DRS;0;0;5
+PRODUCTION;PROD-444;DDI 2012-380 Anomalies DCHO groupe 3;Unitaire;Réalisée;Simple;Réalisée;Didier BECMEUR;Herve HERAULT;18/sept./13 9:35;18/sept./13 10:23;18/sept./13 10:23;PLATEFORME - UNIX;2;;;;;;;;"Dans le cadre de cette DDI, 
+Merci de copier le fichier : 
+/sas_liv/aed/DDI2012-380/Lignes_DCHO_Groupe3.dat 
+sous : 
+/zaed01/fichiers/fic/Lignes_DCHO_Groupe3.dat 
+(Ecraser le fichier en place) 
+Puis, de lancer le script suivant : 
+DCHO_Load_Groupe3_Select.ksh 
+
+Cdt, 
+Hervé";;;;;;;AE13 : GESTION COMPTE DE DROITS;;AED;PLATEFORME - UNIX;18/sept./13 11:25;DRS;Z;Pre-exploitation;439;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Exécution de Traitement;;DRS;0;0;10
+PRODUCTION;PROD-299;Archiver la base PI9 du calcul PM 2012 (Provision Mathématique). La commande habituelle est la fiche de cas 37 - PI9 ERAFP (voir avec P. Renouard ou V. Charvet) Sauvegarder WPI901 et WPI903 avec une rétention de 5 ans. (PM 2012 ERAFP);Unitaire;Réalisée;Simple;Réalisée;Wilfried PEYROU;Laurence GARRIGA MAJO;16/sept./13 14:50;17/sept./13 20:29;17/sept./13 20:29;STOCKAGE - SAUVEGARDE;2;;;;;;;;Archiver le répertoire SAS ERAFP (fiche de cas 37). Les instances de la base Oracle (WPI901 et WPI903) ont en principe déjà été sauvergardé avec l'ODTI 327607 du 29/07/2013;;;;;;;PI9 : ACTUARIAT ERAFP;;PI4;STOCKAGE - SAUVEGARDE;;EERAFP;RAINFA1;Exploitation;2207;Gestion de Patrimoine;Annulée;Réalisée;Support;Sensible;Demande de Sauvegarde - Restauration;;DRS;0;2;0
+PRODUCTION;PROD-369;Sauvegarde de la VA Z;Unitaire;Réalisée;Simple;Réalisée;Wilfried PEYROU;Marie-Christine DELEGLISE;17/sept./13 11:24;17/sept./13 19:38;17/sept./13 19:38;SUPERVISION - PILOTAGE;3;;;;;;;;Bonjour Merci de faire une sauvegarde de la VA Z OC1 et de la restorer sur l'espace requeteur de la VA Z c'est à dire Voc101;;;;;;;OUTILLAGE DE CALCUL ALLOCATIONS, PENSIONS, IND;;OC1;SUPERVISION - PILOTAGE;17/sept./13 13:21;DIR GEST MUTUAL;Zoc101 -> Voc101;Pre-exploitation;1849;Gestion de Patrimoine;Annulée;Réalisée;Support;Sensible;Demande de Sauvegarde - Restauration;Tests LUP 09;DRS;1;2;0
+PRODUCTION;PROD-390;Demande de lancement de requête;Unitaire;Réalisée;Simple;Réalisée;Vincent KROWA;Pascal GOUVINE;17/sept./13 14:40;17/sept./13 17:22;17/sept./13 17:22;SGBD - ORACLE;2;;;;;;;;"Bonjour 
+
+Pourriez-vous lancer la requête se trouvant sous /sas_liv/aed/DDI2013-033-16. 
+Cette requête est à lancer sous XUNI01/AED01. 
+Celle-ci génère un fichier selection-des-anomalies-ouvertes. 
+Pourriez-vous le mettre sous la ressource /sas_liv/aed/DDI2013-033-16 
+
+Merci d'avance 
+
+Pascal";;;;;;;IPR : INDICATEURS DE PRODUCTION;;IP4;PLATEFORME - UNIX;;DRS ANGERS;;Exploitation;1675;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Traitement de Forçage;;DRS;0;0;20
+PRODUCTION;PROD-396;Incident 0397426 lots 1 et 3;Unitaire;Réalisée;Simple;Réalisée;Vincent KROWA;Emmanuelle QUEMENEUR;17/sept./13 15:00;17/sept./13 17:15;17/sept./13 17:15;SGBD - ORACLE;3;;;;;;;;"Bonjour, 
+
+Afin de relancer les traitements des DI RAFP bloquées à l'état RCP(incident 0397426), pouriez vous , svp, lancer en environnement de production sous AED04@XUNI01 les requêtes de forçage suivantes: 
+/sas_liv/dm3/incident_0397426/lot_1/incident_0397426_lot1.sql 
+/sas_liv/dm3/incident_0397426/lot_3/incident_0397426_lot3.sql 
+
+Merci d'avance. 
+Cordialement, 
+Emmanuelle Quémeneur-Bacher";;;;;;;GESTION DES DÉCLARATIONS INDIVIDUELLES RAFP;;DM3;SGBD - ORACLE;17/sept./13 15:55;DRS BORDEAUX;PROD RAFP xaed04;Exploitation;2274;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Traitement de Forçage;397426;DRS;0;0;20
+PRODUCTION;PROD-421;GC1 - PROD Incident 404994 RR;Unitaire;Réalisée;Simple;Réalisée;Christophe CHIGNAGUET;Stephanie MEUNIER;17/sept./13 16:49;17/sept./13 17:09;17/sept./13 17:09;PLATEFORME - UNIX;1;;;;;;;;"Bonjour, 
+
+Merci de faire passer en production le forçage suivant se trouvant sous radeva1/sas_liv/gc11/forcages/inc_404993_RR12_rr02.sql 
+
+Pour le processus RR : 
+Relancer partiellement le script d'extraction des RAR (gc1_dv1r01.sh: Mettre en commentaire le lancement du programme rscb18, il ne faut passer que la fin du script pour constituer les RAR vers les autres applications) et les autres scripts. 
+
+Stéphanie";;;;;;;GC11 : GESTION DES COMPTES (RECOUVREMENT);;GC1;PLATEFORME - UNIX;17/sept./13 16:29;DRS;X;Exploitation;458;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Reprise d’incident;404994;DRS;0;0;30
+PRODUCTION;PROD-411;copie de 2 fichiers PPB dans l'environnement de GC1 (PROD);Unitaire;Réalisée;Simple;Réalisée;Vincent KROWA;Christine DUPUY ESNAULT;17/sept./13 16:17;17/sept./13 17:07;17/sept./13 17:07;PLATEFORME - UNIX;3;;;;;;;;"bonjour, 
+
+en attendant qu'une DDI soit livrée, nous sommes dans l'obligation d'intervenir sur des fichiers. 
+
+Aussi pourriez-vous copier 2 fichiers dans les environnements de GC1 comme suit : 
+1) copier le fichier xppb_xgc1_FluxECH_sept (attention ce fichier se trouve dans environnement M) 
+de /mppb01/fichiers/fic/ 
+vers 
+/xgc101/fichiers/rec/ech/ 
+et vers 
+/xppb01/fichiers/sav/m 
+
+2) copier le fichier xppb_xgc1_FluxCDR (celui-ci se trouve bien dans l'environnement de PROD) 
+de /xppb01/fichiers/env 
+vers 
+/xgc101/fichiers/rec/cdr 
+
+merci de votre aide. 
+bonne journée. 
+";;;;;;;PPB : PRODUITS PÉRIPHÉRIQUES;;PPB;PLATEFORME - UNIX;17/sept./13 18:04;DIR SOLRISQ PRO;X;Exploitation;1030;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Traitement de Forçage;ddi 2013-329;DRS;0;0;20
+HORS PRODUCTION;HORSPROD-97;[R][EC3] Installation CISPEO 5.0.3;Unitaire;Réalisée;Simple;Réalisée;Frederic GERARD;Lyes MESSAOUDI;17/sept./13 14:57;17/sept./13 16:21;17/sept./13 16:21;WEB - TOMCAT;1;;;;;;;;"Pouvez-vous installer la webapp JCMS disponible ci-dessous sur REC3 ? : 
+
+1) Arrêter l'application CISPEO 
+2) Récupérer les fichiers /rexploit/tomcat/ec3/application/WEB-INF/data/store.xml et /rexploit/tomcat/ec3/application/WEB-INF/data/custom.prop et les mettre de côté. 
+3) Télécharger l'archive de la webapp JCMS 7.0.4 (REC3-jcms-704-5.0.3.zip)sur https://sfe.caissedesdepots.fr/sdf-web/sdf-web/Telechargement/Telechargement?tfCode=euZa2sK2qqkmSbS 
+Mot de passe : Cispeo2013 
+4) Supprimer tout le contenu de /rexploit/tomcat/ec3/application/ sauf les répertoires upload et WEB-inf/data/stats (aucune sauvegarde n'est nécessaire) 
+5) Déposer l'archive téléchargée dans /rexploit/tomcat/ec3/application/ 
+6) Décompresser l'archive 
+7) Rétablir dans le répertoire WEB-INF/data/, les fichiers store.xml et custom.prop mis de côté à l'étape 2 
+8) Démarrer l'application CISPEO 
+
+Merci par avance.";;;;;;;ADMINISTRATION DU PORTAIL ESPACE COLLABORATIF;;EC3;WEB - TOMCAT;18/sept./13 11:00;DIR PROCESSUS ET SI;;Recette;1756;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;;;DRS;0;0;25
+HORS PRODUCTION;HORSPROD-96;CRM - Livraison EAI version 1.1.2 en Environnement de recette;Unitaire;Réalisée;Simple;Réalisée;Frederic GERARD;Stephane DONA;17/sept./13 14:40;17/sept./13 15:22;17/sept./13 15:22;MIDDLEWARE - EAI;1;;;;;;;;"Bonjour, 
+
+pourriez-vous svp livrer en environnement de recette la nouvelle version de l'EAI CRM comportant une nouvelle entrée ( Entree_CRM ). 
+
+Je suis à votre disposition pour tout renseignement complémentaire. 
+Cordialement";;;;;;;CRM GESTION DE LA RELATION CLIENT;;CRM;MIDDLEWARE - EAI;;DRS;;Recette;1851;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;;;DRS;0;0;20
+PRODUCTION;PROD-373;Exécution scripts LR6_12_ctrl_batch.ksh en VA;Unitaire;Réalisée;Simple;Réalisée;Jean Francois RICHEFORT;Frederique CAPET;17/sept./13 11:47;17/sept./13 14:13;17/sept./13 14:13;PLATEFORME - UNIX;1;;;;;;;;"Bonjour, 
+
+nous avons amélioré la recherche des incohérences en base de prod. 
+Pouvez-vous lancer le script LR6_12_ctrl_batch.ksh en VA ? (livré récemment) 
+La durée d'exécution et le volume des résultats m'intéressent. 
+
+Merci 
+Fred 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;17/sept./13 13:45;DIR GEST MUTUAL;Z;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;0;0;30
+PRODUCTION;PROD-301;PROD-TAC-DRS-HLUP-EVOL-QC10-1221;Unitaire;Réalisée;Simple;Réalisée;Vincent KROWA;Brigitte DUS;16/sept./13 15:03;17/sept./13 14:12;17/sept./13 14:12;PLATEFORME - UNIX;2;;;;;;;;Livraison par package du service Tuxedo CSA007.cbl de l'application TAC pour RUBIS;;;;;;;RUBIS: PERSONNALISATION DES COURRIERS;;RB1;PLATEFORME - UNIX;16/sept./13 16:47;DRS ANGERS;RAPROA1;Exploitation;1898;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;QC10-1221;DRS;0;0;40
+PRODUCTION;PROD-356;FH1 - PROD X - Forçage de données;Unitaire;Réalisée;Simple;Réalisée;Vincent KROWA;Laurence CULLIN;17/sept./13 10:27;17/sept./13 14:00;17/sept./13 14:00;PLATEFORME - UNIX;2;;;;;;;;"Bonjour, 
+
+Merci de récupérer la requête updateCodeEnvoiGC9NonAssujetties.sql dans /sas_liv/fh1/sql, 
+la copier dans /xpatrimoine/fh1/oneshot 
+et la lancer dans XUNI06 fh101/fh101.";;;;;;;DÉCLARATION EMPLOYEUR FIPH;;FH1;PLATEFORME - UNIX;17/sept./13 12:21;DIRECTION GA DU FIPHFP;X;Exploitation;1360;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;DDI AMOA 2013-049;DRS;0;0;20
+PRODUCTION;PROD-374;SRV - PROD - Demande de forçage valid VA200330236;Unitaire;Terminée;Simple;Réalisée;Vincent KROWA;Christine THAI VAN;17/sept./13 11:50;19/sept./13 9:02;17/sept./13 13:52;PLATEFORME - UNIX;2;;;;;;;;"Bonjour 
+
+Pourrez vous effectuer les 2 forçages ci dessous sur la base SRV de PRODUCTION? 
+Resultat attendu : 2 lignes en MAJ dans AT8Z et 1 ligne en MAJ dans AT8C 
+
+Radeva1 : /sas_liv/srv/Forcages/update_at8z_VA200330236.sql 
+Radeva1 : /sas_liv/srv/Forcages/at8c_update_cgetap_VA200330236.sql 
+
+PJ : accord MOA SRV 
+
+Merci pour votre intervention, 
+Christine. 
+";;;;;;;AE03 : RÉGULARISATIONS VALIDATIONS CNRACL;;SRV;PLATEFORME - UNIX;17/sept./13 13:45;DIR GEST MUTUAL;X (XUNI06);Exploitation;489;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Traitement de Forçage;391286;DRS;0;0;20
+PRODUCTION;PROD-382;GC1 - PROD - Incident RC 404993;Unitaire;Réalisée;Simple;Réalisée;Jean Francois RICHEFORT;Stephanie MEUNIER;17/sept./13 13:01;17/sept./13 13:52;17/sept./13 13:52;PLATEFORME - UNIX;1;;;;;;;;"Bonjour, 
+
+Suite à l'incident sur le RC : 
+- abandonner le traitement RC. 
+- déplacer le fichier flux_cdrJOUR000916.210839 présent $FREC/cdr1 pour le mettre sous $FREC/cdr. 
+- supprimer tous les autres fichiers présents sous $FREC/cdr1. 
+
+Stéphanie";;;;;;;GC11 : GESTION DES COMPTES (RECOUVREMENT);;GC1;PLATEFORME - UNIX;17/sept./13 14:54;DRS;X;Exploitation;458;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Reprise d’incident;404993;DRS;0;0;30
+PRODUCTION;PROD-354;LR7 forçage de données sur demande MOA;Unitaire;Réalisée;Simple;Réalisée;Jean Francois RICHEFORT;Maryse GAGNAIRE;17/sept./13 10:06;17/sept./13 13:47;17/sept./13 13:47;PLATEFORME - UNIX;1;;;;;;;;"Bonjour, 
+Merci de bien vouloir passer la requête présente sous 
+sas_liv/vp4/ requete_VP04_130917_DQ13.sql 
+
+avec le 'rollback', 
+puis, après mon accord, la passer avec le 'commit' 
+et mettre sous sas_liv/vp4 le résultat des requêtes. 
+
+Merci, 
+
+
+";;;;;;;LR7 : LIQUIDATION SASV;;LR7;PLATEFORME - UNIX;17/sept./13 11:58;DIR SOLRISQ PRO;"""X""";Exploitation;499;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Traitement de Forçage;DDI 2013/523;DRS;0;0;30
+PRODUCTION;PROD-291;Demande de passage de requetes en environnement VA uniquement;Unitaire;Réalisée;Simple;Réalisée;Gilles ROULLON;Pascal LEROY;16/sept./13 13:59;17/sept./13 13:23;17/sept./13 13:23;SGBD - ORACLE;2;;;;;;;;"Bonjour, 
+merci de passer les 3 requetes exécutées depuis le script 
+DDI2013-033-14_lanceur_fiabilisation.ksh sur l'environnement VA uniquement. 
+
+Merci de fournir sous /sas_liv/aed/DDI2013-033-14 le compte rednu de chacune des requêtes que vous trouverez dans $FTEMP 
+($FTEMP/FIA-1-requetes_DDOREG_incorrect.txt, 
+$FTEMP/FIA-1-requetes_montant_situ_particuliere.txt, 
+$FTEMP/FIA-1-requetes_taux_tps_partiel.txt et 
+$FTEMP/DDI2013-033-14-fiabilisation$DTE.log). 
+
+Cordialement, 
+P. LEROY 
+52507 
+";;;;;;;AE14 : GESTION DÉCLARATIONS;;AEE;SGBD - ORACLE;16/sept./13 15:31;DRS;VA (Z);Pre-exploitation;440;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Exécution de Traitement;DDI2013-033-14;DRS;0;0;15
+BORDEAUX-INTRA DPI;BDX-26;Création de FS sur radevz1;Unitaire;Réalisée;Simple;Réalisée;Jonathan HOUZE;Yves DERRE;16/sept./13 9:57;17/sept./13 12:26;17/sept./13 12:26;STOCKAGE - DEMANDE DE DISQUE;2;;;;;;;;"Pourriez-vous créer le FS /rlr691/oracle de 190 Go (le vg UV055 a déjà été créé à cet effet) ? 
+Cordialement 
+Yves Derré";;;;;;;LIQUIDATION CNRACL;;LR6;STOCKAGE - DEMANDE DE DISQUE;;DIR GEST MUTUAL;;Recette;1127;;Annulée;Réalisée;Support;Sensible;;;DRS;0;0;15
+BORDEAUX-INTRA DPI;BDX-29;Agrandissement de FS sur radeva1;Unitaire;Terminée;Simple;Réalisée;Jonathan HOUZE;Yves DERRE;17/sept./13 10:43;19/sept./13 9:21;17/sept./13 12:23;STOCKAGE - DEMANDE DE DISQUE;2;;;;;;;;"Bonjour, 
+Pourriez vous agrandir le FS /rdsc01 de radeva1 : actuellement 2.5Go -> 3Go 
+Merci";;;;;;;CL01 : CLIENTS;;CLI;STOCKAGE - DEMANDE DE DISQUE;;DRS;;Recette;451;;Annulée;Réalisée;Support;Sensible;;;DRS;0;0;15
+HORS PRODUCTION;HORSPROD-90;Diffusion IHM LR6 V6.1.1 et passage à java 1.6 pour environnement C;Unitaire;Réalisée;Simple;Réalisée;Luc HADJADJ;Frederique CAPET;17/sept./13 11:32;17/sept./13 12:19;17/sept./13 12:18;WEB - TOMCAT;2;;;;;;;;"Bonjour, 
+
+il faudrait diffuser l'IHM LR6 6.1.1 intranet uniquement et mettre l'application en java 1.6. 
+
+Le WAR est disponible ici : radeva1:/sas_liv/lr6LR6WEB-6.1.01.war 
+
+Merci 
+Fred";;;;;;;LIQUIDATION CNRACL;;LR6;WEB - TOMCAT;20/sept./13 13:27;DIR GEST MUTUAL;C;Recette;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;;;DRS;0;0;15
+HORS PRODUCTION;HORSPROD-77;[I][EC3] Installation CISPEO 5.0.3;Unitaire;Réalisée;Simple;Réalisée;Yves DERRE;Lyes MESSAOUDI;16/sept./13 17:19;17/sept./13 12:05;17/sept./13 12:05;WEB - TOMCAT;1;;;;;;;;"Pouvez-vous installer la webapp JCMS disponible ci-dessous sur IEC3 ? : 
+
+1) Arrêter l'application CISPEO 
+2) Récupérer les fichiers /iexploit/tomcat/ec3/application/WEB-INF/data/store.xml et /iexploit/tomcat/ec3/application/WEB-INF/data/custom.prop les mettre de côté. 
+3) Télécharger l'archive de la webapp JCMS 7.0.4 (IEC3-jcms-704-5.0.3.zip) sur https://sfe.caissedesdepots.fr/sdf-web/sdf-web/Telechargement/Telechargement?tfCode=kpcJ4NAqeahALOo 
+uaj3b1rVH 
+Mot de passe : Cispeo2013 
+4) Supprimer tout le contenu de /iexploit/tomcat/ec3/application/ sauf les répertoires upload et WEB-inf/data/stats (aucune sauvegarde n'est nécessaire) 
+5) Déposer l'archive téléchargée dans /iexploit/tomcat/ec3/application/ 
+6) Décompresser l'archive 
+7) Rétablir dans le répertoire WEB-INF/data/, les fichiers store.xml et custom.prop mis de côté à l'étape 2 
+8) Démarrer l'application CISPEO 
+
+Merci par avance.";;;;;;;ADMINISTRATION DU PORTAIL ESPACE COLLABORATIF;;EC3;WEB - TOMCAT;16/sept./13 19:02;DIR PROCESSUS ET SI;;Intégration;1756;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;;;DRS;0;0;15
+PRODUCTION;PROD-341;Prod : demande passage script avec fichier param fourni;Unitaire;Réalisée;Simple;Réalisée;Gilles ROULLON;Pascal LEROY;17/sept./13 9:10;17/sept./13 11:54;17/sept./13 11:54;SGBD - ORACLE;2;;;;;;;;"Bonjour, 
+
+Pour libérer le bouchon DI IRC,pouvez vous, svp, recopier le fichier paramètre ci- dessous: 
+/sas_liv/aed/DDI2013-033-015/Param-sed-fudagt 
+vers XAED03/fichiers/param/DI/Param-sed-fudagt (déja existant à écraser) 
+puis 
+executer le script sed-fudagt.ksh sur prod DI IRC hors traitement chaine DI avec valorisation des variables TRT et NUM comme ci-dessous 
+export TRT=DIIRC 
+export NUM=00 
+
+Merci d'avance. 
+P. LEROY 
+52507";;;;;;;GESTION DES DÉCLARATIONS INDIVIDUELLES IRCANTEC;;DM2;SGBD - ORACLE;17/sept./13 10:05;DRS ANGERS;Production IRC;Exploitation;2273;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Exécution de Traitement;DDI2013-033-15;DRS;0;0;15
+PRODUCTION;PROD-256;PROD- FC1- DRS- HLUP- EVOL- QC1287- RE0847_V1.10- RE0848_V1.10;Unitaire;Terminée;;Réalisée;Vincent KROWA;Philippe JESOPH;13/sept./13 11:23;17/sept./13 16:34;17/sept./13 11:41;;3;;;;;;;;"Merci de mettre en VA & PROD les courriers décrits dans la fiche de livraison. 
+@+ Philippe";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;13/sept./13 13:20;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;1;0;30
+PRODUCTION;PROD-255;PROD- CLX -DRS- HLUP- EVOL- QC1312 -RE1124_V1.1;Unitaire;Terminée;;Réalisée;Vincent KROWA;Philippe JESOPH;13/sept./13 11:13;17/sept./13 16:33;17/sept./13 11:41;;3;;;;;;;;"Bonjour, 
+
+Merci de mettre en VA & PROD le courrier décrit dans la fiche de livraison. 
+@+ Philippe";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;1;0;30
+PRODUCTION;PROD-330;Forçage sas demandes CD1 / rachat;Unitaire;Terminée;Simple;Réalisée;Franck VERGEZ;Hugo LETERRIER;16/sept./13 17:34;17/sept./13 18:41;17/sept./13 11:31;SGBD - ORACLE;3;;;;;;;;"Pourriez-vous exécuter le script suivant sur CD101 : 
+
+/sas_liv/cd1/RepriseSQL/ForcageRachatRA201100109/ForcageSasPeriodeRachatRA201100109.sql 
+
+Cette demande doit être traitée après le demande AED : PROD-306 
+
+Merci.";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;SGBD - ORACLE;16/sept./13 19:30;DRS BORDEAUX;X et Z;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;DDI2013-171 Forçage;DRS;0;0;30
+PRODUCTION;PROD-306;Forçage ré-ouverture rachat RA201100109;Unitaire;Terminée;Simple;Réalisée;Jean Francois RICHEFORT;Hugo LETERRIER;16/sept./13 15:10;17/sept./13 18:40;17/sept./13 11:20;SGBD - ORACLE;2;;;;;;;;"Pourriez-vous exécuter la requête de forçage suivante sur AED01 : 
+
+/sas_liv/aed/ForcageRachatRA201100109/ForcageOuvertureRachatRA201100109.sql 
+
+Merci.";;;;;;;AE13 : GESTION COMPTE DE DROITS;;AED;SGBD - ORACLE;16/sept./13 16:06;DRS;X et Z;Exploitation;439;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Traitement de Forçage;DDI2013-171 Forçage;DRS;0;0;25
+PRODUCTION;PROD-307;Livraison SLG en VA et PROD pour LUP 09;Globale;Terminée;Simple;Réalisée;Franck VERGEZ;Arnaud GENDRY;16/sept./13 15:14;18/sept./13 9:48;17/sept./13 11:08;;3;;;;;;PROD-312;;"Bonjour, 
+
+Dans le cadre des évolutions DDI 2013-314 et DDI 2013-379, pouvez vous mettre SLG en en VA dès aujourd'hui et en production lors de la LUP-09 le jeudi 26/09/2013 au matin . 
+
+La fiche des livraison est en pièce jointe. 
+
+Merci d'avance";;;;;;;SLG - SERVICES EN LIGNE;;SLG;;16/sept./13 17:05;DRS;ZSLG et XSLG;Pre-exploitation;1118;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;;DRS;;;
+PRODUCTION;PROD-312;PROD-307 LIV.COMPOSANT.LUP Z SLG DDI 2013-314 DDI 2013-379 - WAR;Sous-Tâche;Terminée;Simple;Réalisée;Franck VERGEZ;Franck VERGEZ;16/sept./13 16:03;17/sept./13 11:04;17/sept./13 11:04;PLATEFORME - UNIX;1;;;;;;;;"Bonjour, 
+
+Dans le cadre des évolutions DDI 2013-314 et DDI 2013-379, pouvez vous mettre SLG en en VA dès aujourd'hui et en production lors de la LUP-09 le jeudi 26/09/2013 au matin . 
+
+La fiche des livraison est en pièce jointe. 
+
+Merci d'avance 
+";;;;;;;SLG - SERVICES EN LIGNE;;SLG;PLATEFORME - UNIX;16/sept./13 18:00;DRS;ZSLG et XSLG;Pre-exploitation;1118;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;0;0;30
+PRODUCTION;PROD-320;SRV - PROD - Demande de forçage rachat RA201300125;Unitaire;Terminée;Simple;Réalisée;Franck VERGEZ;Christine THAI VAN;16/sept./13 16:22;17/sept./13 11:53;17/sept./13 10:51;PLATEFORME - UNIX;2;;;;;;;;"Bonjour 
+
+pourrez vous faire passer la requete de forçage ci dessous sur la base SRV de PRODUCTION svp ? 
+
+Radeva1 : /sas_liv/srv/Forcages/au01_update_date_RA201300125.sql 
+
+Merci pour votre intervention. 
+Resultat attendu : une ligne en mise à jour pour le rachat 
+
+PJ : accord MOA";;;;;;;AE03 : RÉGULARISATIONS VALIDATIONS CNRACL;;SRV;PLATEFORME - UNIX;16/sept./13 18:19;DIR GEST MUTUAL;X;Exploitation;489;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Traitement de Forçage;SRV;DRS;0;0;25
+PRODUCTION;PROD-281;SRV - VA - Demande de forçage Régul RE201300396;Unitaire;Terminée;Simple;Réalisée;Franck VERGEZ;Christine THAI VAN;16/sept./13 11:30;17/sept./13 11:55;17/sept./13 10:32;PLATEFORME - UNIX;2;;;;;;;;"Bonjour 
+
+pourrez vous effectuer le forçage ci dessous sur la base SRV de VA svp ? 
+
+Radeva1 : /sas_liv/srv/Forcages/at55_insert_RE201300396.sql 
+
+Résultat attendu : 1 ligne créée dans AT55 pour la regul 
+
+Merci pour votre intervention 
+Christine.";;;;;;;AE03 : RÉGULARISATIONS VALIDATIONS CNRACL;;SRV;PLATEFORME - UNIX;16/sept./13 13:25;DIR GEST MUTUAL;Z (ZUNI06);Pre-exploitation;489;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Traitement de Forçage;SRV;DRS;0;0;20
+PRODUCTION;PROD-277;SRV - VA - demande de forçage valid VA200330236;Unitaire;Terminée;Simple;Réalisée;Franck VERGEZ;Christine THAI VAN;16/sept./13 10:50;17/sept./13 11:51;17/sept./13 10:30;PLATEFORME - UNIX;2;;;;;;;;"Bonjour 
+
+Pourrez vous effectuer les 2 forçages ci dessous sur la base SRV de VA ? 
+Resultat attendu : 2 lignes en MAJ dans les 2 tables 
+
+Radeva1 : /sas_liv/srv/Forcages/update_at8z_VA200330236.sql 
+Radeva1 : /sas_liv/srv/Forcages/at8c_update_cgetap_VA200330236.sql 
+
+Merci pour votre intervention, 
+Christine.";;;;;;;AE03 : RÉGULARISATIONS VALIDATIONS CNRACL;;SRV;PLATEFORME - UNIX;16/sept./13 12:42;DIR GEST MUTUAL;Z (Zuni06);Pre-exploitation;489;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Initial;Traitement de Forçage;391286;DRS;0;0;30
+PRODUCTION;PROD-339;Depots du fichier 398699_proaud_lot02.csv pour controle d'intégrité;Unitaire;Terminée;Simple;Réalisée;Philippe SABINOTTO;Patrice MERLE;17/sept./13 8:40;17/sept./13 10:25;17/sept./13 10:21;COMITE RESSOURCES - UNIX;2;_thumb_15101.png ;;;;;;;"Bonjour, 
+
+Merci de déposer le fichier joint dans le répertoire suivant avant midi : 
+/xsa701/fichiers/fic/controleintegrite/in 
+Sur la machine raproa1 
+
+Merci d'avance 
+Cordialement 
+Patrice 
+";;;;;;;SA7 - ARCHIDATA;;SA7;COMITE RESSOURCES - UNIX;17/sept./13 10:00;SERVICES DES ARCHIVES;X;Exploitation;2303;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Critique;Demande Action Préventive;398699;DRS;0;0;0
+PRODUCTION;PROD-268;OC1 - PROD IRC - Forçage Données en Production pour reprise KU;Unitaire;Terminée;Simple;Réalisée;Jean Francois RICHEFORT;Alain GUINLE;16/sept./13 9:49;17/sept./13 14:17;17/sept./13 8:38;SGBD - ORACLE;2;;;;;;;;"Bonjour, 
+
+Veuillez effectuer IMPERATIVEMENT le Mardi 17/09/2013 (avant 07h) 
+avant le lancement de l'interface LR-OC1 (qui démarre à 7h) 
+même si Paie IRC en erreur. 
+
+Raison de ce forçage : 
+étant toujours en attente de la livraison d'une correction LR4, 
+--> necessité de Forçage Alignement MotifAnnul et DtFin Prestation, 
+MotifAnnul et DtFinDroit Contrat 
+pour les Dossiers KU après chaque Paie IRC, 
+
+pour cela veuillez effectuer les actions suivantes sur l'Envt Prod(X) : 
+
+1- Récupération Requêtes de forçage, depuis le Répertoire de radeva1 : 
+/sas_liv/oc1/20130917_Rep_KU_MotifEtDteFinDroitCtrt_IRC 
+- Copier les fichiers Rep_KU_MotifEtDteFinPrest_IRC.sql et 
+Rep_KU_MotifEtDteFinDroitCtrt_IRC.sql 
+dans raproa1 : /xpatrimoine/oc1/oneshot/ 
+
+2- Exécuter sous raproa1, la Requête .sql 
+(attention, l'ordre des requêtes est important) : 
+/xpatrimoine/oc1/oneshot/Rep_KU_MotifEtDteFinPrest_IRC.sql 
+
+3- Exécuter sous raproa1, la Requête .sql : 
+/xpatrimoine/oc1/oneshot/Rep_KU_MotifEtDteFinDroitCtrt_IRC.sql 
+
+4- Copier les résultats des 2 logs produites 
+sous /sas_liv/oc1/20130917_Rep_KU_MotifEtDteFinDroitCtrt_IRC 
+(/xpatrimoine/oc1/oneshot/Rep_KU_MotifEtDteFinPrest_IRC_20130917.log 
+et /xpatrimoine/oc1/oneshot/Rep_KU_MotifEtDteFinDroitCtrt_IRC_20130917.log). 
+
+Merci. 
+Alain GUINLE. 
+5.49.34";;;;;;;OUTILLAGE DE CALCUL ALLOCATIONS, PENSIONS, IND;;OC1;SGBD - ORACLE;17/sept./13 06:30;DIR GEST MUTUAL;XOC101;Exploitation;1849;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;QC153;DRS;0;0;20
+BORDEAUX-INTRA DPI;BDX-28;test;Unitaire;Terminée;Simple;Réalisée;Frederic GERARD;Frederic GERARD;16/sept./13 16:45;16/sept./13 17:14;16/sept./13 17:14;WEB - SPS;1;;;;;;;;test;;;;;;;SPS INTERNE - BORDEAUX;;WS3;WEB - SPS;;MOA SOCLE COMMUN;;Recette;2389;;Annulée;Réalisée;Support;Sensible;;;DRS;0;0;0
+BORDEAUX-INTRA DPI;BDX-27;restauration espace fichiers de la Prod sur la VA;Unitaire;Terminée;Simple;Réalisée;Wilfried PEYROU;Philippe SABINOTTO;16/sept./13 16:09;17/sept./13 13:51;16/sept./13 16:32;STOCKAGE - SAUVEGARDE;2;;;;;;;;"Merci de restaurer : 
+/xia501/fichiers/hraccess/file 
+Sur : 
+/zia501/fichiers/hraccess/file 
+
+à la même date que la restaure effectuée pour la base ORACLE 
+";;;;;;;IA5 : GESTION ALLOCATIONS RISP;;IA5;STOCKAGE - SAUVEGARDE;16/sept./13 18:07;DIR SOLRISQ PRO;Z;Pre-exploitation;464;;Annulée;Réalisée;Support;Sensible;;;DRS;1;0;10
+PRODUCTION;PROD-313;restauration espace fichiers de la Prod sur la VA;Unitaire;Terminée;Simple;Annulée;Non attribuée;Philippe SABINOTTO;16/sept./13 16:04;16/sept./13 16:07;16/sept./13 16:07;STOCKAGE - SAUVEGARDE;1;;;;;;;;"Merci de restaurer : 
+/xia501/fichiers/hraccess/file 
+Sur : 
+/zia501/fichiers/hraccess/file 
+
+à la même date que la restaure effectuée pour la base ORACLE";;;;;;;IA5 : GESTION ALLOCATIONS RISP;;IA5;STOCKAGE - SAUVEGARDE;16/sept./13 18:02;DIR SOLRISQ PRO;Z;Pre-exploitation;464;Gestion de Patrimoine;Annulée;Réalisée;Support;Sensible;;;DRS;0;0;0
+HORS PRODUCTION;HORSPROD-72;Accès projet Prelude au WS Editique (SPS);Unitaire;Terminée;Simple;Réalisée;Frederic GERARD;Sylvain NERAUDEAU;16/sept./13 15:30;16/sept./13 17:08;16/sept./13 15:47;WEB - SPS;1;;;;;;;;"Bonjour, 
+
+Merci d'autoriser le consommateur urn:cdc:pret:prelude:pt1:2677:1.0 à accéder au WS Editique via la SPS DRS.";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;WEB - SPS;16/sept./13 17:24;DRS;;Recette;1353;Gestion de Patrimoine;Annulée;Réalisée;Support;Sensible;;;DRS;0;0;15
+PRODUCTION;PROD-303;PROD-RB1-DRS-HLUP-QC10-1221;Unitaire;Terminée;Simple;Annulée;Non attribuée;Brigitte DUS;16/sept./13 15:06;16/sept./13 15:08;16/sept./13 15:08;PLATEFORME - UNIX;1;;;;;;;;Livraison par package du csa007.cbl de l'application TAC pour Rubis;;;;;;;RUBIS: PERSONNALISATION DES COURRIERS;;RB1;PLATEFORME - UNIX;16/sept./13 17:04;DRS ANGERS;raproa1;Exploitation;1898;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;;QC10-1221;DRS;0;0;0
+PRODUCTION;PROD-273;Depots d'un fichier;Unitaire;Terminée;Simple;Réalisée;Didier BECMEUR;Patrice MERLE;16/sept./13 10:32;17/sept./13 8:32;16/sept./13 11:32;PLATEFORME - UNIX;3;;;;;;;;"Bonjour, 
+
+Merci de déposer le fichier joint dans le répertoire suivant avant midi : 
+/xsa701/fichiers/fic/controleintegrite/in 
+Sur la machine raproa1 
+
+Merci d'avance 
+Cordialement 
+Patrice";;;;;;;SA7 - ARCHIDATA;;SA7;PLATEFORME - UNIX;16/sept./13 11:00;SERVICES DES ARCHIVES;X;Exploitation;2303;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Critique;Exécution de Traitement;398699;DRS;0;0;5
+HORS PRODUCTION;HORSPROD-62;Passage en JDK1.6 sur les 2 instances IHM d'intégration;Unitaire;Terminée;Simple;Réalisée;Luc HADJADJ;Hugo LETERRIER;16/sept./13 11:05;16/sept./13 17:50;16/sept./13 11:26;WEB - TOMCAT;2;;;;;;;;"Pourriez-vous passer les JVM suivantes en JDK 1.6 : 
+
+jdm1gdeceihm 
+jdm1gdeciihm 
+
+Merci.";;;;;;;GESTION DES DÉCLARATIONS INDIVIDUELLES CNRACL;;DM1;WEB - TOMCAT;16/sept./13 11:10;DRS BORDEAUX;J;Intégration;2199;Gestion de Patrimoine;Annulée;Réalisée;Système;Initial;;;DRS;0;0;10
+PRODUCTION;PROD-167;Recopie des tables E614 et E641 dans DWEB01 quand la QC 5817 aura été réalisée;Unitaire;Terminée;;Réalisée;Philippe DOUAY;Frederique CAPET;03/sept./13 14:58;17/sept./13 11:18;16/sept./13 10:52;;2;;;;;;;;"Bonjour, 
+
+la DSI a demandé l'éclatement des tables E614 et E641 en VA Z. 
+Quand ce sera fait, recopier ces 2 tables en VA D pour le projet ""Carrières longues"". 
+
+Merci 
+Fred";;;;;;;LIQUIDATION CNRACL;;LR6;SGBD - ORACLE;05/sept./13 16:55;DIR GEST MUTUAL;D;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Mise à jour d’environnement;;DRS;;0;30
+PRODUCTION;PROD-252;Demande de forçage de données en production - CD1;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Celine ARTICO;13/sept./13 10:41;13/sept./13 11:56;13/sept./13 11:25;;2;;;;;;;;"Bonjour, 
+
+Merci de lancer sur la production CD1, à partir de $ORASQL, la requête CD1 suivante à récupérer sur J dans $ORASQL : 
+
+> sqlplus cd101/cd101 @reprise_prod_130913.sql 
+
+Merci 
+
+C. Artico - 5.24.03 
+";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;SGBD - ORACLE;13/sept./13 11:39;DRS BORDEAUX;X;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;DDI 2013-171;DRS;;;
+PRODUCTION;PROD-226;Diffusion aide en ligne sur les serveurs internet pour les employeurs;Globale;Terminée;;Réalisée;Franck VERGEZ;Frederique CAPET;10/sept./13 15:29;17/sept./13 11:08;13/sept./13 10:25;;2;;;;;;PROD-227, PROD-228;;"Bonjour, 
+
+merci de diffuser l'aide en ligne jointe (zip) sur les serveurs destinés aux employeurs. 
+
+Sans attendre la fin du mois. 
+
+Merci 
+Fred";;;;;;;LIQUIDATION CNRACL;;LR6;;10/sept./13 17:26;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;;DRS;;;
+PRODUCTION;PROD-227;PROD-226 TRAIT.EXCEPT X LR6 - diffuser aide en ligne;Sous-Tâche;Terminée;;Réalisée;Gijs VAN DORP;Franck VERGEZ;10/sept./13 16:16;13/sept./13 9:48;13/sept./13 9:48;;2;;;;;;;;"Bonjour, 
+
+merci de diffuser l'aide en ligne jointe (zip) sur les serveurs destinés aux employeurs. 
+
+Sans attendre la fin du mois. 
+
+Merci 
+Fred";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;10/sept./13 17:26;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+HORS PRODUCTION;HORSPROD-45;Montée de version LR601 dans I J G M et N;Unitaire;Terminée;;Réalisée;Luc HADJADJ;Frederique CAPET;11/sept./13 16:11;17/sept./13 11:06;12/sept./13 15:05;;2;;;;;;;;"Bonjour, 
+
+nous avons besoin d'ajouter une table dans LR601 de *WEB01. 
+Il faudrait passer le schéma de I J G M et N de v02-00-02 en v02-00-03. 
+M'appelez si problème. 
+Merci 
+Fred";;;;;;;LIQUIDATION CNRACL;;LR6;SGBD - ORACLE;16/sept./13 18:04;DIR GEST MUTUAL;I J G M N;Recette;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;;;DRS;;;
+PRODUCTION;PROD-247;Lacement d'un triatement de chargement de table DM55 LR6;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Nicolas DRENO;12/sept./13 13:51;17/sept./13 16:52;12/sept./13 14:51;;2;;;;;;;;"Bonjour dans le cadre des tests de VA (Z) de la DDI 2013-197 « évolution requête DM55» nous aurions besoin du passage du traitement du script : 
+
+/zpatrimoine/lr6/batch/scripts/LR6_00_charge_dm55.ksh 
+
+Merci 
+
+Nicolas";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;;DIR GEST MUTUAL;VA Z;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+HORS PRODUCTION;HORSPROD-43;Création user Pacbase;Unitaire;Terminée;;Annulée;Non attribuée;Gerard GUILLAUME;10/sept./13 16:30;12/sept./13 14:20;12/sept./13 14:20;;1;;;;;;;;Création d'un code utilisateur Pacbase pour BOUJU Charles (Retraites Angers);;;;;;;PACBASE;;VA3;POSTE DE TRAVAIL - SECURITE;10/sept./13 18:25;ICDC DEI CCMT;;Développement;1701;Gestion de Patrimoine;Rejetée;Réalisée;Support;Sensible;;MAIL_LABPAC_201309101550;DRS;;;
+PRODUCTION;PROD-246;traitement ddr_xjrv_demande;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Nicolas DRENO;12/sept./13 13:26;17/sept./13 16:52;12/sept./13 14:15;;2;;;;;;;;"Bonjour, 
+
+afin de dupliquer la carrière CD1 de deux dossiers LR6 nous avons une nouvelle fois besoin du passage du script xjrv. 
+
+Merci 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;12/sept./13 13:27;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+PRODUCTION;PROD-240;Livraison package + reprise de données CD1 pour Carrière Longue - environnement C;Globale;Terminée;;Annulée;Non attribuée;Celine ARTICO;12/sept./13 10:30;12/sept./13 14:03;12/sept./13 14:03;;2;;;;;;;PROD-208;Même contenu que la Darwin n° PROD-208 : livaison de package à partir de la fiche de livraison et reprise de données;;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;;12/sept./13 12:28;DRS BORDEAUX;C;Simulation;1726;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;Projet Carrière Longue;DRS;;;
+PRODUCTION;PROD-237;traitement ddr_xjrv_demande;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Nicolas DRENO;11/sept./13 17:14;17/sept./13 16:53;12/sept./13 11:05;;2;;;;;;;;"Bonjour, 
+
+afin de dupliquer la carrière CD1 d'un dossier LR6 nous avons besoin du passage du script xjrv. 
+
+Merci";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+PRODUCTION;PROD-185;PROD- CLX- DRS -HLUP- CREATION -QC848- RE1063_V1.1.1;Unitaire;Terminée;;Réalisée;Vincent KROWA;Philippe JESOPH;05/sept./13 12:14;17/sept./13 16:35;11/sept./13 10:42;;4;;;;;;;;"Merci de mettre en production le courrier CLX décrit dans la fiche de livraison, la fiche DCME est jointe. 
+
+@+";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;05/sept./13 13:45;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;;;
+PRODUCTION;PROD-228;PROD-226 Sous-tâche;Sous-Tâche;Terminée;;Annulée;Non attribuée;Franck VERGEZ;10/sept./13 16:18;10/sept./13 16:18;10/sept./13 16:18;;1;;;;;;;;"Bonjour, 
+
+merci de diffuser l'aide en ligne jointe (zip) sur les serveurs destinés aux employeurs. 
+
+Sans attendre la fin du mois. 
+
+Merci 
+Fred";;;;;;;LIQUIDATION CNRACL;;LR6;;10/sept./13 17:26;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;;DRS;;;
+PRODUCTION;PROD-208;Livraison package pour Projet Carrière Longue + reprise de données sur Z - pour LUP Septembre;Globale;Réalisée;;Réalisée;Christophe CHIGNAGUET;Celine ARTICO;10/sept./13 10:32;12/sept./13 10:31;10/sept./13 16:09;;3;;;;;;PROD-209, PROD-210;PROD-240;"Bonjour, 
+
+Pour la livraison de la LUP de Septembre, il faudrait : 
+
+- livrer le package de la fiche de livraison jointe 
+
+- exécuter sur ZUNI01 la requête ""reprise_donnees_CD1_CL.sql "" à récupérer dans $ORASQL de l'environnement G, APRES Y AVOIR AJOUTE UN SET TIMING ON afin de relever le temps d'exécution de la requête. 
+
+> sqlplus cd101/cd101 @reprise_donnees_CD1_CL.sql 
+
+- me transmettre le résultat des temps de traitement de la requête. 
+
+Merci 
+
+C. Artico 
+5.24.03";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;;10/sept./13 12:09;DRS BORDEAUX;Z;Pre-exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;Projet Carrière Longue;DRS;;;
+PRODUCTION;PROD-210;PROD-208 TRAIT.EXCEPT.LUP Z CD1 Carrière Longue - avant 16h00;Sous-Tâche;Terminée;;Réalisée;Franck VERGEZ;Franck VERGEZ;10/sept./13 10:52;10/sept./13 16:06;10/sept./13 16:06;;1;;;;;;;;"Bonjour, 
+
+Pour la livraison de la LUP de Septembre, il faudrait : 
+?livrer le package de la fiche de livraison jointe 
+?exécuter sur ZUNI01 la requête ""reprise_donnees_CD1_CL.sql "" à récupérer dans $ORASQL de l'environnement G, APRES Y AVOIR AJOUTE UN SET TIMING ON afin de relever le temps d'exécution de la requête. 
+
+> sqlplus cd101/cd101 @reprise_donnees_CD1_CL.sql 
+?me transmettre le résultat des temps de traitement de la requête. 
+
+Merci 
+
+C. Artico 
+5.24.03 
+";;;;;;;;;;PLATEFORME - UNIX;;;;;;;Annulée;Réalisée;Applicatif;;Exécution de Traitement;;DRS;;;
+PRODUCTION;PROD-225;Exécution d'une requête en VA;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Frederique CAPET;10/sept./13 15:00;10/sept./13 15:30;10/sept./13 15:15;;2;;;;;;;;"Bonjour, 
+
+il faudrait jouer une requête en VA en notant le temps d'exécution. 
+
+sur ravapa1 depuis LR6, répertoire $ORASQL 
+
+lancer la requête LR6-CL_reprise_anteriorite.sql depuis sqlplus lr601/lr601@DWEB01 
+
+Merci 
+Fred 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;10/sept./13 16:53;DIR GEST MUTUAL;Z;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-209;PROD-208 LIV.COMPOSANT.LUP Z CD1 Carrière Longue - avant 16h00;Sous-Tâche;Terminée;;Réalisée;Franck VERGEZ;Franck VERGEZ;10/sept./13 10:49;10/sept./13 14:56;10/sept./13 14:56;;1;;;;;;;;"Bonjour, 
+
+Pour la livraison de la LUP de Septembre, il faudrait : 
+
+- livrer le package de la fiche de livraison jointe 
+
+- exécuter sur ZUNI01 la requête ""reprise_donnees_CD1_CL.sql "" à récupérer dans $ORASQL de l'environnement G, APRES Y AVOIR AJOUTE UN SET TIMING ON afin de relever le temps d'exécution de la requête. 
+
+> sqlplus cd101/cd101 @reprise_donnees_CD1_CL.sql 
+
+- me transmettre le résultat des temps de traitement de la requête. 
+
+Merci 
+
+C. Artico 
+5.24.03";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;PLATEFORME - UNIX;10/sept./13 12:09;DRS BORDEAUX;Z;Pre-exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;Projet Carrière Longue;DRS;;;
+PRODUCTION;PROD-197;PROD- RB1- DRS- HLUP- INCIDENT- QC1309 -RE1080_V1.10;Unitaire;Terminée;;Réalisée;Vincent KROWA;Philippe JESOPH;09/sept./13 14:24;17/sept./13 16:34;10/sept./13 11:28;;3;;;;;;;;"Bonjour, 
+
+Merci de mettre en production le courrier décrit dans la fiche de livraison. 
+@+ Philippe";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;09/sept./13 16:21;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;;;
+PRODUCTION;PROD-198;PROD- RFA- DRS- HLUP- EVOL- QC1308- RE0845_V1.11;Unitaire;Terminée;;Réalisée;Vincent KROWA;Philippe JESOPH;09/sept./13 14:40;17/sept./13 16:35;10/sept./13 11:28;;3;;;;;;;;"Merci de mettre en production le courrier décrit dans la fiche de livraison. 
+@+ Philippe";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;09/sept./13 16:38;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;;;
+PRODUCTION;PROD-204;PROD- PM8- DPH- HLUP- PROJET- PR0063_V1.189;Unitaire;Terminée;;Réalisée;Vincent KROWA;Nicolas NGO;09/sept./13 16:35;11/sept./13 9:02;10/sept./13 11:21;;3;;;;;;;;Merci de mettre en production les documents cités dans la livcomp;;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;09/sept./13 18:30;DRS;b3217;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;;;
+PRODUCTION;PROD-199;"Livraison en VA projet ""Carrières longues"" + incident DM55 avec Client";Globale;Terminée;;Réalisée;Franck VERGEZ;Frederique CAPET;09/sept./13 15:01;10/sept./13 14:53;10/sept./13 10:55;;2;;;;;;PROD-200, PROD-201;;"Bonjour, 
+pour le projet, et la recette d'un incident de prod avec Client, livraison en VA de l'IHM (ce n'est pas la dernière version) , des batch, de la requête de reprise... 
+Merci de m'appeler pour tout problème. 
+Je ferai une autre demande pour le pssage de la reprise et des batch (une fois pour vérifier le déploiement) 
+
+Fred 
+5.38.75";;;;;;;LIQUIDATION CNRACL;;LR6;;09/sept./13 16:57;DIR GEST MUTUAL;Z et D;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;;DRS;;;
+PRODUCTION;PROD-200;PROD-199 LIV.COMPOSANT.LUP Z LR6 CARRIERES LONGUES;Sous-Tâche;Terminée;;Réalisée;Gijs VAN DORP;Franck VERGEZ;09/sept./13 15:16;10/sept./13 10:10;10/sept./13 10:10;;2;;;;;;;;"Bonjour, 
+pour le projet, et la recette d'un incident de prod avec Client, livraison en VA de l'IHM (ce n'est pas la dernière version) , des batch, de la requête de reprise... 
+Merci de m'appeler pour tout problème. 
+Je ferai une autre demande pour le pssage de la reprise et des batch (une fois pour vérifier le déploiement) 
+
+Fred 
+5.38.75";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;09/sept./13 16:57;DIR GEST MUTUAL;Z et D;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;;;
+PRODUCTION;PROD-201;PROD-199 TRAIT.EXCEPT.LUP Z LR6 CARRIERES LONGUES;Sous-Tâche;Terminée;;Réalisée;Gijs VAN DORP;Franck VERGEZ;09/sept./13 15:21;10/sept./13 10:09;10/sept./13 10:09;;2;;;;;;;;"Bonjour, 
+pour le projet, et la recette d'un incident de prod avec Client, livraison en VA de l'IHM (ce n'est pas la dernière version) , des batch, de la requête de reprise... 
+Merci de m'appeler pour tout problème. 
+Je ferai une autre demande pour le pssage de la reprise et des batch (une fois pour vérifier le déploiement) 
+
+Fred 
+5.38.75 
+";;;;;;;;;;PLATEFORME - UNIX;;;;;;;Annulée;Réalisée;Applicatif;;Livraison composant;;DRS;;;
+PRODUCTION;PROD-206;Demande de forçage de données en production - CD1;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Celine ARTICO;09/sept./13 17:28;10/sept./13 9:48;10/sept./13 8:52;;2;;;;;;;;"Bonjour, 
+
+Merci de lancer sur la production CD1, à partir de $ORASQL, la requête CD1 suivante à récupérer sur J dans $ORASQL : 
+
+> sqlplus cd101/cd101 @reprise_prod_130909.sql 
+
+Merci 
+
+C. Artico - 5.24.03 
+";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;SGBD - ORACLE;09/sept./13 17:30;DRS BORDEAUX;X;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;DDI 2013-171;DRS;;;
+PRODUCTION;PROD-205;Requete suppresion message OCAPI sas LR6;Unitaire;Terminée;;Réalisée;Vincent KROWA;Nicolas DRENO;09/sept./13 16:51;17/sept./13 17:42;09/sept./13 17:18;;2;;;;;;;;"A la demande de la MOA nous avons une suppression à faire dans notre SAS de paiements : 
+
+merci de passer le traitement ci dessous : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/Suppression_flux_OC1_LR6_TBSC02_TBSC03.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01 
+
+
+Nicolas";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-183;PROD-FC3-DRS-HLUP-EVOL-QC1264-re_code_fond_v7.48.txt;Unitaire;Terminée;;Réalisée;Xavier FOURNIOLS;Philippe JESOPH;05/sept./13 10:52;17/sept./13 16:35;09/sept./13 13:08;;3;;;;;;;;"Merci de mettre en production la table technique décrite dans la fiche de livraison. 
+
+@+ Philippe";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;05/sept./13 12:45;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Demande Edition Ponctuelle;;DRS;;;
+PRODUCTION;PROD-187;VA- PM8- DPH- HLUP- PROJET- PR0063_V1.19;Unitaire;Terminée;;Réalisée;Xavier FOURNIOLS;Nicolas NGO;06/sept./13 9:30;11/sept./13 9:03;09/sept./13 13:07;;3;;;;;;;;Merci de livrer en VA les composants cités dans la livcomp (PR0063_V1.19);;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;06/sept./13 12:00;DRS;B3296 (VA);Pre-exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Demande Edition Ponctuelle;;DRS;;;
+HORS PRODUCTION;HORSPROD-40;Passage en java 1.6 LR6 dans M;Unitaire;Terminée;;Réalisée;Luc HADJADJ;Frederique CAPET;09/sept./13 11:51;09/sept./13 15:03;09/sept./13 12:08;;2;;;;;;;;Fait par Luc à 11h45 ce jour.;;;;;;;LIQUIDATION CNRACL;;LR6;WEB - TOMCAT;09/sept./13 11:50;DIR GEST MUTUAL;M;Recette;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;;;DRS;;;
+PRODUCTION;PROD-191;Mise à niveau composant de la chaîne LR6_17 + relance;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Nicolas DRENO;06/sept./13 17:02;17/sept./13 16:53;06/sept./13 17:10;;3;;;;;;;;"bonjour, 
+
+suite à la LUP, le déploiement du batch AlimCarrière à faussé la JNDI d'accès au webservice CD1. 
+
+Nous avions fait la demande de modification de cette URL pour les chaînes PO4 et EG4 mais un oubli a été fait sur LR6_17. 
+
+Merci de corriger pour les fichiers param alim carriere en PROD et en VA. 
+
+Merci également de relancer la chaîne LR6_17 avant le différé de ce soir. 
+
+Nicolas";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;06/sept./13 17:02;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Exécution de Traitement;;DRS;;;
+PRODUCTION;PROD-182;PROD LR6 : extraction dossier;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Guillaume SERRANO;04/sept./13 15:04;17/sept./13 17:41;06/sept./13 13:31;;3;;;;;;;;"bonjour, 
+
+Merci de lancer l'exportation de dossier et de me mettre au courant une fois l'archive dispo : 
+
+1) récupérer sur radeva1 /sas_liv/lr6/DUP_pilote.txt 
+2) le copier sur raproa1 dans $FFIC 
+3) depuis raproa1 $JSCRIPT lancer lanceExportation 
+4) déposer le fichier généré dans /sas_liv/LR6 sur radeva1 
+
+Merci, 
+
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;04/sept./13 17:03;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+PRODUCTION;PROD-168;Livraison DDI2013-215(Stats) & incidents 393671 et 394193;Globale;Terminée;;Réalisée;Franck VERGEZ;Hugo LETERRIER;03/sept./13 15:25;16/sept./13 17:51;06/sept./13 9:29;;2;;;;;;PROD-169, PROD-170, PROD-171, PROD-172;;"Bonjour, 
+Merci de livrer le package cité dans la fiche de livraison jointe. 
+Il faut également modifier la proc CtrlM cd10ft5a10.sh du processus STAT, afin de transférer sur la ressource MOA des fichiers avec l’extension « .txt » au lieu de l’extension « .csv » existante. Le script CD1_Stats.ksh a été modifié pour cette extension .txt et sur le format de la date (plus de « . » dans le $DTE) : il faut vérifier que le transfert fonctionne avec le nouveau nom de fichier généré. Le dossier d’exploitation modifié en ce sens est également en pièce jointe. 
+";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;;05/sept./13 18:30;DRS BORDEAUX;X et Z;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;DDI2013-215(Stats) & incidents 393671 et 394193;DRS;;;
+PRODUCTION;PROD-174;PROD LR6 : LUP08 Livraison en production IHM et BATCHS JAVA (à faire vendredi 06/09 matin);Globale;Terminée;;Réalisée;Franck VERGEZ;Guillaume SERRANO;03/sept./13 16:50;17/sept./13 17:40;06/sept./13 9:28;;3;;;;;;PROD-177, PROD-178, PROD-179, PROD-180;;"Bonjour, 
+
+Merci de livrer en production et VA l'IHM LR6 et les batchs (cf pj). 
+
+Merci de modifier en production la variable jndi webservice/cd1 dans le fichier /xpatrimoine/lr601/batchs_java/param/naming_EG4_AlimCarriere.xml value=""http://xcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint"" 
+
+idem en VA : 
+value=""http://zcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint"" 
+
+Guillaume";;;;;;;LIQUIDATION CNRACL;;LR6;;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;;DRS;;;
+PRODUCTION;PROD-169;PROD-168 LIV.COMPOSANT.LUP X CD1 DDI 2013-215 - livraison - LUP 05/09/2013;Sous-Tâche;Terminée;;Réalisée;Franck VERGEZ;Franck VERGEZ;03/sept./13 16:01;06/sept./13 9:28;06/sept./13 9:28;;1;;;;;;;;"Bonjour, 
+Merci de livrer le package cité dans la fiche de livraison jointe. 
+Il faut également modifier la proc CtrlM cd10ft5a10.sh du processus STAT, afin de transférer sur la ressource MOA des fichiers avec l’extension « .txt » au lieu de l’extension « .csv » existante. Le script CD1_Stats.ksh a été modifié pour cette extension .txt et sur le format de la date (plus de « . » dans le $DTE) : il faut vérifier que le transfert fonctionne avec le nouveau nom de fichier généré. Le dossier d’exploitation modifié en ce sens est également en pièce jointe. 
+";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;PLATEFORME - UNIX;05/sept./13 18:30;DRS BORDEAUX;X et Z;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;DDI2013-215(Stats) & incidents 393671 et 394193;DRS;;;
+PRODUCTION;PROD-177;PROD-174 LIV.COMPOSANT.LUP Z LR6 DDI 2013-214;Sous-Tâche;Terminée;;Réalisée;Didier BECMEUR;Franck VERGEZ;04/sept./13 9:41;05/sept./13 14:38;05/sept./13 14:38;;1;;;;;;;;"Bonjour, 
+
+Merci de livrer en production et VA l'IHM LR6 et les batchs (cf pj). 
+
+Merci de modifier en production la variable jndi webservice/cd1 dans le fichier /xpatrimoine/lr601/batchs_java/param/naming_EG4_AlimCarriere.xml value=""http://xcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint"" 
+
+idem en VA : 
+value=""http://zcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint"" 
+
+Guillaume";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;;;
+PRODUCTION;PROD-179;PROD-174 LIV.COMPOSANT.LUP X LR6 DDI 2013-214 - LUP 05/09/2013;Sous-Tâche;Terminée;;Réalisée;Didier BECMEUR;Franck VERGEZ;04/sept./13 9:41;05/sept./13 14:37;05/sept./13 14:37;;1;;;;;;;;"Bonjour, 
+
+Merci de livrer en production et VA l'IHM LR6 et les batchs (cf pj). 
+
+Merci de modifier en production la variable jndi webservice/cd1 dans le fichier /xpatrimoine/lr601/batchs_java/param/naming_EG4_AlimCarriere.xml value=""http://xcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint"" 
+
+idem en VA : 
+value=""http://zcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint"" 
+
+Guillaume";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;;;
+PRODUCTION;PROD-180;PROD-174 TOMCAT.LUP X LR6 DDI 2013-214 - modif JNDI - LUP 05/09/2013;Sous-Tâche;Terminée;;Réalisée;Franck VERGEZ;Franck VERGEZ;04/sept./13 9:49;05/sept./13 13:44;05/sept./13 13:44;;1;;;;;;;;"Bonjour, 
+
+Merci de livrer en production et VA l'IHM LR6 et les batchs (cf pj). 
+
+Merci de modifier en production la variable jndi webservice/cd1 dans le fichier /xpatrimoine/lr601/batchs_java/param/naming_EG4_AlimCarriere.xml value=""http://xcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint"" 
+
+idem en VA : 
+value=""http://zcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint"" 
+
+
+Merci de modifier aussi en production la variable jndi webservice/cd1 dans le fichier /xpatrimoine/lr601/batchs_java/param/naming_PO4_AlimCarriere.xml value=""http://xcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint"" 
+
+idem en VA : 
+value=""http://zcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint"" 
+
+
+Guillaume";;;;;;;LIQUIDATION CNRACL;;LR6;WEB - TOMCAT;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Livraison composant;;DRS;;;
+PRODUCTION;PROD-170;PROD-168 MODIF.IAB.LUP X CD1 DDI 2013-215 - modif lanceur - LUP 05/09/2013;Sous-Tâche;Terminée;;Réalisée;Franck VERGEZ;Franck VERGEZ;03/sept./13 16:01;05/sept./13 13:23;05/sept./13 13:23;;1;;;;;;;;"Bonjour, 
+Merci de livrer le package cité dans la fiche de livraison jointe. 
+Il faut également modifier la proc CtrlM cd10ft5a10.sh du processus STAT, afin de transférer sur la ressource MOA des fichiers avec l’extension « .txt » au lieu de l’extension « .csv » existante. Le script CD1_Stats.ksh a été modifié pour cette extension .txt et sur le format de la date (plus de « . » dans le $DTE) : il faut vérifier que le transfert fonctionne avec le nouveau nom de fichier généré. Le dossier d’exploitation modifié en ce sens est également en pièce jointe. 
+";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;ORDONNANCEUR - CONTROL-M UNIX;05/sept./13 18:30;DRS BORDEAUX;X et Z;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Mise à jour d’environnement;DDI2013-215(Stats) & incidents 393671 et 394193;DRS;;;
+PRODUCTION;PROD-178;PROD-174 TOMCAT.LUP Z LR6 DDI 2013-214 - modif JNDI;Sous-Tâche;Terminée;;Réalisée;Franck VERGEZ;Franck VERGEZ;04/sept./13 9:41;05/sept./13 11:12;05/sept./13 11:12;;1;;;;;;;;"Bonjour, 
+
+Merci de livrer en production et VA l'IHM LR6 et les batchs (cf pj). 
+
+Merci de modifier en production la variable jndi webservice/cd1 dans le fichier /xpatrimoine/lr601/batchs_java/param/naming_EG4_AlimCarriere.xml value=""http://xcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint"" 
+
+idem en VA : 
+value=""http://zcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint"" 
+
+
+
+Merci de modifier aussi en production la variable jndi webservice/cd1 dans le fichier /xpatrimoine/lr601/batchs_java/param/naming_PO4_AlimCarriere.xml value=""http://xcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint"" 
+
+idem en VA : 
+value=""http://zcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint"" 
+
+
+
+Guillaume";;;;;;;LIQUIDATION CNRACL;;LR6;WEB - TOMCAT;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-181;PROD- CLX- DRS- HLUP- QC1283- RE1079_V1.1 et RE1126_V1.0;Unitaire;Terminée;;Réalisée;Vincent KROWA;Nicolas NGO;04/sept./13 11:27;11/sept./13 9:02;05/sept./13 10:50;;3;;;;;;;;Merci de mettre en VA et PROD les composants cités dans la livcomp;;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;04/sept./13 12:00;DRS;B3268 (rprt02) -> B3217 (xprt02) et B3296 (zprt02);Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Mise à jour d’environnement;;DRS;;;
+PRODUCTION;PROD-172;PROD-168 MODIF.IAB.LUP Z CD1 DDI 013-215- modif lanceur;Sous-Tâche;Terminée;;Réalisée;Franck VERGEZ;Franck VERGEZ;03/sept./13 16:05;05/sept./13 10:25;05/sept./13 10:25;;1;;;;;;;;"Bonjour, 
+Merci de livrer le package cité dans la fiche de livraison jointe. 
+Il faut également modifier la proc CtrlM cd10ft5a10.sh du processus STAT, afin de transférer sur la ressource MOA des fichiers avec l’extension « .txt » au lieu de l’extension « .csv » existante. Le script CD1_Stats.ksh a été modifié pour cette extension .txt et sur le format de la date (plus de « . » dans le $DTE) : il faut vérifier que le transfert fonctionne avec le nouveau nom de fichier généré. Le dossier d’exploitation modifié en ce sens est également en pièce jointe. 
+";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;ORDONNANCEUR - CONTROL-M UNIX;05/sept./13 18:30;DRS BORDEAUX;X et Z;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Mise à jour d’environnement;DDI2013-215(Stats) & incidents 393671 et 394193;DRS;;;
+PRODUCTION;PROD-171;PROD-168 LIV.COMPOSANT.LUP Z CD1 DDI 2013-215 - Livraison;Sous-Tâche;Terminée;;Réalisée;Franck VERGEZ;Franck VERGEZ;03/sept./13 16:05;05/sept./13 10:24;05/sept./13 10:24;;1;;;;;;;;"Bonjour, 
+Merci de livrer le package cité dans la fiche de livraison jointe. 
+Il faut également modifier la proc CtrlM cd10ft5a10.sh du processus STAT, afin de transférer sur la ressource MOA des fichiers avec l’extension « .txt » au lieu de l’extension « .csv » existante. Le script CD1_Stats.ksh a été modifié pour cette extension .txt et sur le format de la date (plus de « . » dans le $DTE) : il faut vérifier que le transfert fonctionne avec le nouveau nom de fichier généré. Le dossier d’exploitation modifié en ce sens est également en pièce jointe. 
+";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;PLATEFORME - UNIX;05/sept./13 18:30;DRS BORDEAUX;X et Z;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;DDI2013-215(Stats) & incidents 393671 et 394193;DRS;;;
+PRODUCTION;PROD-165;Montée de de version LR602 dans ZUNI01 en V04-00-00;Unitaire;Terminée;;Réalisée;Yves DERRE;Frederique CAPET;03/sept./13 9:17;06/sept./13 9:49;04/sept./13 9:41;;3;;;;;;;;"Bonjour, 
+
+le schéma LR602 dans ZUNI01 est en V03-01-06. 
+
+Il faudrait lui appliquer les modif de la V04-00-00. 
+Merci 
+Fred";;;;;;;LIQUIDATION CNRACL;;LR6;SGBD - ORACLE;06/sept./13 11:15;DIR GEST MUTUAL;Z;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Mise à jour d’environnement;;DRS;;;
+PRODUCTION;PROD-109;PROD- PM8- DPH- HLUP- PROJET- QC1268- PR0069_V1.16;Unitaire;Terminée;;Annulée;Non attribuée;Philippe JESOPH;08/08/2013 18:55;03/sept./13 17:10;03/sept./13 17:10;;2;;;;;;;;"Merci de mettre en production le courrier cité dans la fiche de livraison. 
+Bon week -end ! 
+
+@+ Philippe";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;09/08/2013 20:52;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;;;DRS;;;
+PRODUCTION;PROD-166;Passage de l'application LR6 en java 1.6 en VA;Unitaire;Terminée;;Réalisée;Luc HADJADJ;Frederique CAPET;03/sept./13 10:42;06/sept./13 9:48;03/sept./13 14:59;;3;;;;;;;;"Bonjour, 
+
+l'IHM que nous allons livrer ne fonctionne qu'en java 1.6. 
+Merci de passer l'application LR6 (intranet et internet) en Java 1.6. 
+
+Fred";;;;;;;LIQUIDATION CNRACL;;LR6;WEB - TOMCAT;04/sept./13 12:36;DIR GEST MUTUAL;Z et/ou D;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Mise à jour d’environnement;;DRS;;;
+PRODUCTION;PROD-159;PROD- PM8- DPH- HLUP- PROJET- PR0063_V1.18;Unitaire;Réalisée;;Réalisée;Vincent KROWA;Jean Luc DAURY;30/08/2013 15:14;03/sept./13 10:50;03/sept./13 10:50;;2;;;;;;;;"Bonjour, 
+
+Merci de passer en production le modèle PR0063_V1.18 lundi 02 Septembre après 18h30. 
+
+Cordialement.";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;02/sept./13 18:30;DRS;B3268 - B3217;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Mise à jour d’environnement;;DRS;;;
+PRODUCTION;PROD-164;Montée de version de LR601 dans DWEB01 en V02-00-02;Unitaire;Terminée;;Réalisée;Yves DERRE;Frederique CAPET;03/sept./13 9:15;06/sept./13 9:50;03/sept./13 9:28;;3;;;;;;;;"Bonjour, 
+
+le schéma LR601 dans DWEB01 est en V01-05-16. 
+Il faudrait lui appliquer les modif successives : V02-00-00, V02-00-01 et V02-00-02. 
+
+Merci 
+Fred";;;;;;;LIQUIDATION CNRACL;;LR6;SGBD - ORACLE;05/sept./13 11:13;DIR GEST MUTUAL;D;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Mise à jour d’environnement;;DRS;;;
+PRODUCTION;PROD-163;PROD LR6 : ano 260 C18327N;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Guillaume SERRANO;02/sept./13 18:06;03/sept./13 9:37;03/sept./13 8:41;;3;;;;;;;;"Bonjour, 
+
+Un dossier plante lors de l'historisation. Il faut supprimer 2 lignes : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/ano_260_C18327N_partage.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;02/sept./13 20:05;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+PRODUCTION;PROD-162;PROD- RB1- DRS- HLUP- QC1238- RE1080_V1.9;Unitaire;Réalisée;;Réalisée;Xavier FOURNIOLS;Jean Luc DAURY;30/08/2013 16:44;02/sept./13 13:43;02/sept./13 13:43;;2;;;;;;;;"Merci de livrer le RE1080_V1.9 en VA et PROD dès que possible SVP. 
+
+Merci.";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;30/08/2013 18:00;DRS;B3217;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Demande Edition Ponctuelle;;DRS;;;
+PRODUCTION;PROD-160;PROD- SEQUOIA- DPH- HLUP- QC1290-1291-1924- pr_signatures_V1.35;Unitaire;Réalisée;;Réalisée;Xavier FOURNIOLS;Jean Luc DAURY;30/08/2013 15:18;02/sept./13 12:03;02/sept./13 12:03;;2;;;;;;;;"Bonjour, 
+
+Merci de livrer, Lundi 02 Septembre entre 12h00 et 14h00, en VA et Prod, le fichier ""pr_signature_V1.5.txt"" accompagné du fichier image ""jl_coopman.jpg"" 
+
+cordialement.";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;02/sept./13 12:00;DRS;B3268 (rprt02) -> B3217 (xprt02) et B3296;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Demande Edition Ponctuelle;;DRS;;;
+HORS PRODUCTION;HORSPROD-30;Mettre en mode debbug LR6 sous G;Unitaire;Terminée;;Réalisée;Luc HADJADJ;Frederique CAPET;28/08/2013 16:46;02/sept./13 14:55;02/sept./13 11:47;;2;;;;;;;;"Bonjour, 
+
+pour la recette ""Carrières longues"", nous avons besoin que LR6 gestionnaire (intranet) soit en mode debbug dans G. 
+Merci 
+Fred";;;;;;;LIQUIDATION CNRACL;;LR6;WEB - TOMCAT;28/08/2013 16:44;DIR GEST MUTUAL;G;Recette;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Mise à jour d’environnement;;DRS;;;
+PRODUCTION;PROD-161;PROD- CL9- DRS- HLUP- QC537- PARAMETRAGE RE1063;Unitaire;Réalisée;;Réalisée;Xavier FOURNIOLS;Jean Luc DAURY;30/08/2013 15:32;02/sept./13 10:10;02/sept./13 10:10;;2;;;;;;;;"Bpnjour 
+
+Ce demande est une régularisation du travail fait le 21 Août : paramétrage batch pour le modèle RE1063. 
+
+A+";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;21/08/2013 17:28;DRS;B3217;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Demande Edition Ponctuelle;;DRS;;;
+PRODUCTION;PROD-150;Livraison anticipée pour LUP Août - Montée de version Oracle + livraison package + Processus CtrlM - PRODUCTION;Globale;Terminée;;Réalisée;Christophe CHIGNAGUET;Celine ARTICO;28/08/2013 13:09;10/sept./13 9:49;30/08/2013 15:14;;2;;;;;;PROD-151, PROD-152, PROD-153, PROD-154;;"Bonjour, 
+
+Merci de : 
+- monter la version v02-00-08 du schéma cd101 en production, après la montée de version du schéma lr601 
+- livrer le package de la fiche de livraison jointe (version v02-00-28) 
+- monter le nouveau processus CtrlM STAT (mis en place en VA) selon le dossier d'exploitation mis à jour (v1r1) 
+- exécuter le processus STAT dès la fermeture du TP les 29 et 30 août sur l'environnement de production 
+
+C. Artico - 5.24.03";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;;29/08/2013 15:04;DRS BORDEAUX;X;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;DDI 2013-215;DRS;;;
+PRODUCTION;PROD-154;PROD-150 TRAIT.EXCEPT.LUP X CD1 - exécution du traitement mensuel fin de mois stats;Sous-Tâche;Terminée;;Réalisée;Christophe CHIGNAGUET;Christophe CHIGNAGUET;28/08/2013 14:04;30/08/2013 15:13;30/08/2013 15:13;;1;;;;;;;PROD-153;"Bonjour, 
+
+Merci de : 
+- monter la version v02-00-08 du schéma cd101 en production, après la montée de version du schéma lr601 
+- livrer le package de la fiche de livraison jointe (version v02-00-28) 
+- monter le nouveau processus CtrlM STAT (mis en place en VA) selon le dossier d'exploitation mis à jour (v1r1) 
+- exécuter le processus STAT dès la fermeture du TP les 29 et 30 août sur l'environnement de production 
+
+C. Artico - 5.24.03";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;ORDONNANCEUR - CONTROL-M UNIX;29/08/2013 15:04;DRS BORDEAUX;X;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;DDI 2013-215;DRS;;;
+PRODUCTION;PROD-158;VA- PM8- DPH- HLUP- PROJET- PR0068_V1.18;Unitaire;Terminée;;Réalisée;Xavier FOURNIOLS;Jean Luc DAURY;30/08/2013 11:54;30/08/2013 15:19;30/08/2013 14:03;;1;;;;;;;;"Bonjour, 
+
+Merci de livrer en VA uniquement le modèle PR0063_V1.18; 
+
+La mise en production, si validation sera à faire lundi 02 soir";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;30/08/2013 12:00;DRS;B3268 -> B3217;Pre-exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Demande Edition Ponctuelle;Projet ALLEGRO;DRS;;;
+PRODUCTION;PROD-157;PROD LR6 : extraction dossier LR6;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Guillaume SERRANO;30/08/2013 11:54;02/sept./13 16:22;30/08/2013 13:43;;3;;;;;;;;"bonjour, 
+
+Merci de lancer l'exportation de dossier et de me mettre au courant une fois l'archive dispo : 
+
+1) récupérer sur radeva1 /sas_liv/lr6/DUP_pilote.txt 
+2) le copier sur raproa1 dans $FFIC 
+3) depuis raproa1 $JSCRIPT lancer lanceExportation 
+4) déposer le fichier généré dans /sas_liv/LR6 sur radeva1 
+
+Merci, 
+
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;30/08/2013 13:51;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+PRODUCTION;PROD-153;PROD-150 MODIF.IAB.LUP X CD1 - mise en place traitement mensuel stats;Sous-Tâche;Terminée;;Réalisée;Christophe CHIGNAGUET;Christophe CHIGNAGUET;28/08/2013 14:04;29/08/2013 17:34;29/08/2013 17:32;;1;_thumb_13703.png ;;;;;;PROD-154;"Bonjour, 
+
+Merci de : 
+- monter la version v02-00-08 du schéma cd101 en production, après la montée de version du schéma lr601 
+- livrer le package de la fiche de livraison jointe (version v02-00-28) 
+- monter le nouveau processus CtrlM STAT (mis en place en VA) selon le dossier d'exploitation mis à jour (v1r1) 
+- exécuter le processus STAT dès la fermeture du TP les 29 et 30 août sur l'environnement de production 
+
+C. Artico - 5.24.03";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;ORDONNANCEUR - CONTROL-M UNIX;29/08/2013 15:04;DRS BORDEAUX;X;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;DDI 2013-215;DRS;;;
+PRODUCTION;PROD-152;PROD-150 LIV.COMPOSANT.LUP X CD1 - DDI2013-2015;Sous-Tâche;Terminée;;Réalisée;Christophe CHIGNAGUET;Christophe CHIGNAGUET;28/08/2013 14:04;29/08/2013 16:46;29/08/2013 16:46;;0;;;;;;;PROD-151;"Bonjour, 
+
+Merci de : 
+- monter la version v02-00-08 du schéma cd101 en production, après la montée de version du schéma lr601 
+- livrer le package de la fiche de livraison jointe (version v02-00-28) 
+- monter le nouveau processus CtrlM STAT (mis en place en VA) selon le dossier d'exploitation mis à jour (v1r1) 
+- exécuter le processus STAT dès la fermeture du TP les 29 et 30 août sur l'environnement de production 
+
+C. Artico - 5.24.03";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;PLATEFORME - UNIX;29/08/2013 15:04;DRS BORDEAUX;X;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;DDI 2013-215;DRS;;;
+HORS PRODUCTION;HORSPROD-9;Modification Version Oracle Schéma cd101 sur les environnements S, I et J;Unitaire;Terminée;;Réalisée;Yves DERRE;Celine ARTICO;29/juil./13 17:42;29/08/2013 14:28;29/08/2013 12:02;;3;;;;;;;;"Bonjour, 
+Merci de créer la version v02-00-08 du schéma cd101 avec l'ajout de la vue matérialisée suivante : 
+CREATE MATERIALIZED VIEW CACHE_CD1_LR6_DOSSIER AS 
+SELECT IRCNT2 AS CONTRAT_AFFIL, 
+IIBCRV AS ID_BCR_AGENT, 
+INNIRK AS NIR, 
+LDENAI AS DATE_NAISSANCE, 
+XIPROJ AS TYPE_DOSSIER, 
+IIAFF6 AS NUM_DOSSIER, 
+CTPRO6 AS TYPE_DOSSIER_LONG, 
+IIBCRE AS ID_BCR_EMPLOYEUR, 
+INSRTD AS SIRET, 
+CCEPRC AS ETAT_DOSSIER, 
+DTCHGT AS DATE_MODIFICATION, 
+TYPUSR AS TYPE_UTILISATEUR, 
+IIENTA AS ENTITE_ADMINISTRATIVE, 
+CCGEST AS GROUPE_GESTION, 
+CCREPH AS CLE_REPARTITION_GEO, 
+IIBCRS AS ID_BCR_CDG, 
+CKCOND AS INDIC_RECTIF_DAI 
+FROM LR601.VUE_LR6_CD1@LR601.WORLD ; 
+
+Ainsi que les indexes sur les colonnes suivantes : 
+- ETAT_DOSSIER 
+- CONTRAT_AFFIL 
+- CONTRAT_AFFIL, ETAT_DOSSIER 
+- TYPE_DOSSIER_LONG, NUM_DOSSIER 
+- ETAT_DOSSIER, DATE_MODIFICATION 
+- TYPE_DOSSIER_LONG, NUM_DOSSIER, ETAT_DOSSIER, DATE_MODIFICATION 
+- TYPE_DOSSIER_LONG, NUM_DOSSIER, INDIC_RECTIF_DAI 
+
+C. Artico - 5.24.03";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;SGBD - ORACLE;29/juil./13 19:38;DRS BORDEAUX;S, I et J;Intégration;1726;Gestion de Patrimoine;Annulée;Réalisée;Support;Sensible;Mise à jour d’environnement;DDI 2013-215;DRS;;;
+PRODUCTION;PROD-151;PROD-150 ORACLE X LR6/CD1 - montée de version des schémas LR601 et CD101;Sous-Tâche;Terminée;;Réalisée;Yves DERRE;Christophe CHIGNAGUET;28/08/2013 13:57;28/08/2013 15:51;28/08/2013 15:51;;2;;;;;;;PROD-152, PROD-148;"Bonjour, 
+
+Merci de : 
+- monter la version v02-00-08 du schéma cd101 en production, après la montée de version du schéma lr601 
+- livrer le package de la fiche de livraison jointe (version v02-00-28) 
+- monter le nouveau processus CtrlM STAT (mis en place en VA) selon le dossier d'exploitation mis à jour (v1r1) 
+- exécuter le processus STAT dès la fermeture du TP les 29 et 30 août sur l'environnement de production 
+
+C. Artico - 5.24.03";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;SGBD - ORACLE;29/08/2013 15:04;DRS BORDEAUX;X;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Mise à jour d’environnement;DDI 2013-215;DRS;;;
+PRODUCTION;PROD-149;Montée de version Schéma Oracle CD1 en Production // après PROD-148 de LR6;Unitaire;Terminée;;Annulée;Non attribuée;Celine ARTICO;27/08/2013 18:58;28/08/2013 08:57;28/08/2013 08:57;;2;;;;;;;;"Bonjour, 
+Pouvez-vous monter la version v02-00-08 du schéma cd101 (xUNI01) sur l'environnement de production X. 
+Pour vérification, les modifications portent sur la création d'une vue matérialisée, d'indexes rattachés et de 3 synonymes vers xUNI02. 
+Merci 
+C. Artico";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;SGBD - ORACLE;28/08/2013 10:56;DRS BORDEAUX;X;Exploitation;1726;Gestion de Patrimoine;Rejetée;Réalisée;Applicatif;Sensible;;DDI 2013-215;DRS;;;
+PRODUCTION;PROD-148;PROD LR6 : DDI 2013-214 Montée de version schéma LR601;Unitaire;Terminée;;Annulée;Non attribuée;Guillaume SERRANO;27/08/2013 18:04;28/08/2013 14:03;28/08/2013 08:55;;3;;;;;;;PROD-151;"Bonjour, 
+
+Merci d'effectuer la mise à jour du schéma LR601 en PROD : 
+
+1) Création d'une vue v01-05-16 (cf pj) 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;SGBD - ORACLE;27/08/2013 20:02;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Rejetée;Réalisée;Applicatif;Sensible;;DDI 2013-214;DRS;;;
+PRODUCTION;PROD-147;PROD LR6 : reprise histo V3 PLIQ DEGERY;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Guillaume SERRANO;27/08/2013 11:15;27/08/2013 18:44;27/08/2013 17:01;;3;;;;;;;;"Bonjour, 
+
+L'histo de la V3 du dossier DEGERY est à recréer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/reprise_histo_DEGERY.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD en rollback 
+3) la rejouer en commit 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - LINUX;27/08/2013 13:13;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-146;VA LR6;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Guillaume SERRANO;27/08/2013 10:32;02/sept./13 16:23;27/08/2013 15:14;;3;;;;;;;;"Bonjour, 
+
+Les durées théoriques des bonifs sont à forcer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/update_bonif_duree_theorique.sql2) la jouer sur raproa1 depuis sqlplus lr601/lr601@DWEB01.WORLD en rollback 
+3) à mon feu vert, la rejouer en commit 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;27/08/2013 12:29;DIR GEST MUTUAL;;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-142;VA LR6 : reprise des bonifications durée théorique en VA;Globale;Terminée;;Réalisée;Franck VERGEZ;Guillaume SERRANO;26/08/2013 15:08;02/sept./13 16:23;26/08/2013 16:46;;3;;;;;;PROD-143, PROD-144;;"Bonjour, 
+
+Merci de : 
+
+1) livrer le batch java (cf pj) en VA Z 
+2) lancer depuis ravapa1 le script $JSCRIPT/LR6_UtilVerifDureeThPeriodeCarriere.ksh 
+
+Guillaume 
+
+
+
+";;;;;;;LIQUIDATION CNRACL;;LR6;;26/08/2013 17:06;DIR GEST MUTUAL;;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;;DRS;;;
+PRODUCTION;PROD-144;PROD-142 TRAIT.EXCEPT Z LR6;Sous-Tâche;Terminée;;Réalisée;Franck VERGEZ;Franck VERGEZ;26/08/2013 15:18;26/08/2013 16:45;26/08/2013 16:45;;1;;;;;;;;"Bonjour, 
+
+Merci de : 
+
+1) livrer le batch java (cf pj) en VA Z 
+2) lancer depuis ravapa1 le script $JSCRIPT/LR6_UtilVerifDureeThPeriodeCarriere.ksh 
+
+Guillaume 
+
+
+
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;26/08/2013 17:06;DIR GEST MUTUAL;;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+PRODUCTION;PROD-143;PROD-142 LIV.COMPOSANT Z LR6 - livraison;Sous-Tâche;Terminée;;Réalisée;Franck VERGEZ;Franck VERGEZ;26/08/2013 15:18;26/08/2013 16:14;26/08/2013 16:14;;1;;;;;;;;"Bonjour, 
+
+Merci de : 
+
+1) livrer le batch java (cf pj) en VA Z 
+2) lancer depuis ravapa1 le script $JSCRIPT/LR6_UtilVerifDureeThPeriodeCarriere.ksh 
+
+Guillaume 
+
+
+
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;26/08/2013 17:06;DIR GEST MUTUAL;;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;;;
+PRODUCTION;PROD-145;PROD LR6 : ano 260 BCR 02SNR316 données à recréer;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Guillaume SERRANO;26/08/2013 15:23;27/08/2013 10:29;26/08/2013 16:05;;3;;;;;;;;"Bonjour, 
+
+Des données CLIENT du BCR 02SNR316 ont disparu, il faut les recréer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/ano_260_02SNR316_creer_donnees_CLI.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;26/08/2013 17:22;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-141;PROD LR6 : suppression lien enfant contrat n°1AW12TTD;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Guillaume SERRANO;26/08/2013 14:02;02/sept./13 16:23;26/08/2013 15:55;;3;;;;;;;;"Bonjour, 
+
+La date de début de la pension BJ8286K est à forcer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forçage_suppr_lien_enfant.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;26/08/2013 16:01;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-132;PROD LR6 : ano 260 C18327N reprise;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Guillaume SERRANO;22/08/2013 16:49;02/sept./13 16:23;26/08/2013 15:14;;2;;;;;;;;"Bonjour, 
+
+Un dossier a 2 lignes à recréer dans la DM89 et DM9L suite à la supprerssion d'une pension pour faire la demande: 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/ano_260_C18327N_reprise.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;22/08/2013 18:48;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-138;PROD LR6: ano 169 suppression données client sans processu LR6;Unitaire;Terminée;;Réalisée;Christophe CHIGNAGUET;Guillaume SERRANO;26/08/2013 12:23;26/08/2013 14:38;26/08/2013 14:28;;3;;;;;;;;"Bonjour, 
+
+Des dossiers client sont rattachées à aucun processus. Il faudrait les supprimer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/ano_169_suppr_donnees_cli_sans_processus_lr6.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;26/08/2013 14:22;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-137;PROD LR6 : forçage 2 dossiers à l'état 815;Unitaire;Terminée;;Réalisée;Christophe CHIGNAGUET;Guillaume SERRANO;26/08/2013 12:16;26/08/2013 14:22;26/08/2013 14:14;;3;;;;;;;;"Bonjour, 
+
+2 dossiers sont à forcer à l'état 815 : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_815_2608.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;26/08/2013 14:15;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-139;"PROD LR6 : top suppression logique à ""NON""";Unitaire;Terminée;;Réalisée;Christophe CHIGNAGUET;Guillaume SERRANO;26/08/2013 13:24;26/08/2013 14:22;26/08/2013 14:13;;3;;;;;;;;"Bonjour, 
+
+Le top suppression loggique d'un enfat est à forcer à ""NON"": 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_enf_supp_logique.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;26/08/2013 15:23;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-140;PROD LR6 : forçage date début pension n°BJ8286K;Unitaire;Terminée;;Réalisée;Christophe CHIGNAGUET;Guillaume SERRANO;26/08/2013 13:53;26/08/2013 14:22;26/08/2013 14:07;;3;;;;;;;;"Bonjour, 
+
+La date de début de la pension BJ8286K est à forcer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_pension_BJ8286K_bis.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;26/08/2013 15:51;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-134;Livraison VA Composants Unix et création d'un nouveau processus CtlrM pour CD1 - LUP Août;Globale;Terminée;;Réalisée;Franck VERGEZ;Celine ARTICO;23/08/2013 15:46;29/08/2013 14:28;26/08/2013 13:42;;2;;;;;;PROD-135, PROD-136;;"Bonjour, 
+Ci joint une fiche de livraison pour la VA, d'un script et une requête dans un package. 
+La livraison s'accompagne de la modification du dossier d'exploitation CD1, avec la création d'un nouveau processus ""STAT"" à la demande, détaillé en fin de document (§9.2), qui comprend 3 jobs. 
+Une fois la livraison effectuée et le processus monté, il faudrait l'exécuter, afin de vérifier qu'il fonctionne et pour des tests de performance. 
+Pour avoir le temps de faire les éventuelles optimisations, le plus tôt est le mieux. 
+Merci 
+C. Artico";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;;26/08/2013 17:39;DRS BORDEAUX;Z;Pre-exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;DDI 2013-215;DRS;;;
+PRODUCTION;PROD-136;PROD-134 MODIF.IAB.LUP Z CD1 DDI 2013-215;Sous-Tâche;Terminée;;Réalisée;Christophe CHIGNAGUET;Franck VERGEZ;23/08/2013 16:07;26/08/2013 11:25;26/08/2013 11:25;;2;_thumb_13400.png ;;;;;;;"Bonjour, 
+Ci joint une fiche de livraison pour la VA, d'un script et une requête dans un package. 
+La livraison s'accompagne de la modification du dossier d'exploitation CD1, avec la création d'un nouveau processus ""STAT"" à la demande, détaillé en fin de document (§9.2), qui comprend 3 jobs. 
+Une fois la livraison effectuée et le processus monté, il faudrait l'exécuter, afin de vérifier qu'il fonctionne et pour des tests de performance. 
+Pour avoir le temps de faire les éventuelles optimisations, le plus tôt est le mieux. 
+Merci 
+C. Artico";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;ORDONNANCEUR - CONTROL-M UNIX;26/08/2013 17:39;DRS BORDEAUX;Z;Pre-exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;DDI 2013-215;DRS;;;
+PRODUCTION;PROD-135;PROD-134 LIV.COMPOSANT.LUP Z CD1 DDI 2013-215;Sous-Tâche;Terminée;;Réalisée;Christophe CHIGNAGUET;Franck VERGEZ;23/08/2013 16:04;26/08/2013 09:57;26/08/2013 09:57;;2;;;;;;;;"Bonjour, 
+Ci joint une fiche de livraison pour la VA, d'un script et une requête dans un package. 
+La livraison s'accompagne de la modification du dossier d'exploitation CD1, avec la création d'un nouveau processus ""STAT"" à la demande, détaillé en fin de document (§9.2), qui comprend 3 jobs. 
+Une fois la livraison effectuée et le processus monté, il faudrait l'exécuter, afin de vérifier qu'il fonctionne et pour des tests de performance. 
+Pour avoir le temps de faire les éventuelles optimisations, le plus tôt est le mieux. 
+Merci 
+C. Artico";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;PLATEFORME - UNIX;26/08/2013 17:39;DRS BORDEAUX;Z;Pre-exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;DDI 2013-215;DRS;;;
+PRODUCTION;PROD-133;CD101 - forçage de données;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Bruno SIRET;23/08/2013 12:22;23/08/2013 15:38;23/08/2013 13:59;;2;;;;;;;;"merci d'éxecuter le forçage suivant 
+sqlplus cd101/cd101@ZUNI01 
+
+update cd101.TBAC03_PERIODE 
+set etat='03' 
+where id_periode in (98827615, 
+73850072, 
+78377783, 
+94634694, 
+101494726, 
+98369116, 
+67508913, 
+122888776, 
+82832856, 
+123418357, 
+127382851, 
+91871383, 
+100912508, 
+86868910, 
+128061223, 
+110944467, 
+110847178, 
+85787761, 
+77441278, 
+112647546, 
+85756378, 
+104494658, 
+109238463, 
+109141104, 
+125194302, 
+63587271, 
+108320602, 
+66331266, 
+64844249, 
+109013484, 
+64303783, 
+104441315, 
+87859983, 
+100573581, 
+65264580, 
+97964904, 
+98770033, 
+124687904, 
+103814464, 
+129176003, 
+80422740, 
+84940695, 
+103661102, 
+79128017, 
+63065177, 
+67602253, 
+120886060, 
+77844154, 
+99400872, 
+87890875, 
+122001460, 
+118088490, 
+91025926, 
+81144215, 
+94689003, 
+70580325, 
+80147373, 
+129180709, 
+113251453, 
+100882164, 
+88781602, 
+83392352, 
+102200934, 
+116508436, 
+84993388, 
+92624463, 
+109613405, 
+109361153, 
+78213042, 
+68554720, 
+118499216, 
+73470602, 
+104525042, 
+84057654, 
+81797951, 
+103356876, 
+71583162, 
+73234704, 
+93861373, 
+66987709, 
+101641883, 
+95078411, 
+112944569, 
+64681848, 
+105607828, 
+68537886, 
+115238531, 
+68482745, 
+128991181, 
+116407247, 
+110401508, 
+74255167, 
+109134602, 
+86264672, 
+71472927, 
+75507286, 
+80810599, 
+118926806, 
+84497256, 
+65108341, 
+118128455, 
+127391154, 
+89046210, 
+68707748, 
+121691782, 
+106150221, 
+85899462, 
+109789008, 
+88562555, 
+124226713, 
+92803234, 
+63549015, 
+95654609, 
+78738403, 
+83414058, 
+95536862, 
+99815146)";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;SGBD - ORACLE;23/08/2013 14:04;DRS BORDEAUX;VA - Z;Pre-exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;DDI2013-171;DRS;;;
+PRODUCTION;PROD-131;PROD LR6 : ano 260 C18327N bis;Unitaire;Terminée;;Réalisée;Christophe CHIGNAGUET;Guillaume SERRANO;21/08/2013 17:54;22/08/2013 16:47;22/08/2013 16:09;;3;;;;;;;;"Bonjour, 
+
+Un dossier plante sur la demande pour un pb d'historisation de la table DM9L. Il faudrait supprimer une ligne dans la DM89 : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/ano_260_C18327N_bis.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;21/08/2013 19:53;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-127;Montée de version schéma Oracle cd101 sur environnements G et Z;Globale;Terminée;;Réalisée;Franck VERGEZ;Celine ARTICO;21/08/2013 11:47;23/08/2013 13:06;22/08/2013 10:44;;2;;;;;;PROD-128;;"Bonjour, 
+Pouvez-vous monter la version v02-00-08 du schéma cd101 (xUNI01) sur les environnements G et Z. 
+Pour vérification, les modifications portent sur la création d'une vue matérialisée, d'indexes rattachés et de 3 synonymes vers xUNI02. 
+Merci 
+C. Artico";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;;21/08/2013 13:46;DRS BORDEAUX;G et Z;Pre-exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;DDI 2013-215;DRS;;;
+PRODUCTION;PROD-128;PROD-127 ORACLE.LUP Z CD1 DDI 2013-215 - monter version v02-00-08 du schéma cd101;Sous-Tâche;Terminée;;Réalisée;Yves DERRE;Franck VERGEZ;21/08/2013 14:08;22/08/2013 09:54;22/08/2013 09:38;;2;;;;;;;;"Bonjour, 
+Pouvez-vous monter la version v02-00-08 du schéma cd101 (xUNI01) sur les environnements G et Z. 
+Pour vérification, les modifications portent sur la création d'une vue matérialisée, d'indexes rattachés et de 3 synonymes vers xUNI02. 
+Merci 
+C. Artico";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;SGBD - ORACLE;21/08/2013 13:46;DRS BORDEAUX;G et Z;Pre-exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Mise à jour d’environnement;DDI 2013-215;DRS;;;
+PRODUCTION;PROD-129;Demande de forçage de données en production - CD1;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Celine ARTICO;21/08/2013 16:07;21/08/2013 17:02;21/08/2013 17:02;;2;;;;;;;;"Bonjour, 
+
+Merci de lancer sur la production CD1, à partir de $ORASQL, la requête CD1 suivante à récupérer sur J dans $ORASQL : 
+
+> sqlplus cd101/cd101 @reprise_prod_130821.sql 
+
+Merci 
+C. Artico - 5.24.03 
+";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;SGBD - ORACLE;21/08/2013 18:06;DRS BORDEAUX;X;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;DDI 2013-171;DRS;;;
+PRODUCTION;PROD-125;PROD LR6 : ano 260 - pb d'historisation de la table DM9L;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Guillaume SERRANO;21/08/2013 09:07;21/08/2013 17:53;21/08/2013 16:25;;2;;;;;;;;"Bonjour, 
+
+Un dossier plante sur la demande pour un pb d'historisation de la table DM9L. Il faudrait la forcer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/ano_260_C18327N.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;21/08/2013 11:06;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-74;Suppression des lignes de plusieurs tables volumineuses dans LR601 de EWEB01 et DWEB01;Unitaire;Terminée;;Réalisée;Christophe CHIGNAGUET;Frederique CAPET;24/juil./13 14:42;21/08/2013 15:39;21/08/2013 08:58;;3;;;;;;;;"Bonjour, 
+en attendant la modif de schéma qui supprimera les tables devenues inutiles dans le schéma LR601 (bascule carrières longues), il faut alléger la base en vidant les tables qui sont volumineuses. Faire des ordre delete (?) sur : 
+
+TBAB04_SOUS_PERIODE; 
+TBAB07_APPARTIENT_GROUPE; 
+TBDM50_PROC_VALIDATION_WEB; 
+TBDM52_LIEN_ENFANT; 
+TBDM60_LIGNE_REGUL; 
+TBAB02_LIGNE_PAR_ANNUITE; 
+
+TBDM53_HISTO_LIEN_ENFANT; 
+TBDM54_HISTO_LIEN_REGIME_W; 
+TBDM56_HISTO_SOUS_PERIODE_W; 
+TBDM51_HISTO_PROC_VALID_WEB; 
+TBDM61_HISTO_LIGNE_REGUL; 
+TBDM58_HISTO_APPARTIENT_GRP; 
+TBDM59_HISTO_GROUPE_LIGNE; 
+TBDM57_HISTO_LIGNE_ANNUITE; 
+
+Attention : il y a des cascades entre AB02 et les autres. Et il y a des vues aussi sur AB02. 
+
+Merci de faire en VA sur DWEB01 et en prod sur EWEB01. 
+Fred 
+5.38.75 
+
+";;;;;;;LIQUIDATION CNRACL;;LR6;SGBD - ORACLE;24/juil./13 00:00;DIR GEST MUTUAL;D et E;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Demande Action Préventive;;DRS;;;
+PRODUCTION;PROD-121;VA LR6 : DDI 2013-214 mise à jour schéma LR601;Globale;Terminée;;Réalisée;Franck VERGEZ;Guillaume SERRANO;19/08/2013 17:10;21/08/2013 16:12;20/08/2013 15:16;;3;;;;;;PROD-122;;"Bonjour, 
+
+Merci d'effectuer la mise à jour du schéma LR601 en VA : 
+
+1) Création d'une vue v01-05-16 (cf pj) 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;;19/08/2013 19:09;DIR GEST MUTUAL;;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;;DRS;;;
+PRODUCTION;PROD-122;PROD-121 ORACLE.LUP Z LR6 DDI 2013-214 - mise à jour schéma oracle;Sous-Tâche;Terminée;;Réalisée;Franck VERGEZ;Franck VERGEZ;19/08/2013 17:20;20/08/2013 15:15;20/08/2013 15:15;;1;;;;;;;;"Bonjour, 
+
+Merci d'effectuer la mise à jour du schéma LR601 en VA : 
+
+1) Création d'une vue v01-05-16 (cf pj) 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;SGBD - ORACLE;19/08/2013 19:09;DIR GEST MUTUAL;;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Mise à jour d’environnement;;DRS;;;
+PRODUCTION;PROD-123;Demande de forçage de données en production - CD1;Unitaire;Terminée;;Réalisée;Didier BECMEUR;Celine ARTICO;20/08/2013 11:42;20/08/2013 15:26;20/08/2013 14:32;;2;;;;;;;;"Bonjour, 
+
+Merci de lancer sur la production CD1, à partir de $ORASQL, la requête CD1 suivante à récupérer sur J dans $ORASQL : 
+
+> sqlplus cd101/cd101 @reprise_prod_130820.sql 
+
+Merci 
+C. Artico - 5.24.03 
+";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;SGBD - ORACLE;20/08/2013 13:39;DRS BORDEAUX;X;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;DDI 2013-171;DRS;;;
+PRODUCTION;PROD-102;PROD LR6 : extraction dossier;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Guillaume SERRANO;06/08/2013 09:50;20/08/2013 13:47;20/08/2013 11:56;;3;;;;;;;;"Bonjour, j'aurais besoin d'extraire 2 dossiers de prod ainsi que leur carrière : 
+
+I] dossier LR6 
+
+1) récupérer sur radeva1 /sas_liv/lr6/DUP_pilote.txt 
+2) le copier sur raproa1 dans $FFIC 
+3) depuis raproa1 $JSCRIPT lancer lanceExportation 
+4) déposer le fichier généré dans /sas_liv/LR6 sur radeva1 
+
+si traitement OK 
+
+II] lancement du traitement de jeux réduits : ddr_xjrv_demande 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;06/08/2013 11:48;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+PRODUCTION;PROD-120;VA LR6: DDI 2013-214 Mise à joru schéma LR601;Unitaire;Terminée;;Annulée;Franck VERGEZ;Guillaume SERRANO;19/08/2013 15:40;19/08/2013 17:12;19/08/2013 17:12;;3;;;;;;;;"Bonjour, 
+
+Merci d'effectuer la mise à jour du schéma LR601 en VA : 
+1) Création d'une vue v01-05-16 (cf pj) 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;19/08/2013 17:39;DIR GEST MUTUAL;;Pre-exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;;;DRS;;;
+PRODUCTION;PROD-117;PROD- RB1- DRS- HLUP- EVOL- RE1125_V1.1;Unitaire;Terminée;;Réalisée;Vincent KROWA;Philippe JESOPH;14/08/2013 16:14;03/sept./13 16:39;16/08/2013 14:55;;3;;;;;;;;"Merci de mettre en production le courrier cité dans la fiche de livraison. 
+@+";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;14/08/2013 18:12;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;;;
+PRODUCTION;PROD-115;PROD-RB1-DRS-HLUP-EVOL- QC1244-RE5054_V1.13 et RE5056_V1.14;Unitaire;Terminée;;Réalisée;Vincent KROWA;Philippe JESOPH;14/08/2013 15:02;03/sept./13 16:46;16/08/2013 14:54;;3;;;;;;;;"C'est le dernier du jour avant mon départ en vacances ! Pas aux Antilles ! 
+
+En tout cas, vous serez sympas de mettre en production les courriers RUBIS. 
+Vous souhaitant un excellent week-end, et soyez prudents sur les routes .... 
+
+Cordialement, 
+@+";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;15/08/2013 16:59;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;;;
+PRODUCTION;PROD-116;PROD-GC1-DRS-EVOL-QC1232-RE0124_V1.15-RE0127_V1.8-RE0463_V1.9;Unitaire;Terminée;;Réalisée;Vincent KROWA;Philippe JESOPH;14/08/2013 15:38;03/sept./13 16:46;16/08/2013 12:06;;3;;;;;;;;"Merci de mettre en production les courriers décrits dans la fiche de livraison. 
+@+";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;14/08/2013 17:34;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;;;
+PRODUCTION;PROD-114;PROD LR6 : extraction carrière contrat n°1AW12TTD;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Guillaume SERRANO;14/08/2013 09:44;19/08/2013 11:07;14/08/2013 15:29;;2;;;;;;;;"Bonjour, j'aurais besoin d'extraire la carrière d'un dossier de prod : 
+
+lancement du traitement de jeux réduits : ddr_xjrv_demande 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;14/08/2013 11:36;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+PRODUCTION;PROD-113;PROD LR6 : forçage date MG;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Guillaume SERRANO;14/08/2013 09:30;19/08/2013 11:07;14/08/2013 14:04;;2;;;;;;;;"Bonjour, 
+
+Un dossier n'a pas de date au MG renseignée à tort. Il faudrait la forcer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_date_mg.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;14/08/2013 11:28;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-112;Extraction dossier de PROD LR6;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Nicolas DRENO;13/08/2013 17:50;19/08/2013 10:33;14/08/2013 09:16;;3;;;;;;;;"bonjour, 
+
+Merci de lancer l'exportation de dossier et de me mettre au courant une fois l'archive dispo : 
+
+1) récupérer sur radeva1 /sas_liv/lr6/DUP_pilote.txt 
+2) le copier sur raproa1 dans $FFIC 
+3) depuis raproa1 $JSCRIPT lancer lanceExportation 
+4) déposer le fichier généré dans /sas_liv/LR6 sur radeva1 
+
+Merci, 
+
+Nicolas";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+PRODUCTION;PROD-111;chargement CLI vers LR6;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Nicolas DRENO;13/08/2013 11:52;19/08/2013 10:33;13/08/2013 13:59;;3;;;;;;;;"afin d'ajouter des données client dans le schéma LR601 pour une demande de liquidation j'aurais besoin du passage de la requete dispo sur radeva1 
+/gpatrimoine/lr601/oracle/sql/incidents/ano_260_creer_donnees_cli_ BCR_01KWY337.sql 
+
+Merci d'effectuer le script sur raproa1 depuis sqlplus lr601/lr601@EWEB01 
+
+Merci 
+
+Nico 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-33;PROD- GC9- DRS -HLUP- EVOL- QC1239- ROUTAGE EDITIONS FNC;Unitaire;Terminée;;Annulée;Non attribuée;Philippe JESOPH;10/juil./13 16:59;12/08/2013 17:06;12/08/2013 17:06;;1;;;;;;;;"Merci de prendre en compte les nouvelles DCME des courriers GC9, pièces jointes. 
+@+";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;11/juil./13 18:36;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;;;DRS;;;
+PRODUCTION;PROD-108;PROD- CLX- DRS- HLUP- EVOL- QC1269- RE1090_V1.2;Unitaire;Terminée;;Réalisée;Vincent KROWA;Philippe JESOPH;08/08/2013 16:34;03/sept./13 16:43;12/08/2013 11:02;;3;;;;;;;;"Merci de mettre en production le courrier décrit dans la fiche de livraison. 
+@+";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;09/08/2013 18:31;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Livraison composant;;DRS;;;
+PRODUCTION;PROD-110;Forcage code état 2 dossiers;Unitaire;Terminée;;Réalisée;Vincent KROWA;Nicolas DRENO;09/08/2013 14:44;13/08/2013 10:33;09/08/2013 17:43;;3;;;;;;;;"Bonjour, 
+
+A la demande de la MOA, 2 dossiers sont à forcer à l'état 815. Pour cela : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_815_2_dossiers.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-107;PROD-GC1-DRS-HLUP-EVOL-QC1233-RE0344_V1.9-RE0342_V1.9-RE0271_V1.15-RE0329_V1.12;Unitaire;Terminée;;Réalisée;Vincent KROWA;Philippe JESOPH;08/08/2013 16:14;03/sept./13 16:43;09/08/2013 10:45;;3;;;;;;;;"Merci de mettre en production les courriers décrits dans la fiche de livraison. 
+
+Bon week-end à tous, je vais faire dégager l'arbre qui est tombé chez moi récemment, donc du boulot ce week-end !!! 
+
+@+ 
+Philippe";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Mise à jour d’environnement;;DRS;;;
+PRODUCTION;PROD-106;Retour arrière correction incident bloquant 395398 sur WS et batch CD1 en VA et production;Unitaire;Terminée;;Réalisée;Vincent KROWA;Celine ARTICO;07/08/2013 16:21;19/08/2013 10:51;08/08/2013 17:38;;2;;;;;;;;"Bonjour, 
+Merci de livrer le WS et le batch CD1 selon la fiche de livraison jointe, et les remarques indiquées en fin de fiche.";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;WEB - TOMCAT;07/08/2013 18:18;DRS BORDEAUX;Z et X;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Mise à jour d’environnement;INCIDENT 395398;DRS;;;
+PRODUCTION;PROD-105;PROD LR6 : forçage date effet pension BJ8286K;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Guillaume SERRANO;06/08/2013 18:28;19/08/2013 11:07;08/08/2013 11:15;;3;;;;;;;;"Bonjour, 
+
+La date d'effet de la pension BJ8286K est à corriger : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_pension_BJ8286K.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;06/08/2013 20:28;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-103;PROD- GC9- DRS -HLUP- INCIDENT- QC1261 - RE0695_V1.12;Unitaire;Terminée;;Réalisée;Vincent KROWA;Philippe JESOPH;06/08/2013 10:41;08/08/2013 10:35;07/08/2013 18:22;;3;;;;;;;;"Bonjour, 
+
+Merci de mettre en production le courrier décrit dans la fiche de livraison. 
+@+";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;06/08/2013 12:38;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Mise à jour d’environnement;;DRS;;;
+HORS PRODUCTION;HORSPROD-14;Passage des JVM de G en 1.6;Unitaire;Terminée;;Réalisée;Luc HADJADJ;Frederique CAPET;06/08/2013 10:31;20/08/2013 09:00;07/08/2013 16:47;;2;;;;;;;;"REGUL 
+
+Demande réalisée par Luc ce matin. 
+Merci 
+Fred";;;;;;;LIQUIDATION CNRACL;;LR6;WEB - TOMCAT;06/08/2013 10:30;DIR GEST MUTUAL;G;Recette;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Mise à jour d’environnement;;DRS;;;
+PRODUCTION;PROD-104;"PROD LR6 : Ajout menu ""Créer un dossier de pré-liquidation""";Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Guillaume SERRANO;06/08/2013 15:06;06/08/2013 17:35;06/08/2013 15:11;;3;;;;;;;;"Bonjour, 
+
+Le menu ""Créer un dossier de pré-liquidation"" est à ajouter pour les gestionnaires. Il faudrait : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/maj_dm77.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;06/08/2013 17:04;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-101;PROD LR6 : forçage état 815 2 dossiers;Unitaire;Terminée;;Réalisée;Vincent KROWA;Guillaume SERRANO;06/08/2013 09:26;07/08/2013 10:30;06/08/2013 14:08;;3;;;;;;;;"Bonjour, 
+
+2 dossiers sont bloqués à l'état 816. Il faudrait les forcer à l'état 815 : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_815_20130806.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;06/08/2013 11:26;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-100;PROD LR6 : forçage date fin majo tp bis;Unitaire;Terminée;;Réalisée;Vincent KROWA;Guillaume SERRANO;06/08/2013 09:21;19/08/2013 11:08;06/08/2013 10:15;;3;;;;;;;;"Bonjour, 
+
+La date de fin de la majo tp est à forcer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_date_fin_majo_tp.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;06/08/2013 11:20;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-99;PROD LR6 : ano 260 données client disparues pour BCR 01QCS726;Unitaire;Terminée;;Réalisée;Vincent KROWA;Guillaume SERRANO;05/08/2013 18:32;19/08/2013 11:07;06/08/2013 09:51;;3;;;;;;;;"Bonjour, 
+
+Des données CLIENT ont disparu pour un BCR. Il faudrait les recréer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/ano_260_creer_donnees_cli_01QCS726.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD en rollback 
+3) la rejouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD en commit à mon feu vert 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;05/08/2013 20:28;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-98;LR6 PROD : forçage date pension BJ8286K;Unitaire;Terminée;;Réalisée;Vincent KROWA;Guillaume SERRANO;05/08/2013 17:51;06/08/2013 09:26;06/08/2013 08:56;;3;;;;;;;;"Bonjour, 
+
+La date d'effet de la pension BJ8286K est à corriger : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_pension_BJ8286K.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;05/08/2013 19:50;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-97;PROD LR6 : ano 169 suppression données client sans processus;Unitaire;Terminée;;Réalisée;Vincent KROWA;Guillaume SERRANO;05/08/2013 17:41;06/08/2013 09:27;06/08/2013 08:52;;3;;;;;;;;"Bonjour, 
+
+Des dossiers client sont rattachées à aucun processus. Il faudrait les supprimer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/ano_169_suppr_donnees_cli_sans_processus_lr6.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;05/08/2013 19:40;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-96;LR6 PROD : forçage date fin majo tp;Unitaire;Terminée;;Réalisée;Vincent KROWA;Guillaume SERRANO;05/08/2013 17:35;06/08/2013 09:40;06/08/2013 08:36;;3;;;;;;;;"Bonjour, 
+
+La date de fin de la majo tp est à forcer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_date_fin_majo_tp.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;05/08/2013 19:34;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-95;LR6 PROD : forçage 5 dopssiers à l'état 815;Unitaire;Terminée;;Réalisée;Vincent KROWA;Guillaume SERRANO;05/08/2013 17:29;06/08/2013 09:26;06/08/2013 08:34;;3;;;;;;;;"Bonjour, 
+
+5 dossiers sont bloqués à l'état 816. Il faudrait les forcer à l'état 815 : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_815_5_dossiers.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;05/08/2013 19:28;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-93;PROD- PM8- DPH- HLUP- PROJET- QC1263- PR0063_V1.15;Unitaire;Terminée;;Réalisée;Vincent KROWA;Philippe JESOPH;02/08/2013 16:17;06/08/2013 10:42;06/08/2013 07:58;;3;;;;;;;;"Merci de mettre en production le courrier décrit dans la fiche de livraison. 
+
+@+ Philippe";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;02/08/2013 18:15;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Mise à jour d’environnement;;DRS;;;
+PRODUCTION;PROD-92;PROD LR6 : DAI 2013 - 32 PROL bloquées à l'état 3 à forcer;Unitaire;Terminée;;Réalisée;Philippe SABINOTTO;Guillaume SERRANO;02/08/2013 10:40;02/08/2013 17:44;02/08/2013 17:43;;3;;;;;;;;"Bonjour, 
+
+Une PROL est bloquée à l'état 3. Il faudrait la recycler: 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_PROL_01KLY149.sql 
+2) la jouer sur raproa1 depuis sqlplus dr106/dr106@XUNI01.WORLD 
+
+1 ligne modifiée et 1 ligne supprimée 
+
+31 PROL sont bloquées à l'état 3. Il faudrait forcer le code ano à T0016 et le code état à 4: 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_PROL_T0016.sql 
+2) la jouer sur raproa1 depuis sqlplus dr106/dr106@XUNI01.WORLD 
+
+31 lignes modifiées 
+
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;02/08/2013 12:34;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Support;Sensible;Demande Action Préventive;;DRS;;;
+HORS PRODUCTION;HORSPROD-13;LR6 : Mise à jour version du schéma LR601 dans I, J, G, M;Unitaire;Terminée;;Réalisée;Luc HADJADJ;Guillaume SERRANO;02/08/2013 14:01;06/08/2013 09:41;02/08/2013 16:18;;2;;;;;;;;"Bonjour, 
+
+Merci d'effectuer la mise à jour du schéma LR601 dans I, J, G, M : 
+1) Création d'une vue v01-05-16 (cf pj) 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;SGBD - ORACLE;02/08/2013 16:01;DIR GEST MUTUAL;;Recette;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Mise à jour d’environnement;;DRS;;;
+PRODUCTION;PROD-90;PROD- GC1- DRS -HLUP- EVOL- QC1248 -RE0327_V1.8;Unitaire;Terminée;;Réalisée;Xavier FOURNIOLS;Philippe JESOPH;01/08/2013 16:31;02/08/2013 10:25;02/08/2013 09:16;;2;;;;;;;;"Bonjour, 
+
+Merci de mettre en production le courrier cité dans la fiche de livraison. 
+
+@+ Philippe";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;01/08/2013 18:27;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Demande Edition Ponctuelle;;DRS;;;
+HORS PRODUCTION;HORSPROD-7;Passage de LR6 en java 1.6 : mise à jour des JVM de J d'abord;Unitaire;Terminée;;Réalisée;Luc HADJADJ;Frederique CAPET;26/juil./13 14:44;06/08/2013 10:29;01/08/2013 15:53;;2;;;;;;;;"Bonjour, 
+passer au JDK 1.6 les JVM LR6 de J. 
+
+Merci 
+Fred";;;;;;;LIQUIDATION CNRACL;;LR6;WEB - TOMCAT;26/juil./13 16:37;DIR GEST MUTUAL;J;Intégration;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;Mise à jour d’environnement;roadmap;DRS;;;
+PRODUCTION;PROD-83;PROD-PM8-DRS-HLUP-EVOL-QC1259-PR0063_V1.15;Unitaire;Terminée;;Annulée;Non attribuée;ANAIS DENOUETTE;26/juil./13 16:59;01/08/2013 12:25;01/08/2013 12:25;;1;;;;;;;;Merci de livrer en VA et Prod le modèle cité dans la livcomp;;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;31/juil./13 21:30;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;;;DRS;;;
+PRODUCTION;PROD-85;PROD-LR4-DRS-HLUP-EVOL-QC1260-RE1089_V1.2;Unitaire;Terminée;;Réalisée;Xavier FOURNIOLS;ANAIS DENOUETTE;29/juil./13 16:48;01/08/2013 12:17;01/08/2013 11:57;;2;;;;;;;;Merci de livrer le modèle cité dans la livcomp jointe.;;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;31/juil./13 18:46;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Demande Edition Ponctuelle;;DRS;;;
+PRODUCTION;PROD-89;PROD LR6: DAI 2013 PROL 01LQK120 à rejouer;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Guillaume SERRANO;31/juil./13 14:31;02/08/2013 09:44;01/08/2013 10:36;;3;;;;;;;;"Bonjour, 
+
+Une PROL est bloquée à l'état 3. Il faudrait la débloquer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_PROL_01LQK120.sql 
+2) la jouer sur raproa1 depuis sqlplus dr106/dr106@XUNI01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;31/juil./13 16:28;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-86;LR6 PROD : DAI 2013 : 5000 EIGA à traiter par jour;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Guillaume SERRANO;30/juil./13 10:17;30/juil./13 13:40;30/juil./13 11:13;;3;;;;;;;;"Bonjour, 
+
+Merci de mettre le nombre de EIG à traiter à 5000 dans le script /xprod01/lr6/proc/majj/eig/lr60mj1w01.sh (ligne 43) 
+
+Merci 
+
+Guillaume";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;30/juil./13 12:15;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Demande Edition Ponctuelle;;DRS;;;
+PRODUCTION;PROD-82;Forçage Soap WS CD1 pour reprise de données;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Hugo LETERRIER;26/juil./13 15:37;29/juil./13 11:26;29/juil./13 10:22;;2;;;;;;;;"Pourriez-vous : 
+
+1 - copier les fichiers : 
+
+radeva1 : /sas_liv/cd1/SoapToWsCD1_ForcageStatutPeriodes1978_1AC66JWG.xml 
+radeva1 : /sas_liv/cd1/SoapToWsCD1_ForcageStatutPeriodes2004_1AB75CVE.xml 
+
+dans le répertoire : 
+
+ravapa1: /zcd101/fichiers/fic/d 
+
+2 - lancer le script suivant avec l'URL du WS CD1 (sans SPS) en paramètre : 
+
+EnvoiFluxSoapWsCD1.ksh http://zcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint 
+
+3 - Me prévenir pour vérification 
+
+4 - Suite au contrôle de l'exécution précédente, copier les fichiers : 
+
+radeva1 : /sas_liv/cd1/SoapToWsCD1_ForcageStatutPeriodes1978_1AC66JWG.xml 
+radeva1 : /sas_liv/cd1/SoapToWsCD1_ForcageStatutPeriodes2004_1AB75CVE.xml 
+
+dans le répertoire : 
+
+raproa1: /xcd101/fichiers/fic/d 
+
+5 - lancer le script suivant avec l'URL du WS CD1 (sans SPS) en paramètre : 
+
+EnvoiFluxSoapWsCD1.ksh http://xcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint 
+
+Merci 
+";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;WEB - TOMCAT;26/juil./13 17:32;DRS BORDEAUX;Z, puis X;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;DDI2013-171 (Forçages - Assistance);DRS;;;
+PRODUCTION;PROD-81;Passer les JVM LR6 dans J en JDK 1.6;Unitaire;Terminée;;Annulée;Non attribuée;Frederique CAPET;26/juil./13 14:29;26/juil./13 14:36;26/juil./13 14:36;;2;;;;;;;;"Bonjour, 
+
+nous souhaitons passer l'application LR6 en java 1.6. 
+On commence d'abord par J. Quand ce sera ok on vous demandera G (recette MOA). 
+
+Merci d'avertir toute l'équipe LR6 quand cette demande sera réalisée au cas où je ne serai pas présente. 
+
+Fred";;;;;;;LIQUIDATION CNRACL;EM3LR6;LR6;WEB - TOMCAT;26/juil./13 16:24;DIR GEST MUTUAL;J;Simulation;1127;Gestion de Patrimoine;Annulée;Réalisée;Système;Sensible;;incident sans numéro;DRS;;;
+PRODUCTION;PROD-79;Demande de forçage de données en production pour déblocage dossiers urgents;Unitaire;Terminée;;Réalisée;Vincent KROWA;Celine ARTICO;25/juil./13 17:45;29/juil./13 11:13;26/juil./13 11:18;;2;;;;;;;;"Bonjour, 
+
+Merci de lancer sur la production CD1, à partir de $ORASQL, la requête CD1 suivante à récupérer sur J dans $ORASQL : 
+
+> sqlplus cd101/cd101 @reprise_prod_130725.sql 
+
+Merci 
+C. Artico - 5.24.03";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;SGBD - ORACLE;25/juil./13 18:00;DRS BORDEAUX;X;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;DDI 2013-171;DRS;;;
+PRODUCTION;PROD-80;Forcage code état 2 dossiers;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Nicolas DRENO;26/juil./13 10:26;19/08/2013 10:34;26/juil./13 11:08;;3;;;;;;;;"bonjour, 
+
+Bonjour, 
+
+A la demande de la MOA, 2 dossiers sont à forcer à l'état 815. Pour cela : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_815_2_dossiers.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-75;Récupération histo dossier;Unitaire;Terminée;;Réalisée;Vincent KROWA;Nicolas DRENO;25/juil./13 15:37;19/08/2013 10:34;26/juil./13 10:09;;3;;;;;;;;"Bonjour, 
+
+dans le cadre de l'incident n° 382351 nous allons reprendre un histo de carrière. 
+
+pour cela : executer en rollback 
+/gpatrimoine/lr601/oracle/sql/incidents/reprise_histo_FERCHAUD.sql 
+
+sous raproa1 --> sqlplus lr601/lr601@EWEB01.WORLD 
+
+puis m'envoyer les résultats avant GO pour commit. 
+
+Merci";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement à la Demande;;DRS;;;
+PRODUCTION;PROD-72;Correction incidents 395398 - 391564 sur WS et batch CD1;Unitaire;Terminée;;Réalisée;Vincent KROWA;Hugo LETERRIER;23/juil./13 18:16;30/juil./13 10:47;26/juil./13 8:50;;2;;;;;;;;"Pourriez-vous livrer 
+
+* le WS CD1 jeudi 25/07/2013 le matin 
+* le batch mercredi 24/07/2013 le soir, avant le différé 
+
+suivant le package indiqué dans la fiche jointe. 
+
+Merci.";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;WEB - TOMCAT;24/juil./13 18:00;DRS BORDEAUX;X et Z;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;"INC0000395398;INC0000391564";DRS;;;
+PRODUCTION;PROD-68;PROD-RB1-DRS-HLUP-EVOL-QC1243-RE5098_V1.7;Unitaire;Terminée;;Réalisée;Xavier FOURNIOLS;ANAIS DENOUETTE;22/juil./13 14:00;24/juil./13 11:20;24/juil./13 10:30;;2;;;;;;;;Merci de livrer le courrier cité dans la livcomp.;;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;23/juil./13 18:00;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Demande Edition Ponctuelle;;DRS;;;
+PRODUCTION;PROD-69;PROD-RB1-DRS-HLUP-EVOL-QC1225-RE1125_V1.0;Unitaire;Terminée;;Réalisée;Xavier FOURNIOLS;ANAIS DENOUETTE;22/juil./13 14:05;24/juil./13 11:20;24/juil./13 10:30;;2;;;;;;;;Merci de livrer le modèle cité dans la livcomp;;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;22/juil./13 19:04;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Demande Edition Ponctuelle;;DRS;;;
+BORDEAUX-INTRA DPI;BDX-8;suppression des BdD XLR603 et XLR6AN sur RAPROA1;Unitaire;Terminée;;Réalisée;Luc HADJADJ;Christophe CHIGNAGUET;23/juil./13 14:32;23/juil./13 16:32;23/juil./13 16:24;;2;;;;;;;;"suite message en piece-jointe DEI, merci de supprimer les schémas LR603 de XUNI01 sur RAPROA1, 
+
+ainsi que le schéma LR603 de ZUNI01 sur RAVAPA1. 
+
+puis supprimer les File System /xlr6an/oracle /xlr603/oracle sur raproa1 et /zlr603/oracle sur ravapa1";;;;;;;LIQUIDATION CNRACL;;LR6;SGBD - ORACLE;26/juil./13 16:26;DIR GEST MUTUAL;x, z;Exploitation;1127;;Annulée;Réalisée;Système;Sensible;Suppression d'Environnement;;DRS;;;
+PRODUCTION;PROD-71;Extraction dossier de PROD : Dossier LR6 + Carrière CD1;Unitaire;Terminée;;Réalisée;Christophe CHIGNAGUET;Nicolas DRENO;23/juil./13 14:59;30/juil./13 10:47;23/juil./13 15:48;;3;;;;;;;;"Bonjour, pour l'incident de prod n°394193, j'aurais besoin d'extraire un dossier de pord ainsi que sa carrière : 
+
+I] dossier LR6 
+
+1) récupérer sur radeva1 /sas_liv/lr6/DUP_pilote.txt 
+2) le copier sur raproa1 dans $FFIC 
+3) depuis raproa1 $JSCRIPT lancer lanceExportation 
+4) déposer le fichier généré dans /sas_liv/LR6 sur radeva1 
+
+si traitement OK 
+
+II] lancement du traitement de jeux réduits : ddr_xjrv_demande 
+
+
+Merci 
+
+Nico";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+PRODUCTION;PROD-64;PROD-RB1-DRS-HLUP-EVOL-QC1241-RE1097_V1.3;Unitaire;Terminée;;Réalisée;Xavier FOURNIOLS;ANAIS DENOUETTE;19/juil./13 10:54;24/juil./13 10:15;23/juil./13 13:26;;2;;;;;;;;Merci de livrer le courrier cité dans la livcomp;;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;22/juil./13 12:49;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Demande Edition Ponctuelle;;DRS;;;
+PRODUCTION;PROD-70;forçages dossiers à 815;Unitaire;Terminée;;Réalisée;Gijs VAN DORP;Nicolas DRENO;22/juil./13 16:57;23/juil./13 13:49;23/juil./13 9:27;;3;;;;;;;;"2 dossiers à forcer à l'état 815. Pour cela : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_815_LE_PAPE_ANDOUARD.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+MErci";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-63;PROD- RB1- DRS- HLUP- EVOL- QC1242 -RE1091_V1.3;Unitaire;Terminée;;Réalisée;Xavier FOURNIOLS;Philippe JESOPH;18/juil./13 18:20;23/juil./13 14:18;22/juil./13 10:07;;3;;;;;;;;"Merci de mettre en production le courrier cité dans la fiche descriptive. 
+@+ Philippe";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;19/juil./13 20:15;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Demande Edition Ponctuelle;;DRS;;;
+PRODUCTION;PROD-66;Forcage dossier;Unitaire;Terminée;;Réalisée;Christophe CHIGNAGUET;Nicolas DRENO;19/juil./13 17:03;22/juil./13 16:42;22/juil./13 9:45;;2;;;;;;;;"Un dossier est à forcer à l'état 815. Pour cela : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_815_BLOUIN.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+";;;;;;;LIQUIDATION CNRACL;;LR6;;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-65;Forcage code état page;Unitaire;Terminée;;Réalisée;Christophe CHIGNAGUET;Nicolas DRENO;19/juil./13 11:42;22/juil./13 16:43;19/juil./13 14:04;;2;;;;;;;;"Merci de débloquer le gestionnaire en passant une requête 
+
+Pour cela : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_page_bene_DEVOS.sql 
+
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01 
+
+
+Merci, 
+
+Nico";;;;;;;LIQUIDATION CNRACL;;LR6;;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-61;PROD LR6 : inc 395754 forçage durées incohérentes (odti de régul);Unitaire;Terminée;;Réalisée;Christophe CHIGNAGUET;Guillaume SERRANO;18/juil./13 9:09;02/08/2013 09:45;18/juil./13 17:06;;2;;;;;;;;"Bonjour, 
+
+
+Un dossier a des durées incohérents fait planter le traitement PROL. Pour cela : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/inc_395574_durees_incoherentes.sql 
+2) la jouer sur raproa1 depuis sqlplus lr602/lr602@XUNI01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;SGBD - ORACLE;18/juil./13 11:07;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;inc 395754;DRS;;;
+PRODUCTION;PROD-60;Chargement données client LR601 depuis synonym CLI00;Unitaire;Terminée;;Réalisée;Vincent KROWA;Nicolas DRENO;17/juil./13 17:22;19/juil./13 11:40;18/juil./13 15:22;;3;;;;;;;;"afin d'ajouter des données client dans le schéma LR601 pour une demande de MCIR j'aurais besoin du passage de la requete dispo sur radeva1 
+/gpatrimoine/lr601/oracle/sql/incidents/chargement_client_LR6_depuis_SynonymCLI00_benchaib.sql 
+
+un premier passage sur raproa1 depuis sqlplus lr601/lr601@EWEB01 avec un rollback, envoi des résulats puis à mon GO un passage en commit. 
+
+Merci 
+
+Nico 
+";;;;;;;LIQUIDATION CNRACL;;LR6;;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-57;LR6 DAI 2013 - Livraison en prod batch alim carrière;Globale;Terminée;;Réalisée;Franck VERGEZ;Nicolas DRENO;17/juil./13 13:52;17/juil./13 16:31;17/juil./13 16:13;;3;;;;;;PROD-58, PROD-59;;"Afin de corriger un incident de prod nous avons besoin de la livraison d'un composant de la chaîne de PROL en prod. 
+
+Le composant est validé en VA. 
+
+fiche de livraison en PJ avec oéprations particulières à prendre en compte. 
+
+Merci 
+
+Nico 
+";;;;;;;LIQUIDATION CNRACL;;LR6;;17/juil./13 14:00;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;;DRS;;;
+PRODUCTION;PROD-58;PROD-57 LIV.COMPOSANT X LR6 INC 395314;Sous-Tâche;Terminée;;Réalisée;Franck VERGEZ;Franck VERGEZ;17/juil./13 14:32;30/juil./13 10:56;17/juil./13 16:08;;1;;;;;;;;"Afin de corriger un incident de prod nous avons besoin de la livraison d'un composant de la chaîne de PROL en prod. 
+
+Le composant est validé en VA. 
+
+fiche de livraison en PJ avec oéprations particulières à prendre en compte. 
+
+Merci 
+
+Nico 
+";;;;;;;LIQUIDATION CNRACL;;LR6;PLATEFORME - UNIX;17/juil./13 14:00;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+PRODUCTION;PROD-59;PROD-57 Sous-tâche;Sous-Tâche;Terminée;;Annulée;Non attribuée;Franck VERGEZ;17/juil./13 14:32;17/juil./13 14:39;17/juil./13 14:39;;1;;;;;;;;"Afin de corriger un incident de prod nous avons besoin de la livraison d'un composant de la chaîne de PROL en prod. 
+
+Le composant est validé en VA. 
+
+fiche de livraison en PJ avec oéprations particulières à prendre en compte. 
+
+Merci 
+
+Nico 
+";;;;;;;LIQUIDATION CNRACL;;LR6;;17/juil./13 14:00;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;;DRS;;;
+PRODUCTION;PROD-56;forçage numéros de pensions;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Nicolas DRENO;17/juil./13 10:03;17/juil./13 10:27;17/juil./13 10:22;;3;;;;;;;;"dans le cadre de la 'migration complémentaire', afin de simuler les flux ocapi j'aurais besoin du passage de la requete dispo sur radeva1 qui force des numéros de pension 
+
+/gpatrimoine/lr601/oracle/sql/incidents/forcage_Migration_complementaire.sql 
+
+
+un premier passage sur raproa1 depuis sqlplus lr601/lr601@EWEB01 avec un rollback, envoi des résulats puis à mon GO un passage en commit. 
+
+Merci 
+
+Nico 
+";;;;;;;LIQUIDATION CNRACL;;LR6;;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-55;Livraison en production - batch alimentation Carrière incident DAI 2013;Unitaire;Terminée;;Annulée;Christophe CHIGNAGUET;Nicolas DRENO;16/juil./13 17:10;17/juil./13 9:28;17/juil./13 9:28;;3;;;;;;;;"Afin de corriger un incident levé ce matin en prod (première journée du DAI 2013) nous avons besoin d'une livraison ASAP d'un composant de la chaîne de PROL dans un premier temps en *VA*. 
+
+Une ""Darwin"" sera faite *plus tard pour la prod après passage en VA*. 
+
+fiche de livraison en PJ 
+
+Merci 
+
+Nico";;;;;;;LIQUIDATION CNRACL;;LR6;;;DIR GEST MUTUAL;VA;Pre-exploitation;1127;Gestion de Patrimoine;Rejetée;Réalisée;;Sensible;;395314;DRS;;;
+PRODUCTION;PROD-54;PROD LR6 : plantage PROL contrat incohérent;Unitaire;Terminée;;Réalisée;Vincent KROWA;Guillaume SERRANO;16/juil./13 10:19;19/08/2013 11:08;16/juil./13 15:55;;3;;;;;;;;"Bonjour, 
+
+Un contrat est incohérent dans CD1. Il faudrait l'écarter. Pour cela, il faudrait : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/incident_395314.sql 
+2) la jouer sur raproa1 depuis sqlplus lr602/lr602@XUNI01.WORLD 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;SGBD - ORACLE;16/juil./13 12:16;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-50;Chargement données client LR601 depuis synonym CLI00;Unitaire;Terminée;;Réalisée;Guillaume DUMAS;Nicolas DRENO;15/juil./13 14:32;17/juil./13 10:01;16/juil./13 11:01;;3;;;;;;;;"afin d'ajouter des données client dans le schéma LR601 pour 5 dossiers j'aurais besoin du passage de la requete dispo sur radeva1 
+/gpatrimoine/lr601/oracle/sql/incidents/chargement_client_LR6_depuis_SynonymCLI00_multidossiers.sql 
+
+un premier passage sur raproa1 depuis sqlplus lr601/lr601@EWEB01 avec un rollback, envoi des résulats puis à mon GO un passage en commit. 
+
+Merci 
+
+Nico 
+";;;;;;;LIQUIDATION CNRACL;;LR6;;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-43;PROD-RB1-DRS-HLUP-EVOL-QC1224-RE5046_V1.2-RE5047_V1.2-RE5048_V1.2-RE5049_V1.1;Unitaire;Terminée;;Réalisée;Xavier FOURNIOLS;ANAIS DENOUETTE;12/juil./13 10:28;15/juil./13 10:57;12/juil./13 17:53;;2;;;;;;;;Merci de mettre en VA et PROD les courriers cités dans la livcomp;;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;;12/juil./13 18:24;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Demande Edition Ponctuelle;;DRS;;;
+PRODUCTION;PROD-48;PROD LR6 : forcage dossier à l 'état 816;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Guillaume SERRANO;12/juil./13 14:51;15/juil./13 11:47;12/juil./13 15:49;;2;;;;;;;;"Bonjour, 
+
+Un dossier est à forcer à l'état 816. Pour cela : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_dossier_815.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01.WORLD 
+
+Merci";;;;;;;LIQUIDATION CNRACL;;LR6;;12/juil./13 16:49;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-47;Suppresion date fin de avlidité adresse employeur;Unitaire;Terminée;;Annulée;Christophe CHIGNAGUET;Nicolas DRENO;12/juil./13 14:06;12/juil./13 14:49;12/juil./13 14:49;;2;;;;;;;;"Bonjour, 
+
+dans le cadre de l'incident 394699 nous avons besoin de supprimer la date de fin de l'adresse principale client de l'employeur 01AHD807 Chateau Salins 
+
+Pour cela : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_DFADR_CLIENT_MUNSCH.sql 
+
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01 
+
+Merci 
+
+Nicolas 
+";;;;;;;LIQUIDATION CNRACL;;LR6;;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;;;DRS;;;
+PRODUCTION;PROD-46;PROD LR6 : nettoyage données cli présentes à tort dans LR601;Unitaire;Terminée;;Réalisée;Christophe CHIGNAGUET;Guillaume SERRANO;12/juil./13 12:28;15/juil./13 11:47;12/juil./13 14:47;;3;;;;;;;;"Bonjour, 
+
+Des données client existent rattachées à aucun bcr dans lr6. Il faudrait les supprimer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/suppr_donnees_cli_sans_processus_lr6.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;;12/juil./13 14:28;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-45;Chargement données client LR601 depuis synonym CLI00;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Nicolas DRENO;12/juil./13 12:27;12/juil./13 14:49;12/juil./13 14:19;;2;;;;;;;;"deuxième dossier en erreur : LEBLOND 
+
+
+afin d'ajouter des données client dans le schéma LR601 pour une demande de MCIR j'aurais besoin du passage de la requete dispo sur radeva1 
+/gpatrimoine/lr601/oracle/sql/incidents/chargement_client_LR6_depuis_SynonymCLI00_leblond.sql 
+
+un premier passage sur raproa1 depuis sqlplus lr601/lr601@EWEB01 avec un rollback, envoi des résulats puis à mon GO un passage en commit. 
+
+Merci 
+
+Nico 
+";;;;;;;LIQUIDATION CNRACL;;LR6;;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-42;Chargement données client LR601 depuis synonym CLI00;Unitaire;Terminée;;Réalisée;Jean Francois RICHEFORT;Nicolas DRENO;11/juil./13 17:14;12/juil./13 12:27;12/juil./13 10:32;;1;;;;;;;;"afin d'ajouter des données client dans le schéma LR601 pour une demande de MCIR j'aurais besoin du passage de la requete dispo sur radeva1 
+/gpatrimoine/lr601/oracle/sql/incidents/chargement_client_LR6_depuis_SynonymCLI00.sql 
+
+un premier passage sur raproa1 depuis sqlplus lr601/lr601@EWEB01 avec un rollback, envoi des résulats puis à mon GO un passage en commit. 
+
+Merci 
+
+Nico 
+";;;;;;;LIQUIDATION CNRACL;;LR6;;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-41;PROD LR6 : forçage dossiers bcr et contrats affil faux;Unitaire;Terminée;;Réalisée;Jean Francois RICHEFORT;Guillaume SERRANO;11/juil./13 17:12;15/juil./13 11:47;12/juil./13 8:45;;2;;;;;;;;"Bonjour, 
+
+4 dossiers ont un bcr et un contrat d'affil faux. Il faudrait les forcer 
+
+1)récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_dossiers_bcr_faux.sql.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01 
+
+Merci 
+
+54380 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;;11/juil./13 19:11;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-39;Lancement d'un forçage Soap CD1 / incident urgent 392834;Unitaire;Terminée;;Réalisée;Christophe CHIGNAGUET;Hugo LETERRIER;11/juil./13 15:01;11/juil./13 17:41;11/juil./13 16:52;;3;;;;;;;;"Pourriez-vous : 
+
+1 - copier le fichier : 
+
+radeva1 : /sas_liv/cd1/SoapToWsCD1_ForcageStatutPeriodes1976a1981_1AA95CAT.xml 
+
+dans le répertoire : 
+
+raproa1: /zcd101/fichiers/fic/d 
+
+2 - lancer le script suivant avec l'URL du WS CD1 (sans SPS) en paramètre : 
+
+EnvoiFluxSoapWsCD1.ksh http://zcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint 
+
+3 - Me prévenir pour vérification 
+
+4 - Suite au contrôle de l'exécution précédente, copier le fichier : 
+
+radeva1 : /sas_liv/cd1/SoapToWsCD1_ForcageStatutPeriodes1976a1981_1AA95CAT.xml 
+
+dans le répertoire : 
+
+raproa1: /xcd101/fichiers/fic/d 
+
+5 - lancer le script suivant avec l'URL du WS CD1 (sans SPS) en paramètre : 
+
+EnvoiFluxSoapWsCD1.ksh http://xcd1iws.re.cdc.fr/WS_Carriere_CNR/services/CarrieresEndpoint 
+
+Merci";;;;;;;GESTION DE LA CARRIÈRE CNRACL.;;CD1;;11/juil./13 16:51;DRS BORDEAUX;Z pour contrôle, puis X;Exploitation;1726;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;INC000392834;DRS;;;
+PRODUCTION;PROD-38;PROD LR6: suppression données client sans bcr CP17/CP09;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Guillaume SERRANO;11/juil./13 14:32;11/juil./13 15:55;11/juil./13 15:08;;2;;;;;;;;"Bonjour, 
+
+Des données client existent rattachées à aucun bcr dans lr6 dans les tables CP17 et CP09. Il faudrait les supprimer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/suppr_donnees_cli_sans_processus_lr6_suite.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;;11/juil./13 16:31;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-37;PROD-PM8-DRS-HLUP-EVOL-QC1208-PR0063_V1.14;Unitaire;Terminée;;Réalisée;Xavier FOURNIOLS;ANAIS DENOUETTE;11/juil./13 12:18;11/juil./13 15:23;11/juil./13 14:54;;3;;;;;;;;Merci de mettre en VA et PROD les courriers cités dans la livcomp (PR0063);;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;;11/juil./13 13:09;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Demande Edition Ponctuelle;;DRS;;;
+PRODUCTION;PROD-36;PROD LR6 : suppression données client lr6 non rattachées à un bcr LR6;Unitaire;Terminée;;Réalisée;Arnaud FRANCOIS;Guillaume SERRANO;11/juil./13 10:52;30/juil./13 10:49;11/juil./13 14:08;;2;;;;;;;;"Bonjour, 
+
+Des données client existent rattachées à aucun bcr dans lr6. Il faudrait les supprimer : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/suppr_donnees_cli_sans_processus_lr6.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;SGBD - ORACLE;11/juil./13 12:50;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+PRODUCTION;PROD-35;Forcage PROD BCR employeur;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Nicolas DRENO;11/juil./13 10:05;11/juil./13 17:14;11/juil./13 11:36;;2;;;;;;;;"Bonjour, 
+
+afin d'ajouter des bcr employeur manquants dans LR6 depuis AE1 j'aurais besoin du passage de la requete dispo sur radeva1 
+/gpatrimoine/lr601/oracle/sql/incidents/forcage_iibcr3-et-iibcreV2.sql 
+
+un premier passage sur raproa1 depuis sqlplus lr601/lr601@EWEB01 avec un rollback, envoi des résulats puis à mon GO un passage en commit. 
+
+Merci 
+
+Nico";;;;;;;LIQUIDATION CNRACL;;LR6;;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-26;PROD-RB1-DRS-HLUP-EVOL-QC1234-RE1069_V1.14;Unitaire;Terminée;;Réalisée;Xavier FOURNIOLS;Philippe JESOPH;10/juil./13 10:40;23/juil./13 14:17;11/juil./13 10:22;;3;;;;;;;;"Bonjour, 
+
+Merci de mettre en production le courrier décrit dans la fiche de livraison. 
+@+ Philippe";;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;10/juil./13 12:36;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Demande Edition Ponctuelle;QC-1234;DRS;;;
+BORDEAUX-INTRA DPI;BDX-6;restaurer les anciens fichiers cd2;Unitaire;Terminée;;Réalisée;Wilfried PEYROU;Wilfried PEYROU;11/juil./13 9:25;11/juil./13 9:46;11/juil./13 9:46;;1;;;;;;;;"Peux tu nous restaurer les anciens fichiers (cd2) au meme endroit depuis debut avril 
+
+
+/xcli00/fichiers/sav/j > ll -ltr xcd2* 
+
+
+-rw-rw-r-- 1 xiab01 exploit 8305 May 13 22:11 xcd2_cl_clients.0513.221103_traite_0514.204120.gz 
+-rw-rw-r-- 1 xiab01 exploit 16377 May 14 22:23 xcd2_cl_clients.0514.222245_traite_0515.204135.gz 
+-rw-rw-r-- 1 xiab01 exploit 4628 May 15 22:06 xcd2_cl_clients.0515.220638_traite_0516.221628.gz 
+-rw-rw-r-- 1 xiab01 exploit 4414 May 16 22:06 xcd2_cl_clients.0516.220610_traite_0516.221628.gz 
+-rw-rw-r-- 1 xiab01 exploit 5399 May 21 22:08 xcd2_cl_clients.0521.220834_traite_0522.204106.gz 
+-rw-rw-r-- 1 xiab01 exploit 9503 May 28 22:13 xcd2_cl_clients.0528.221243_traite_0529.204144.gz 
+-rw-rw-r-- 1 xiab01 exploit 6511 May 29 22:57 xcd2_cl_clients.0529.225727_traite_0530.204219.gz 
+-rw-rw-r-- 1 xiab01 exploit 7022 May 30 22:09 xcd2_cl_clients.0530.220928_traite_0531.221348.gz 
+-rw-rw-r-- 1 xiab01 exploit 6777 May 31 22:11 xcd2_cl_clients.0531.221100_traite_0531.221348.gz 
+-rw-rw-r-- 1 xiab01 exploit 6921 Jun 3 22:10 xcd2_cl_clients.0603.220944_traite_0604.204201.gz 
+-rw-rw-r-- 1 xiab01 exploit 8345 Jun 4 22:11 xcd2_cl_clients.0604.221038_traite_0605.204238.gz 
+-rw-rw-r-- 1 xiab01 exploit 10885 Jun 5 22:20 xcd2_cl_clients.0605.221947_traite_0606.204159.gz 
+-rw-rw-r-- 1 xiab01 exploit 12146 Jun 6 22:16 xcd2_cl_clients.0606.221550_traite_0607.222657.gz 
+-rw-rw-r-- 1 xiab01 exploit 36125 Jun 8 00:25 xcd2_cl_clients.0608.002243_traite_0610.223636.gz 
+-rw-rw-r-- 1 xiab01 exploit 6281 Jun 10 22:10 xcd2_cl_clients.0610.221012_traite_0610.223636.gz 
+-rwxrwxrwx 1 xiab01 exploit 12251 Jun 11 22:15 xcd2_cl_clients.0611.221510_traite_0612.204644.gz 
+-rw-rw-r-- 1 xiab01 exploit 5681 Jun 12 22:08 xcd2_cl_clients.0612.220803_traite_0613.204545.gz 
+-rw-rw-r-- 1 xiab01 exploit 7057 Jun 13 22:09 xcd2_cl_clients.0613.220904_traite_0614.223628.gz 
+-rw-rw-r-- 1 xiab01 exploit 15876 Jun 14 22:36 xcd2_cl_clients.0614.223528_traite_0614.223628.gz 
+-rw-rw-r-- 1 xiab01 exploit 10292 Jun 14 22:37 xcd2_cl_clients.0614.223528_traite_0617.204333.gz 
+-rw-rw-r-- 1 xiab01 exploit 8752 Jun 17 22:11 xcd2_cl_clients.0617.221107_traite_0618.204344.gz 
+-rw-rw-r-- 1 xiab01 exploit 16687 Jun 18 22:29 xcd2_cl_clients.0618.222838_traite_0619.204523.gz 
+-rw-rw-r-- 1 xiab01 exploit 13728 Jun 19 22:16 xcd2_cl_clients.0619.221553_traite_0620.204844.gz 
+-rw-rw-r-- 1 xiab01 exploit 14164 Jun 20 22:17 xcd2_cl_clients.0620.221628_traite_0621.221939.gz 
+-rw-rw-r-- 1 xiab01 exploit 8084 Jun 21 22:10 xcd2_cl_clients.0621.221017_traite_0621.221939.gz 
+-rw-rw-r-- 1 xiab01 exploit 20801 Jun 24 22:26 xcd2_cl_clients.0624.222542_traite_0625.210049.gz 
+-rw-rw-r-- 1 xiab01 exploit 5714 Jun 25 22:07 xcd2_cl_clients.0625.220703_traite_0626.204210.gz 
+-rw-rw-r-- 1 xiab01 exploit 4385 Jun 26 22:05 xcd2_cl_clients.0626.220514_traite_0627.220131.gz 
+-rw-rw-r-- 1 xiab01 exploit 3547 Jun 27 22:05 xcd2_cl_clients.0627.220516_traite_0628.231952.gz 
+-rw-rw-r-- 1 xiab01 exploit 26360 Jun 28 22:51 xcd2_cl_clients.0628.224912_traite_0628.231952.gz 
+-rw-rw-r-- 1 xiab01 exploit 16477 Jul 1 22:22 xcd2_cl_clients.0701.222120_traite_0702.204447.gz 
+-rw-rw-r-- 1 xiab01 exploit 9843 Jul 2 22:14 xcd2_cl_clients.0702.221339_traite_0703.204356.gz 
+-rw-rw-r-- 1 xiab01 exploit 14847 Jul 3 22:26 xcd2_cl_clients.0703.222541_traite_0704.204326.gz 
+-rw-rw-r-- 1 xiab01 exploit 12378 Jul 4 22:15 xcd2_cl_clients.0704.221428_traite_0705.223044.gz 
+-rw-rw-r-- 1 xiab01 exploit 8971 Jul 5 22:12 xcd2_cl_clients.0705.221201_traite_0705.223044.gz 
+-rw-rw-r-- 1 xiab01 exploit 19573 Jul 8 22:31 xcd2_cl_clients.0708.223007_traite_0709.204258.gz 
+";;;;;;;GESTION DE LA CARRIÈRE IRCANTEC (DDR);;CD2;;10/juil./13 11:20;DRS ANGERS;X;Exploitation;2232;;Annulée;Réalisée;;Initial;Traitement à la Demande;;DRS;;;
+BORDEAUX-INTRA DPI;BDX-5;libération espace disque X et Z;Unitaire;Terminée;;Réalisée;Jonathan HOUZE;Christophe CHIGNAGUET;10/juil./13 14:14;11/juil./13 9:19;10/juil./13 20:56;;2;;;;;;;;"Bonjour, 
+
+suite au bilan du projet Mag'Elan, merci de supprimer les File System suivants qui ne sont plus utilisés : 
+raproa1 /xlr601/oracle 
+ravapa1 /zlr601/oracle 
+
+Cdt, 
+CC (5/4177)";;;;;;;;;;;10/juil./13 16:12;;x,z;Exploitation;;;Annulée;Réalisée;;;Suppression d'Environnement;MAGELAN;DRS;;;
+PRODUCTION;PROD-31;PROD LR6 : forçage V3 au lieu de V4 dans table SUIVI;Unitaire;Terminée;;Réalisée;Christophe CHIGNAGUET;Guillaume SERRANO;10/juil./13 16:31;11/juil./13 11:33;10/juil./13 16:45;;2;;;;;;;;"Bonjour, 
+
+Un dossier a une V4 au lieu de V3 dansla tabel SUIVI. Pour cela, il faudrait : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_histo_V4_suivi_GOURBEYRE.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01 
+
+Merci 
+Guillaume 
+";;;;;;;LIQUIDATION CNRACL;;LR6;;10/juil./13 18:29;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-30;Forcage en base;Unitaire;Terminée;;Réalisée;Franck VERGEZ;Nicolas DRENO;10/juil./13 15:30;10/juil./13 15:53;10/juil./13 15:52;;2;;;;;;;;"Bonjour, 
+
+dans le cadre d'un incident sur la demande de révision de la pension E36435M nous avons besoin de forcer le bcr employeur sur LR6 actuellement nul avec celui dispo sur AE1. 
+
+Pour cela : 
+
+1) récupérer radeva1:/gpatrimoine/lr601/oracle/sql/incidents/forcage_iibcr3-et-iibcre_pension_E36435M.sql 
+2) la jouer sur raproa1 depuis sqlplus lr601/lr601@EWEB01 
+
+
+Merci 
+
+Nicolas, pour sa première sur Darwin :-)";;;;;;;LIQUIDATION CNRACL;;LR6;;;DIR GEST MUTUAL;;Exploitation;1127;Gestion de Patrimoine;Annulée;Réalisée;;Sensible;Traitement de Forçage;;DRS;;;
+PRODUCTION;PROD-25;PROD-PM8-DRS-HLUP-EVOL-QC1208-ep_index_V1.45;Unitaire;Terminée;;Réalisée;Vincent KROWA;ANAIS DENOUETTE;10/juil./13 10:30;30/juil./13 10:36;10/juil./13 14:20;;3;;;;;;;;Merci de mettre en VA et PROD les courriers cités dans la livcomp (livraison ep_index);;;;;;;SOCLE COMMUN ÉDITIQUE;;EDX;PLATEFORME - EDITIQUE;10/juil./13 12:21;DRS;;Exploitation;1353;Gestion de Patrimoine;Annulée;Réalisée;Applicatif;Sensible;Exécution de Traitement;;DRS;;;
+BORDEAUX-INTRA DPI;BDX-3;rafraichissement environnement de VA ---- regularisation;Unitaire;Terminée;;Réalisée;Wilfried PEYROU;Christophe CHIGNAGUET;10/juil./13 9:19;10/juil./13 10:21;10/juil./13 9:57;;2;;;;;;;;merci de mettre à jour l'environnement de VA Z avec les informations dans le document joint.;;;;;;;;;;;10/juil./13 11:09;;z;Pre-exploitation;;;Annulée;Réalisée;;;Traitement à la Demande;;DRS;;;
+Généré à Thu Sep 19 09:43:37 CEST 2013 par Guillaume DUMAS avec JIRA 5.1.5#784-sha1:6c729937863f5b4cf7f0dd89a7db4e505415af41. ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

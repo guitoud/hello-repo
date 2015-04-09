@@ -1,0 +1,15 @@
+NB ETK EN COURS = 1
+NB ETK EN ERREURS  = 1
+NB ETK AVEC TRACE = 0
+NB ETK FINI = 3574
+NB ETK ACTIF = 3576
+
+POURCENTAGE D ERREUR : .02 %
+POURCENTAGE D EN COURS : .02 %
+POURCENTAGE DE TRACE : 0 %
+
+NB ETK ARCHIVE = 59532
+LISTE DES ETK EN ERREUR : /editique-supervision/supervision/b3217_old/liste_etk_en_erreur.txt
+LISTE DES ETK EN COURS  : /editique-supervision/supervision/b3217_old/liste_etk_en_cours.txt
+LISTE DES ETK AVEC TRACE : /editique-supervision/supervision/b3217_old/liste_etk_trace.txt
+

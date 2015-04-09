@@ -1,0 +1,14 @@
+Date: Wed, 18 Jul 2007 01:27:47 +0200
+Return-Path: unit_test@phpmailer.sf.net
+To: Test User <fjdsl@free.fr>
+From: Unit Tester <unit_test@phpmailer.sf.net>
+Reply-to: Reply Guy <no_reply@phpmailer.sf.net>
+Subject: Unit Test: AltBody + Attachment
+Message-ID: <d356a7c35abc30fe5ea1943f2ce7ae3e@stahon.flownet.info>
+X-Priority: 3
+X-Mailer: PHPMailer [version 1.73]
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="b1_d356a7c35abc30fe5ea1943f2ce7ae3e"
+
+

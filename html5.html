@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tutorial: Hello Dojo!</title>
+</head>
+
+<body>
+    <!-- load Dojo -->
+    <script src="./dojo/dojo/dojo.js" data-dojo-config="async: true">
+    </script>
+    <ul id="list">
+        <li id="one">Un</li>
+        <li id="two">Deux</li>
+        <li id="three">Trois</li>
+        <li id="four">Quatre</li>
+        <li id="five">Cinq</li>
+    </ul>
+
+    <script>
+        require(["dojo/dom", "dojo/dom-construct", "dojo/domReady!"], function(dom) {
+
+            function setText(node, text) {
+                node = dom.byId(node);
+                node.innerHTML = text;
+            }
+
+            var one = dom.byId("one");
+            setText(one, "Un a &eacutet&eacute d&eacutefini");
+            setText(two, "pour les unir en deux");
+
+        });
+    </script>
+
+
+</body>
+
+</html>
