@@ -1,0 +1,26 @@
+{
+  "name": "mon-projet",
+  "title": "Mon Projet",
+  "description": "The best jQuery plugin ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/guitoud/grunt",
+  "author": {
+    "name": "guitoud",
+    "email": "etp3332@ca-ts.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guitoud/grunt.git"
+  },
+  "bugs": "https://github.com/guitoud/grunt/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/guitoud/grunt/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}
