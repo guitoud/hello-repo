@@ -10,7 +10,7 @@ module.exports = function(grunt) {
       '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
       '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
       '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-      ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
+      ' Licensed <%= pkg.licenses.join(", ") %> */\n',
     // Task configuration.
     clean: {
       files: ['dist']
@@ -34,35 +34,30 @@ module.exports = function(grunt) {
         dest: 'dist/jquery.<%= pkg.name %>.min.js'
       },
     },
-    qunit: {
-      files: ['test/**/*.html']
+    karma: {
+      unit: {
+        configFile: 'karma.conf.js'
+      },
+      continuous: {
+        configFile: 'karma.conf.js',
+        singleRun: true
+      }
     },
-    jshint: {
-      options: {
-        jshintrc: true
-      },
-      gruntfile: {
-        src: 'Gruntfile.js'
-      },
-      src: {
-        src: ['src/**/*.js']
-      },
-      test: {
-        src: ['test/**/*.js']
-      },
+    eslint: {
+      target: ['src/**/*.js', 'test/**/*.js', 'Gruntfile.js']
     },
     watch: {
       gruntfile: {
-        files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
+        files: 'Gruntfile.js',
+        tasks: ['eslint']
       },
       src: {
-        files: '<%= jshint.src.src %>',
-        tasks: ['jshint:src', 'qunit']
+        files: ['src/**/*.js'],
+        tasks: ['eslint', 'karma:continuous']
       },
       test: {
-        files: '<%= jshint.test.src %>',
-        tasks: ['jshint:test', 'qunit']
+        files: ['test/**/*.js'],
+        tasks: ['eslint', 'karma:continuous']
       },
     },
   });
@@ -71,11 +66,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-qunit');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-eslint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-karma');
 
-  // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit', 'clean', 'concat', 'uglify']);
+  // Register tasks.
+  grunt.registerTask('test', ['eslint', 'karma:continuous']);
+  grunt.registerTask('build', ['clean', 'eslint', 'concat', 'uglify']);
+  grunt.registerTask('default', ['test', 'build']);
+  grunt.registerTask('dev', ['watch']);
 
 };

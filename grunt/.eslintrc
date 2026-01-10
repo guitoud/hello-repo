@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "jquery": true,
+    "node": true,
+    "qunit": true
+  },
+  "extends": ["eslint:recommended"],
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "no-unused-vars": ["warn"]
+  },
+  "globals": {
+    "$": true,
+    "jQuery": true
+  }
+}
